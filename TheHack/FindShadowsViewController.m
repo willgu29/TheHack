@@ -10,8 +10,7 @@
 #import "Router.h"
 #import <Parse/Parse.h>
 #import "ShadowTableViewCell.h"
-
-
+#import "DisplayLogViewController.h"
 @interface FindShadowsViewController ()
 
 @property (nonatomic, strong) FetchSuggestions *fetcher;
@@ -73,9 +72,9 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIViewController *userVC = [Router createUserProfileVCWithUsername:@"Will Gu"];
-//    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:userVC];
-    [self presentViewController:userVC animated:YES completion:nil];
+    DisplayLogViewController *displayVC = [[DisplayLogViewController alloc] initWithNibName:@"DisplayLogViewController" bundle:nil];
+    displayVC.log = [_logsData objectAtIndex:indexPath.row];
+    [self presentViewController:displayVC animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

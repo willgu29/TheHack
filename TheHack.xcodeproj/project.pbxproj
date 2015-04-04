@@ -61,6 +61,8 @@
 		8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */; };
 		8404CBB91AD08F140088D14F /* DisplayLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBB71AD08F140088D14F /* DisplayLogViewController.m */; };
 		8404CBBA1AD08F140088D14F /* DisplayLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */; };
+		8404CBBE1AD092000088D14F /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */; };
+		8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +156,9 @@
 		8404CBB61AD08F140088D14F /* DisplayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLogViewController.h; sourceTree = "<group>"; };
 		8404CBB71AD08F140088D14F /* DisplayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLogViewController.m; sourceTree = "<group>"; };
 		8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayLogViewController.xib; sourceTree = "<group>"; };
+		8404CBBB1AD092000088D14F /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
+		8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
+		8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -410,6 +415,9 @@
 				8404CBA01AD0643A0088D14F /* ShadowTableViewCell.h */,
 				8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */,
 				8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */,
+				8404CBBB1AD092000088D14F /* CalendarTableViewCell.h */,
+				8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */,
+				8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -529,6 +537,7 @@
 				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
 				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
 				8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */,
+				8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */,
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
 				8404CB521ACFBD960088D14F /* LoginViewController.xib in Resources */,
 				8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */,
@@ -599,6 +608,7 @@
 				8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */,
 				8404CBA81AD069970088D14F /* CreateAccountViewController.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
+				8404CBBE1AD092000088D14F /* CalendarTableViewCell.m in Sources */,
 				8404CBB41AD0861E0088D14F /* EditProfileViewController.m in Sources */,
 				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
