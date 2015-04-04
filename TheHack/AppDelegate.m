@@ -12,6 +12,7 @@
 #import "NSDataConvert.h"
 #import "ParseUserValues.h"
 #import "NSUserDefaultValues.h"
+#import "Router.h"
 @interface AppDelegate ()
 
 @end
@@ -121,6 +122,11 @@
 }
 -(UIViewController *)getRootViewController
 {
+    if (true)
+    {
+        UIViewController *mainVC = [Router createMainInterfaceWithNavVC];
+        return mainVC;
+    }
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
     return loginVC;
 }
