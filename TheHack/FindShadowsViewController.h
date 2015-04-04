@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
-@interface FindShadowsViewController : UIViewController <MDCSwipeToChooseDelegate>
+@interface FindShadowsViewController : UIViewController <MDCSwipeToChooseDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @end

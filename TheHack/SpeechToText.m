@@ -40,18 +40,24 @@ const NSString *LanguageModelFiles = @"NameIWantForMyLanguageModelFiles";
 
 -(void)startAcousticModel
 {
+    
     [[OEPocketsphinxController sharedInstance] setActive:TRUE error:nil];
     [[OEPocketsphinxController sharedInstance] startListeningWithLanguageModelAtPath:_lmPath dictionaryAtPath:_dicPath acousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"] languageModelIsJSGF:NO]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to perform Spanish recognition instead of English.
 }
 -(void)stopAcousticModel
 {
-    [[OEPocketsphinxController sharedInstance] stopListening];
-    [[OEPocketsphinxController sharedInstance] setActive:NO error:nil];
+    [[OEPocketsphinxController sharedInstance] suspendRecognition];
 }
 
+-(void)something
+{
+    
+}
 #pragma mark - OEEventsObserver Delegate
 - (void) pocketsphinxDidReceiveHypothesis:(NSString *)hypothesis recognitionScore:(NSString *)recognitionScore utteranceID:(NSString *)utteranceID {
     NSLog(@"The received hypothesis is %@ with a score of %@ and an ID of %@", hypothesis, recognitionScore, utteranceID);
+    
+    
 }
 
 - (void) pocketsphinxDidStartListening {

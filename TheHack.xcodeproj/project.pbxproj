@@ -52,6 +52,8 @@
 		8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB961ACFEAE40088D14F /* SpeechToText.m */; };
 		8404CB9C1AD055BF0088D14F /* RyanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB9A1AD055BF0088D14F /* RyanViewController.m */; };
 		8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB9B1AD055BF0088D14F /* RyanViewController.xib */; };
+		8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */; };
+		8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,9 @@
 		8404CB991AD055BF0088D14F /* RyanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyanViewController.h; sourceTree = "<group>"; };
 		8404CB9A1AD055BF0088D14F /* RyanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RyanViewController.m; sourceTree = "<group>"; };
 		8404CB9B1AD055BF0088D14F /* RyanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RyanViewController.xib; sourceTree = "<group>"; };
+		8404CBA01AD0643A0088D14F /* ShadowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowTableViewCell.h; sourceTree = "<group>"; };
+		8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowTableViewCell.m; sourceTree = "<group>"; };
+		8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShadowTableViewCell.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +199,7 @@
 		8404CB0C1ACFB5BF0088D14F /* TheHack */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB9F1AD0641D0088D14F /* CustomViews */,
 				8404CB981AD0558E0088D14F /* Ryan */,
 				8404CB891ACFE7200088D14F /* External */,
 				8404CB801ACFD6B70088D14F /* SettingsInterface */,
@@ -371,6 +377,16 @@
 			name = APIs;
 			sourceTree = "<group>";
 		};
+		8404CB9F1AD0641D0088D14F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8404CBA01AD0643A0088D14F /* ShadowTableViewCell.h */,
+				8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */,
+				8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,6 +478,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */,
 				8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */,
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
 				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
@@ -531,6 +548,7 @@
 				8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */,
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
+				8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
 				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,

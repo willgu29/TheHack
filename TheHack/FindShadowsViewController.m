@@ -8,6 +8,7 @@
 
 #import "FindShadowsViewController.h"
 #import "Router.h"
+#import "ShadowTableViewCell.h"
 
 
 @interface FindShadowsViewController ()
@@ -51,12 +52,12 @@
 {
     NSString *simpleTableIdentifier = [NSString stringWithFormat:@"%ld_%ld", (long)indexPath.section, (long)indexPath.row];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    ShadowTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:simpleTableIdentifier];
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"ShadowTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
         
     }
-    cell.textLabel.text = @"HI";
     
     return cell;
 }
@@ -69,7 +70,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
-
+-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 132;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 132;
+}
 
 #pragma mark - MDCSwipeToChooseDelegate Callbacks
 
