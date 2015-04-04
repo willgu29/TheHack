@@ -49,6 +49,7 @@
 		8404CB911ACFE72D0088D14F /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8D1ACFE72D0088D14F /* OpenEars.framework */; };
 		8404CB921ACFE72D0088D14F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8E1ACFE72D0088D14F /* Slt.framework */; };
 		8404CB941ACFE7E50088D14F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB931ACFE7E50088D14F /* AVFoundation.framework */; };
+		8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB961ACFEAE40088D14F /* SpeechToText.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,8 @@
 		8404CB8D1ACFE72D0088D14F /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		8404CB8E1ACFE72D0088D14F /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		8404CB931ACFE7E50088D14F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8404CB951ACFEAE40088D14F /* SpeechToText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechToText.h; sourceTree = "<group>"; };
+		8404CB961ACFEAE40088D14F /* SpeechToText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechToText.m; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -299,6 +302,8 @@
 				8404CB701ACFC7F80088D14F /* Router.m */,
 				8404CB7D1ACFD4EB0088D14F /* FetchSuggestions.h */,
 				8404CB7E1ACFD4EB0088D14F /* FetchSuggestions.m */,
+				8404CB951ACFEAE40088D14F /* SpeechToText.h */,
+				8404CB961ACFEAE40088D14F /* SpeechToText.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
+				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
 				8404CB5B1ACFBF7A0088D14F /* Converter.m in Sources */,
 				8404CB711ACFC7F80088D14F /* Router.m in Sources */,
