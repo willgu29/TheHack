@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreateAccountOnServer.h"
 
-@interface CreateAccountViewController : UIViewController
+
+@interface CreateAccountViewController : UIViewController <CreateAccountOnServerDelegate>
 
 @end
