@@ -44,6 +44,10 @@
 		8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB821ACFD6C90088D14F /* SettingsViewController.m */; };
 		8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB831ACFD6C90088D14F /* SettingsViewController.xib */; };
 		8404CB881ACFE21C0088D14F /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB871ACFE21C0088D14F /* Audio.m */; };
+		8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB8B1ACFE72D0088D14F /* AcousticModelEnglish.bundle */; };
+		8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB8C1ACFE72D0088D14F /* AcousticModelSpanish.bundle */; };
+		8404CB911ACFE72D0088D14F /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8D1ACFE72D0088D14F /* OpenEars.framework */; };
+		8404CB921ACFE72D0088D14F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8E1ACFE72D0088D14F /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +116,10 @@
 		8404CB831ACFD6C90088D14F /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		8404CB861ACFE21C0088D14F /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
 		8404CB871ACFE21C0088D14F /* Audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
+		8404CB8B1ACFE72D0088D14F /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		8404CB8C1ACFE72D0088D14F /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		8404CB8D1ACFE72D0088D14F /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		8404CB8E1ACFE72D0088D14F /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -127,11 +135,13 @@
 				8404CB4A1ACFBD300088D14F /* libz.dylib in Frameworks */,
 				8404CB481ACFBD270088D14F /* SystemConfiguration.framework in Frameworks */,
 				8404CB461ACFBCE80088D14F /* StoreKit.framework in Frameworks */,
+				8404CB911ACFE72D0088D14F /* OpenEars.framework in Frameworks */,
 				8404CB441ACFBCDF0088D14F /* Security.framework in Frameworks */,
 				8404CB421ACFBCBE0088D14F /* QuartzCore.framework in Frameworks */,
 				8404CB401ACFBCB90088D14F /* MobileCoreServices.framework in Frameworks */,
 				8404CB3E1ACFBCB40088D14F /* CoreLocation.framework in Frameworks */,
 				8404CB3B1ACFBCAB0088D14F /* CFNetwork.framework in Frameworks */,
+				8404CB921ACFE72D0088D14F /* Slt.framework in Frameworks */,
 				8404CB3C1ACFBCAB0088D14F /* CoreGraphics.framework in Frameworks */,
 				8404CB381ACFBCA20088D14F /* AudioToolbox.framework in Frameworks */,
 				8404CB341ACFBC740088D14F /* Parse.framework in Frameworks */,
@@ -173,6 +183,7 @@
 		8404CB0C1ACFB5BF0088D14F /* TheHack */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB891ACFE7200088D14F /* External */,
 				8404CB801ACFD6B70088D14F /* SettingsInterface */,
 				8404CB6E1ACFC7EE0088D14F /* APIs */,
 				8404CB561ACFBF6A0088D14F /* Converters */,
@@ -308,6 +319,25 @@
 			name = SettingsInterface;
 			sourceTree = "<group>";
 		};
+		8404CB891ACFE7200088D14F /* External */ = {
+			isa = PBXGroup;
+			children = (
+				8404CB8A1ACFE72D0088D14F /* Framework */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		8404CB8A1ACFE72D0088D14F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8404CB8B1ACFE72D0088D14F /* AcousticModelEnglish.bundle */,
+				8404CB8C1ACFE72D0088D14F /* AcousticModelSpanish.bundle */,
+				8404CB8D1ACFE72D0088D14F /* OpenEars.framework */,
+				8404CB8E1ACFE72D0088D14F /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +430,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */,
+				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
+				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
 				8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */,
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
 				8404CB521ACFBD960088D14F /* LoginViewController.xib in Resources */,
@@ -576,9 +608,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TheHack",
+					"$(PROJECT_DIR)/TheHack/Framework",
 				);
 				INFOPLIST_FILE = TheHack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -593,9 +626,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TheHack",
+					"$(PROJECT_DIR)/TheHack/Framework",
 				);
 				INFOPLIST_FILE = TheHack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
