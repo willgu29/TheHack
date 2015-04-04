@@ -8,13 +8,15 @@
 
 #import "FindShadowsViewController.h"
 #import "Router.h"
+#import <Parse/Parse.h>
 #import "ShadowTableViewCell.h"
 
 
 @interface FindShadowsViewController ()
 
+@property (nonatomic, strong) FetchSuggestions *fetcher;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) NSArray *logsData;
 
 @end
 
@@ -23,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _fetcher = [[FetchSuggestions alloc] init];
+    _fetcher.delegate = self;
     MDCSwipeToChooseView *swipeView = [self createNewMDCSwipeToChoose];
     UIImage *swipeImage = [self getImageFromURL:@"http://tupleapp.com/someImageHosting/emailLogo.png"];
     
@@ -34,6 +38,7 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    [_fetcher getAllLogs];
     _tableView.hidden = YES;
 }
 
@@ -46,7 +51,7 @@
 #pragma mark - UITableView Delegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [_logsData count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -58,8 +63,10 @@
         cell = [nib objectAtIndex:0];
         
     }
+    PFObject *log = [_logsData objectAtIndex:indexPath.row];
     
-    
+    cell.whyFollow.text = log[@"whyShadow"];
+    cell.username.text = log[@"username"];
     
     return cell;
 }
@@ -74,11 +81,11 @@
 
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 132;
+    return 160;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 132;
+    return 160;
 }
 
 #pragma mark - MDCSwipeToChooseDelegate Callbacks
@@ -115,6 +122,17 @@
     {
         _tableView.hidden = NO;
     }
+}
+
+#pragma mark - Fetch Delegate
+-(void)fetchSuccess:(NSArray*)data
+{
+    _logsData = data;
+    [_tableView reloadData];
+}
+-(void)fetchFailureWithError:(NSError *)error
+{
+    NSLog(@"Error Fetch: %@", error);
 }
 
 #pragma mark - Helper functions

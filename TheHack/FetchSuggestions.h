@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol FetchSuggestionsDelegate <NSObject>
+
+-(void)fetchSuccess:(NSArray *)data;
+-(void)fetchFailureWithError:(NSError *)error;
+
+@end
+
 @interface FetchSuggestions : NSObject
+
+@property (nonatomic, assign) id delegate;
+
+-(void)getAllLogs;
 
 @end

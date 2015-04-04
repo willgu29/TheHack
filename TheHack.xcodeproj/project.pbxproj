@@ -59,6 +59,8 @@
 		8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */; };
 		8404CBB41AD0861E0088D14F /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBB21AD0861E0088D14F /* EditProfileViewController.m */; };
 		8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */; };
+		8404CBB91AD08F140088D14F /* DisplayLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBB71AD08F140088D14F /* DisplayLogViewController.m */; };
+		8404CBBA1AD08F140088D14F /* DisplayLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +151,9 @@
 		8404CBB11AD0861E0088D14F /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
 		8404CBB21AD0861E0088D14F /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
 		8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		8404CBB61AD08F140088D14F /* DisplayLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayLogViewController.h; sourceTree = "<group>"; };
+		8404CBB71AD08F140088D14F /* DisplayLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayLogViewController.m; sourceTree = "<group>"; };
+		8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DisplayLogViewController.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -342,6 +347,9 @@
 				8404CBB11AD0861E0088D14F /* EditProfileViewController.h */,
 				8404CBB21AD0861E0088D14F /* EditProfileViewController.m */,
 				8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */,
+				8404CBB61AD08F140088D14F /* DisplayLogViewController.h */,
+				8404CBB71AD08F140088D14F /* DisplayLogViewController.m */,
+				8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -524,6 +532,7 @@
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
 				8404CB521ACFBD960088D14F /* LoginViewController.xib in Resources */,
 				8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */,
+				8404CBBA1AD08F140088D14F /* DisplayLogViewController.xib in Resources */,
 				8404CB1B1ACFB5BF0088D14F /* Images.xcassets in Resources */,
 				8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */,
 				8404CB611ACFC1170088D14F /* FindShadowsViewController.xib in Resources */,
@@ -585,6 +594,7 @@
 				8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */,
 				8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */,
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
+				8404CBB91AD08F140088D14F /* DisplayLogViewController.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
 				8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */,
 				8404CBA81AD069970088D14F /* CreateAccountViewController.m in Sources */,

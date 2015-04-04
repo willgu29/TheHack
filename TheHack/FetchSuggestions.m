@@ -7,7 +7,23 @@
 //
 
 #import "FetchSuggestions.h"
+#import <Parse/Parse.h>
 
 @implementation FetchSuggestions
+
+-(void)getAllLogs
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects)
+        {
+            [_delegate fetchSuccess:objects];
+        }
+        else
+        {
+            [_delegate fetchFailureWithError:error];
+        }
+    }];
+}
 
 @end

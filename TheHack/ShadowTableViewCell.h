@@ -10,6 +10,7 @@
 
 @interface ShadowTableViewCell : UITableViewCell
 
+@property (nonatomic, weak) IBOutlet UILabel *username;
 @property (nonatomic, weak) IBOutlet UILabel *whyFollow;
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) IBOutlet UIButton *follow;
