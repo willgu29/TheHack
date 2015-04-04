@@ -48,6 +48,7 @@
 		8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB8C1ACFE72D0088D14F /* AcousticModelSpanish.bundle */; };
 		8404CB911ACFE72D0088D14F /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8D1ACFE72D0088D14F /* OpenEars.framework */; };
 		8404CB921ACFE72D0088D14F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8E1ACFE72D0088D14F /* Slt.framework */; };
+		8404CB941ACFE7E50088D14F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB931ACFE7E50088D14F /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		8404CB8C1ACFE72D0088D14F /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
 		8404CB8D1ACFE72D0088D14F /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		8404CB8E1ACFE72D0088D14F /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		8404CB931ACFE7E50088D14F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8404CB941ACFE7E50088D14F /* AVFoundation.framework in Frameworks */,
 				8404CB7C1ACFD3AF0088D14F /* Accounts.framework in Frameworks */,
 				8404CB7A1ACFD3A70088D14F /* Social.framework in Frameworks */,
 				8404CB4C1ACFBD400088D14F /* libsqlite3.dylib in Frameworks */,
@@ -230,6 +233,7 @@
 		8404CB4D1ACFBD6D0088D14F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB931ACFE7E50088D14F /* AVFoundation.framework */,
 				8404CB7B1ACFD3AF0088D14F /* Accounts.framework */,
 				8404CB791ACFD3A70088D14F /* Social.framework */,
 				8404CB4B1ACFBD400088D14F /* libsqlite3.dylib */,
