@@ -9,6 +9,7 @@
 #ifndef TRN_ParseUserValues_h
 #define TRN_ParseUserValues_h
 
+#define U_USERNAME @"username"
 #define U_FB_ID @"fbID"
 #define U_DEVICE_TOKEN @"deviceToken"
 #define U_EMAIL @"email"

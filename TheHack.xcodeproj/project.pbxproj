@@ -54,6 +54,10 @@
 		8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB9B1AD055BF0088D14F /* RyanViewController.xib */; };
 		8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */; };
 		8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */; };
+		8404CBA81AD069970088D14F /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBA61AD069970088D14F /* CreateAccountViewController.m */; };
+		8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBA71AD069970088D14F /* CreateAccountViewController.xib */; };
+		8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBAB1AD06A6F0088D14F /* ParseDatabase.m */; };
+		8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,13 @@
 		8404CBA01AD0643A0088D14F /* ShadowTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShadowTableViewCell.h; sourceTree = "<group>"; };
 		8404CBA11AD0643A0088D14F /* ShadowTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShadowTableViewCell.m; sourceTree = "<group>"; };
 		8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShadowTableViewCell.xib; sourceTree = "<group>"; };
+		8404CBA51AD069970088D14F /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		8404CBA61AD069970088D14F /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+		8404CBA71AD069970088D14F /* CreateAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CreateAccountViewController.xib; sourceTree = "<group>"; };
+		8404CBAA1AD06A6F0088D14F /* ParseDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDatabase.h; sourceTree = "<group>"; };
+		8404CBAB1AD06A6F0088D14F /* ParseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDatabase.m; sourceTree = "<group>"; };
+		8404CBAD1AD06B940088D14F /* CreateAccountOnServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountOnServer.h; sourceTree = "<group>"; };
+		8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountOnServer.m; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -308,6 +319,7 @@
 		8404CB6E1ACFC7EE0088D14F /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				8404CBB01AD06B9D0088D14F /* Parse */,
 				8404CB861ACFE21C0088D14F /* Audio.h */,
 				8404CB871ACFE21C0088D14F /* Audio.m */,
 				8404CB6F1ACFC7F80088D14F /* Router.h */,
@@ -336,6 +348,9 @@
 				8404CB811ACFD6C90088D14F /* SettingsViewController.h */,
 				8404CB821ACFD6C90088D14F /* SettingsViewController.m */,
 				8404CB831ACFD6C90088D14F /* SettingsViewController.xib */,
+				8404CBA51AD069970088D14F /* CreateAccountViewController.h */,
+				8404CBA61AD069970088D14F /* CreateAccountViewController.m */,
+				8404CBA71AD069970088D14F /* CreateAccountViewController.xib */,
 			);
 			name = SettingsInterface;
 			sourceTree = "<group>";
@@ -385,6 +400,17 @@
 				8404CBA21AD0643A0088D14F /* ShadowTableViewCell.xib */,
 			);
 			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		8404CBB01AD06B9D0088D14F /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				8404CBAA1AD06A6F0088D14F /* ParseDatabase.h */,
+				8404CBAB1AD06A6F0088D14F /* ParseDatabase.m */,
+				8404CBAD1AD06B940088D14F /* CreateAccountOnServer.h */,
+				8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */,
+			);
+			name = Parse;
 			sourceTree = "<group>";
 		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
@@ -486,6 +512,7 @@
 				8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */,
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
 				8404CB521ACFBD960088D14F /* LoginViewController.xib in Resources */,
+				8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */,
 				8404CB1B1ACFB5BF0088D14F /* Images.xcassets in Resources */,
 				8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */,
 				8404CB611ACFC1170088D14F /* FindShadowsViewController.xib in Resources */,
@@ -549,10 +576,13 @@
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
 				8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */,
+				8404CBA81AD069970088D14F /* CreateAccountViewController.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
 				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
+				8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */,
 				8404CB5B1ACFBF7A0088D14F /* Converter.m in Sources */,
+				8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */,
 				8404CB711ACFC7F80088D14F /* Router.m in Sources */,
 				8404CB511ACFBD960088D14F /* LoginViewController.m in Sources */,
 			);

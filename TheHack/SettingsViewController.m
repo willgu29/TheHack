@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "Audio.h"
 #import "SpeechToText.h"
+#import "CreateAccountViewController.h"
 
 @interface SettingsViewController ()
 
@@ -86,5 +87,9 @@
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
-
+-(IBAction)createAccount:(UIButton *)sender
+{
+    CreateAccountViewController *createVC = [[CreateAccountViewController alloc] initWithNibName:@"CreateAccountViewController" bundle:nil];
+    [self.navigationController pushViewController:createVC animated:YES];
+}
 @end
