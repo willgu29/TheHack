@@ -50,6 +50,8 @@
 		8404CB921ACFE72D0088D14F /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB8E1ACFE72D0088D14F /* Slt.framework */; };
 		8404CB941ACFE7E50088D14F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB931ACFE7E50088D14F /* AVFoundation.framework */; };
 		8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB961ACFEAE40088D14F /* SpeechToText.m */; };
+		8404CB9C1AD055BF0088D14F /* RyanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB9A1AD055BF0088D14F /* RyanViewController.m */; };
+		8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB9B1AD055BF0088D14F /* RyanViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +127,9 @@
 		8404CB931ACFE7E50088D14F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8404CB951ACFEAE40088D14F /* SpeechToText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechToText.h; sourceTree = "<group>"; };
 		8404CB961ACFEAE40088D14F /* SpeechToText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechToText.m; sourceTree = "<group>"; };
+		8404CB991AD055BF0088D14F /* RyanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RyanViewController.h; sourceTree = "<group>"; };
+		8404CB9A1AD055BF0088D14F /* RyanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RyanViewController.m; sourceTree = "<group>"; };
+		8404CB9B1AD055BF0088D14F /* RyanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RyanViewController.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -189,6 +194,7 @@
 		8404CB0C1ACFB5BF0088D14F /* TheHack */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB981AD0558E0088D14F /* Ryan */,
 				8404CB891ACFE7200088D14F /* External */,
 				8404CB801ACFD6B70088D14F /* SettingsInterface */,
 				8404CB6E1ACFC7EE0088D14F /* APIs */,
@@ -347,6 +353,24 @@
 			path = Framework;
 			sourceTree = "<group>";
 		};
+		8404CB981AD0558E0088D14F /* Ryan */ = {
+			isa = PBXGroup;
+			children = (
+				8404CB9E1AD056330088D14F /* APIs */,
+				8404CB991AD055BF0088D14F /* RyanViewController.h */,
+				8404CB9A1AD055BF0088D14F /* RyanViewController.m */,
+				8404CB9B1AD055BF0088D14F /* RyanViewController.xib */,
+			);
+			name = Ryan;
+			sourceTree = "<group>";
+		};
+		8404CB9E1AD056330088D14F /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = APIs;
+			sourceTree = "<group>";
+		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -440,6 +464,7 @@
 			files = (
 				8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */,
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
+				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
 				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
 				8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */,
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
@@ -501,6 +526,7 @@
 				8404CB6A1ACFC6F00088D14F /* DataViewController.m in Sources */,
 				8404CB881ACFE21C0088D14F /* Audio.m in Sources */,
 				8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */,
+				8404CB9C1AD055BF0088D14F /* RyanViewController.m in Sources */,
 				8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */,
 				8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */,
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,

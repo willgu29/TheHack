@@ -8,7 +8,7 @@
 
 #import "DataViewController.h"
 #import "SettingsViewController.h"
-
+#import "RyanViewController.h"
 @interface DataViewController ()
 
 @end
@@ -25,6 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)ryan:(UIButton *)sender
+{
+    RyanViewController *ryanVC = [[RyanViewController alloc] initWithNibName:@"RyanViewController" bundle:nil];
+    [self presentViewController:ryanVC animated:YES completion:nil];
+                
+}
 -(IBAction)settings:(UIButton *)sender
 {
     SettingsViewController *settingsVC = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
