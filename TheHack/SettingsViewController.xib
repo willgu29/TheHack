@@ -23,13 +23,13 @@
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="bu5-RM-ngc"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-fE-wVn">
-                    <rect key="frame" x="98" y="140" width="124" height="30"/>
-                    <state key="normal" title="Record a Day Log">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-3y-1kS">
+                    <rect key="frame" x="135" y="269" width="51" height="30"/>
+                    <state key="normal" title="Archive">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="recordAudio:" destination="-1" eventType="touchUpInside" id="vdj-Ft-dhh"/>
+                        <action selector="archive:" destination="-1" eventType="touchUpInside" id="r5X-vn-mYS"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jal-Rs-pIk">
@@ -39,21 +39,21 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvo-9Q-E0d">
-                    <rect key="frame" x="71" y="178" width="178" height="30"/>
-                    <state key="normal" title="Play a Day Log Recording">
+                    <rect key="frame" x="145" y="178" width="30" height="31"/>
+                    <state key="normal" title="Play">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
                         <action selector="playAudio:" destination="-1" eventType="touchUpInside" id="dgw-Hu-aCR"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-3y-1kS">
-                    <rect key="frame" x="135" y="269" width="51" height="30"/>
-                    <state key="normal" title="Archive">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-fE-wVn">
+                    <rect key="frame" x="135" y="140" width="50" height="30"/>
+                    <state key="normal" title="Record">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="archive:" destination="-1" eventType="touchUpInside" id="r5X-vn-mYS"/>
+                        <action selector="recordAudio:" destination="-1" eventType="touchUpInside" id="vdj-Ft-dhh"/>
                     </connections>
                 </button>
             </subviews>
