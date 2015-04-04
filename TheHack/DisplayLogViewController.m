@@ -59,7 +59,7 @@
     
     
     cell.activity.text = [_activities objectAtIndex:indexPath.row];
-    cell.durationHours.text = [NSString stringWithFormat:@"%d",(int)[_time objectAtIndex:indexPath.row]];
+    cell.durationHours.text = [_time objectAtIndex:indexPath.row];
     return cell;
 }
 
