@@ -7,6 +7,7 @@
 //
 
 #import "DataViewController.h"
+#import "SettingsViewController.h"
 
 @interface DataViewController ()
 
@@ -24,5 +25,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)settings:(UIButton *)sender
+{
+    SettingsViewController *settingsVC = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:settingsVC];
+    
+    [self presentViewController:navVC animated:YES completion:nil];
+}
 
 @end

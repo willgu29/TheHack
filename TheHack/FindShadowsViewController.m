@@ -64,6 +64,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UIViewController *userVC = [Router createUserProfileVCWithUsername:@"Will Gu"];
+//    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:userVC];
     [self presentViewController:userVC animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

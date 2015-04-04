@@ -64,8 +64,8 @@
 -(void)setupParse:(UIApplication *)application withLaunchOptions:(NSDictionary *)lauchOptions
 {
     [Parse enableLocalDatastore];
-    [Parse setApplicationId:@"jZU7AQ02iAtDhPQlZt21V4PW0nFpAm3QhLAC77Zq"
-                  clientKey:@"m6qGTPDhpIg371cdMtMnaC73F0ZcB6CKKnp9I9uk"];
+    [Parse setApplicationId:@"bThDyk2ePDvGvoA2In1KhhqkedbFzVD1cQL9DSeh"
+                  clientKey:@"crGFHDjPafkyoJnq7KuqyoWBqIa5vBP17XPbuYO8"];
     [PFAnalytics trackAppOpenedWithLaunchOptions:lauchOptions];
     
 }

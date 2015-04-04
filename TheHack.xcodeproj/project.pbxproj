@@ -40,6 +40,10 @@
 		8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB751ACFC8360088D14F /* ViewUserProfileViewController.xib */; };
 		8404CB7A1ACFD3A70088D14F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB791ACFD3A70088D14F /* Social.framework */; };
 		8404CB7C1ACFD3AF0088D14F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB7B1ACFD3AF0088D14F /* Accounts.framework */; };
+		8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB7E1ACFD4EB0088D14F /* FetchSuggestions.m */; };
+		8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB821ACFD6C90088D14F /* SettingsViewController.m */; };
+		8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB831ACFD6C90088D14F /* SettingsViewController.xib */; };
+		8404CB881ACFE21C0088D14F /* Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB871ACFE21C0088D14F /* Audio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,13 @@
 		8404CB751ACFC8360088D14F /* ViewUserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewUserProfileViewController.xib; sourceTree = "<group>"; };
 		8404CB791ACFD3A70088D14F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		8404CB7B1ACFD3AF0088D14F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8404CB7D1ACFD4EB0088D14F /* FetchSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FetchSuggestions.h; sourceTree = "<group>"; };
+		8404CB7E1ACFD4EB0088D14F /* FetchSuggestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FetchSuggestions.m; sourceTree = "<group>"; };
+		8404CB811ACFD6C90088D14F /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		8404CB821ACFD6C90088D14F /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		8404CB831ACFD6C90088D14F /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		8404CB861ACFE21C0088D14F /* Audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Audio.h; sourceTree = "<group>"; };
+		8404CB871ACFE21C0088D14F /* Audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Audio.m; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,6 +173,7 @@
 		8404CB0C1ACFB5BF0088D14F /* TheHack */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB801ACFD6B70088D14F /* SettingsInterface */,
 				8404CB6E1ACFC7EE0088D14F /* APIs */,
 				8404CB561ACFBF6A0088D14F /* Converters */,
 				8404CB531ACFBE3D0088D14F /* Constants */,
@@ -266,8 +278,12 @@
 		8404CB6E1ACFC7EE0088D14F /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				8404CB861ACFE21C0088D14F /* Audio.h */,
+				8404CB871ACFE21C0088D14F /* Audio.m */,
 				8404CB6F1ACFC7F80088D14F /* Router.h */,
 				8404CB701ACFC7F80088D14F /* Router.m */,
+				8404CB7D1ACFD4EB0088D14F /* FetchSuggestions.h */,
+				8404CB7E1ACFD4EB0088D14F /* FetchSuggestions.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -280,6 +296,16 @@
 				8404CB751ACFC8360088D14F /* ViewUserProfileViewController.xib */,
 			);
 			name = UserInterface;
+			sourceTree = "<group>";
+		};
+		8404CB801ACFD6B70088D14F /* SettingsInterface */ = {
+			isa = PBXGroup;
+			children = (
+				8404CB811ACFD6C90088D14F /* SettingsViewController.h */,
+				8404CB821ACFD6C90088D14F /* SettingsViewController.m */,
+				8404CB831ACFD6C90088D14F /* SettingsViewController.xib */,
+			);
+			name = SettingsInterface;
 			sourceTree = "<group>";
 		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
@@ -378,6 +404,7 @@
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
 				8404CB521ACFBD960088D14F /* LoginViewController.xib in Resources */,
 				8404CB1B1ACFB5BF0088D14F /* Images.xcassets in Resources */,
+				8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */,
 				8404CB611ACFC1170088D14F /* FindShadowsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,8 +458,11 @@
 			files = (
 				8404CB761ACFC8360088D14F /* ViewUserProfileViewController.m in Sources */,
 				8404CB6A1ACFC6F00088D14F /* DataViewController.m in Sources */,
+				8404CB881ACFE21C0088D14F /* Audio.m in Sources */,
 				8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */,
+				8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */,
 				8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */,
+				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
