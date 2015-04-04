@@ -8,7 +8,11 @@
 
 #import "LoginViewController.h"
 #import "Router.h"
+#import <Parse/Parse.h>
 @interface LoginViewController ()
+
+@property (nonatomic, weak) IBOutlet UITextField *username;
+@property (nonatomic, weak) IBOutlet UITextField *password;
 
 @end
 
@@ -26,9 +30,31 @@
 
 -(IBAction)login:(UIButton *)sender
 {
-    UIViewController *mainVC = [Router createMainInterfaceWithNavVC];
-    
-    [self presentViewController:mainVC animated:YES completion:nil];
+    [PFUser logInWithUsernameInBackground:_username.text password:_password.text block:^(PFUser *user, NSError *error) {
+        if (user)
+        {
+            UIViewController *mainVC = [Router createMainInterfaceWithNavVC];
+            [self presentViewController:mainVC animated:YES completion:nil];
+        }
+        else
+        {
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"We couldn't log you in. Try again in a minute" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+            [alertView show];
+        }
+    }];
+
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [_username resignFirstResponder];
+    [_password resignFirstResponder];
 }
 
 

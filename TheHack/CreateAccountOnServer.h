@@ -13,6 +13,8 @@
 
 -(void)createAccountSuccess;
 -(void)createAccountWithFailure:(NSError *)error;
+-(void)updateAccountSuccess;
+-(void)updateAccountWithFailure:(NSError *)error;
 
 @end
 
@@ -22,6 +24,7 @@
 -(BOOL)saveUserWithUsername:(NSString *)username andPassword:(NSString *)password andFirstName:(NSString *)firstName andLastName:(NSString *)lastName;
 -(BOOL)saveEmail:(NSString *)emailAddress;
 -(void)createAccount;
+-(void)updateAccount;
 
 
 @end

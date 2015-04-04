@@ -49,6 +49,16 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#pragma mark - Register Notifications
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    
+    [self saveDeviceTokenToParseAndUserDefaults:deviceToken];
+    if ([self isLoggedIn])
+    {
+        
+        [self updateParseCurrentUserDeviceToken:[deviceToken hexadecimalString]];
+    }
+}
 
 #pragma mark - Helper Functions
 

@@ -10,6 +10,6 @@
 #import "CreateAccountOnServer.h"
 
 
-@interface CreateAccountViewController : UIViewController <CreateAccountOnServerDelegate>
+@interface CreateAccountViewController : UIViewController <CreateAccountOnServerDelegate,UITextFieldDelegate>
 
 @end

@@ -75,6 +75,24 @@
                         <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="7M0-jK-lyn"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwY-Zm-4ah">
+                    <rect key="frame" x="116" y="102" width="88" height="30"/>
+                    <state key="normal" title="Edit Account">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="updateInfo:" destination="-1" eventType="touchUpInside" id="IiN-jP-5KZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-hc-SKk">
+                    <rect key="frame" x="117" y="435" width="87" height="30"/>
+                    <state key="normal" title="Login Admin">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="adminLogin:" destination="-1" eventType="touchUpInside" id="gni-dZ-s8p"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

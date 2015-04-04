@@ -9,6 +9,7 @@
 #import "SettingsViewController.h"
 #import "Audio.h"
 #import "SpeechToText.h"
+#import "LoginViewController.h"
 #import "CreateAccountViewController.h"
 
 @interface SettingsViewController ()
@@ -86,6 +87,16 @@
 -(IBAction)back:(UIButton *)sender
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(IBAction)updateInfo:(UIButton *)sender
+{
+    
+}
+-(IBAction)adminLogin:(UIButton *)sender
+{
+    LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+    [self presentViewController:loginVC animated:YES completion:nil];
 }
 -(IBAction)createAccount:(UIButton *)sender
 {

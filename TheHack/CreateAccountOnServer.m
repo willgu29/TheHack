@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import "Converter.h"
 #import "AppDelegate.h"
+#import "ParseUserValues.h"
+#import "NSUserDefaultValues.h"
 @interface CreateAccountOnServer()
 
 @property (nonatomic, strong) NSString *firstName;
@@ -62,10 +64,9 @@
     PFUser *newUser = [PFUser user];
     newUser.username = _username;
     newUser.password = _password;
-    newUser.email = _email;
-    newUser[@"firstName"] = _firstName;
-    newUser[@"lastName"] = _lastName;
-    newUser[@"deviceToken"] = [[NSUserDefaults standardUserDefaults] stringForKey:@"deviceToken"];
+    newUser[U_FIRST_NAME] = _firstName;
+    newUser[U_LAST_NAME] = _lastName;
+    newUser[U_DEVICE_TOKEN] = @"TITSOMG";//[[NSUserDefaults standardUserDefaults] stringForKey:N_DEVICE_TOKEN_STRING];
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error) {
             // Hooray! Let them use the app now.
@@ -76,7 +77,25 @@
         }
     }];
 }
-
+-(void)updateAccount
+{
+    PFUser *currentUser = [PFUser currentUser];
+    currentUser[U_FIRST_NAME] = _firstName;
+    currentUser[U_LAST_NAME] = _lastName;
+    currentUser.username = _username;
+    currentUser.password = _password;
+    [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded)
+        {
+            [_delegate updateAccountSuccess];
+        }
+        else
+        {
+            [_delegate updateAccountWithFailure:error];
+        }
+    }];
+    
+}
 
 
 @end

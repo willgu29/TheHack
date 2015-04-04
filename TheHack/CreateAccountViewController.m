@@ -7,12 +7,11 @@
 //
 
 #import "CreateAccountViewController.h"
+#import <Parse/Parse.h>
 
 @interface CreateAccountViewController ()
 
 @property (nonatomic, strong) CreateAccountOnServer *createAccount;
-
-@property (nonatomic, weak) IBOutlet UITextField *email;
 
 
 @property (nonatomic, weak) IBOutlet UITextField *username;
@@ -29,6 +28,12 @@
     [super viewDidLoad];
     _createAccount = [[CreateAccountOnServer alloc] init];
     _createAccount.delegate = self;
+    self.title = @"Create Account";
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,12 +47,31 @@
     BOOL success = [_createAccount saveUserWithUsername:_username.text andPassword:_password.text andFirstName:_firstName.text andLastName:_lastName.text];
     if (success)
     {
-        [_createAccount createAccount];
+        if ([PFUser currentUser])
+        {
+            [_createAccount updateAccount];
+        }
+        else
+        {
+            [_createAccount createAccount];
+        }
     }
     else
     {
         [self displayAlertError];
     }
+}
+
+#pragma mark -TextfieldDelegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self resignAllResponders];
 }
 
 #pragma mark - CreateAccountDelegate
@@ -61,6 +85,11 @@
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hmm.." message:@"We're sorry. There was some error with our server! Please try again in a minute." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
     [alertView show];
 }
+-(void)updateAccountSuccess
+{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Woo!" message:@"Your account has been updated!" delegate:nil cancelButtonTitle:@"Thanks!" otherButtonTitles:nil];
+    [alertView show];
+}
 
 #pragma mark -Helper functions
 -(void)displayAlertError
@@ -69,4 +98,11 @@
     [alertView show];
 }
 
+-(void)resignAllResponders
+{
+    [_username resignFirstResponder];
+    [_password resignFirstResponder];
+    [_firstName resignFirstResponder];
+    [_lastName resignFirstResponder];
+}
 @end

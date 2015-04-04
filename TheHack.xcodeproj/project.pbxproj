@@ -21,7 +21,6 @@
 		8404CB401ACFBCB90088D14F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB3F1ACFBCB90088D14F /* MobileCoreServices.framework */; };
 		8404CB421ACFBCBE0088D14F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB411ACFBCBE0088D14F /* QuartzCore.framework */; };
 		8404CB441ACFBCDF0088D14F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB431ACFBCDF0088D14F /* Security.framework */; };
-		8404CB461ACFBCE80088D14F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB451ACFBCE80088D14F /* StoreKit.framework */; };
 		8404CB481ACFBD270088D14F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB471ACFBD270088D14F /* SystemConfiguration.framework */; };
 		8404CB4A1ACFBD300088D14F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB491ACFBD300088D14F /* libz.dylib */; };
 		8404CB4C1ACFBD400088D14F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8404CB4B1ACFBD400088D14F /* libsqlite3.dylib */; };
@@ -58,6 +57,8 @@
 		8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBA71AD069970088D14F /* CreateAccountViewController.xib */; };
 		8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBAB1AD06A6F0088D14F /* ParseDatabase.m */; };
 		8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */; };
+		8404CBB41AD0861E0088D14F /* EditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBB21AD0861E0088D14F /* EditProfileViewController.m */; };
+		8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +91,6 @@
 		8404CB3F1ACFBCB90088D14F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		8404CB411ACFBCBE0088D14F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		8404CB431ACFBCDF0088D14F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		8404CB451ACFBCE80088D14F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		8404CB471ACFBD270088D14F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8404CB491ACFBD300088D14F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8404CB4B1ACFBD400088D14F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -146,6 +146,9 @@
 		8404CBAB1AD06A6F0088D14F /* ParseDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDatabase.m; sourceTree = "<group>"; };
 		8404CBAD1AD06B940088D14F /* CreateAccountOnServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountOnServer.h; sourceTree = "<group>"; };
 		8404CBAE1AD06B940088D14F /* CreateAccountOnServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountOnServer.m; sourceTree = "<group>"; };
+		8404CBB11AD0861E0088D14F /* EditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditProfileViewController.h; sourceTree = "<group>"; };
+		8404CBB21AD0861E0088D14F /* EditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditProfileViewController.m; sourceTree = "<group>"; };
+		8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -161,7 +164,6 @@
 				8404CB4C1ACFBD400088D14F /* libsqlite3.dylib in Frameworks */,
 				8404CB4A1ACFBD300088D14F /* libz.dylib in Frameworks */,
 				8404CB481ACFBD270088D14F /* SystemConfiguration.framework in Frameworks */,
-				8404CB461ACFBCE80088D14F /* StoreKit.framework in Frameworks */,
 				8404CB911ACFE72D0088D14F /* OpenEars.framework in Frameworks */,
 				8404CB441ACFBCDF0088D14F /* Security.framework in Frameworks */,
 				8404CB421ACFBCBE0088D14F /* QuartzCore.framework in Frameworks */,
@@ -267,7 +269,6 @@
 				8404CB331ACFBC740088D14F /* Parse.framework */,
 				8404CB491ACFBD300088D14F /* libz.dylib */,
 				8404CB471ACFBD270088D14F /* SystemConfiguration.framework */,
-				8404CB451ACFBCE80088D14F /* StoreKit.framework */,
 				8404CB431ACFBCDF0088D14F /* Security.framework */,
 				8404CB411ACFBCBE0088D14F /* QuartzCore.framework */,
 				8404CB3F1ACFBCB90088D14F /* MobileCoreServices.framework */,
@@ -338,6 +339,9 @@
 				8404CB731ACFC8360088D14F /* ViewUserProfileViewController.h */,
 				8404CB741ACFC8360088D14F /* ViewUserProfileViewController.m */,
 				8404CB751ACFC8360088D14F /* ViewUserProfileViewController.xib */,
+				8404CBB11AD0861E0088D14F /* EditProfileViewController.h */,
+				8404CBB21AD0861E0088D14F /* EditProfileViewController.m */,
+				8404CBB31AD0861E0088D14F /* EditProfileViewController.xib */,
 			);
 			name = UserInterface;
 			sourceTree = "<group>";
@@ -473,6 +477,12 @@
 				TargetAttributes = {
 					8404CB091ACFB5BF0088D14F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = X8C323275L;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					8404CB221ACFB5C00088D14F = {
 						CreatedOnToolsVersion = 6.2;
@@ -505,6 +515,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */,
+				8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */,
 				8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */,
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
 				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
@@ -578,6 +589,7 @@
 				8404CBA31AD0643A0088D14F /* ShadowTableViewCell.m in Sources */,
 				8404CBA81AD069970088D14F /* CreateAccountViewController.m in Sources */,
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
+				8404CBB41AD0861E0088D14F /* EditProfileViewController.m in Sources */,
 				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
 				8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */,
@@ -689,6 +701,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TheHack",
@@ -707,6 +720,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TheHack",
