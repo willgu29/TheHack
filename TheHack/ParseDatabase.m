@@ -12,6 +12,11 @@
 
 @implementation ParseDatabase
 
++(NSArray *)lookupFollowListForUsername:(NSString*)username
+{
+    PFUser *user = (PFUser *)[ParseDatabase lookupUsername:username];
+    return user[@"Following"];
+}
 +(PFUser *)lookupUsername:(NSString *)username
 {
     if (username == nil)

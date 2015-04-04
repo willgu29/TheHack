@@ -11,6 +11,7 @@
 
 @interface ParseDatabase : NSObject
 
++(NSArray *)lookupFollowListForUsername:(NSString*)username;
 +(PFUser *)lookupUsername:(NSString *)username;
 +(PFUser *)lookupPhoneNumber:(NSString *)phoneNumber;
 +(PFUser *)lookupDeviceToken:(NSString *)deviceToken;

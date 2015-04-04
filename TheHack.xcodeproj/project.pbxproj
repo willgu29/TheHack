@@ -63,6 +63,7 @@
 		8404CBBA1AD08F140088D14F /* DisplayLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBB81AD08F140088D14F /* DisplayLogViewController.xib */; };
 		8404CBBE1AD092000088D14F /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */; };
 		8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */; };
+		8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC11AD0A24E0088D14F /* SwipeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,9 @@
 		8404CBBB1AD092000088D14F /* CalendarTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarTableViewCell.h; sourceTree = "<group>"; };
 		8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarTableViewCell.m; sourceTree = "<group>"; };
 		8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarTableViewCell.xib; sourceTree = "<group>"; };
+		8404CBC01AD0A24E0088D14F /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		8404CBC11AD0A24E0088D14F /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		8404CBC31AD0A55F0088D14F /* FetchConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchConstants.h; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -296,6 +300,7 @@
 			children = (
 				8404CB541ACFBF090088D14F /* NSUserDefaultValues.h */,
 				8404CB551ACFBF090088D14F /* ParseUserValues.h */,
+				8404CBC31AD0A55F0088D14F /* FetchConstants.h */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -375,6 +380,8 @@
 		8404CB891ACFE7200088D14F /* External */ = {
 			isa = PBXGroup;
 			children = (
+				8404CBC01AD0A24E0088D14F /* SwipeView.h */,
+				8404CBC11AD0A24E0088D14F /* SwipeView.m */,
 				8404CB8A1ACFE72D0088D14F /* Framework */,
 			);
 			name = External;
@@ -616,6 +623,7 @@
 				8404CB5B1ACFBF7A0088D14F /* Converter.m in Sources */,
 				8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */,
 				8404CB711ACFC7F80088D14F /* Router.m in Sources */,
+				8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */,
 				8404CB511ACFBD960088D14F /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

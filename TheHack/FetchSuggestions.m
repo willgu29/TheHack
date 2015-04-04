@@ -8,22 +8,77 @@
 
 #import "FetchSuggestions.h"
 #import <Parse/Parse.h>
-
+#import "ParseDatabase.h"
+#import "FetchConstants.h"
 @implementation FetchSuggestions
 
 -(void)getAllLogs
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    
+    NSArray *following = [ParseDatabase lookupFollowListForUsername:[PFUser currentUser].username];
+    
+    [query whereKey:@"username" notContainedIn:following];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)
         {
-            [_delegate fetchSuccess:objects];
+            [_delegate fetchSuccess:objects withIndex:FETCH_FIND];
         }
         else
         {
             [_delegate fetchFailureWithError:error];
         }
     }];
+}
+-(void)getFollowingLogs
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    NSArray *following = [ParseDatabase lookupFollowListForUsername:[PFUser currentUser].username];
+    [query whereKey:@"username" containedIn:following];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects)
+        {
+            [_delegate fetchSuccess:objects withIndex:FETCH_FOLLOWING];
+        }
+        else
+        {
+            [_delegate fetchFailureWithError:error];
+        }
+    }];
+}
+-(void)getTrendingLogs
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    NSArray *following = [ParseDatabase lookupFollowListForUsername:[PFUser currentUser].username];
+    [query whereKey:@"username" notContainedIn:following];
+    [query whereKey:@"views" greaterThan:[NSNumber numberWithInt:10]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects)
+        {
+            [_delegate fetchSuccess:objects withIndex:FETCH_TRENDING];
+        }
+        else
+        {
+            [_delegate fetchFailureWithError:error];
+        }
+    }];
+}
+-(void)getFetchFromIndex:(int)index
+{
+    if (index == 0)
+    {
+        [self getAllLogs];
+    }
+    else if (index == 1)
+    {
+        [self getFollowingLogs];
+    }
+    else if (index == 2)
+    {
+        [self getTrendingLogs];
+    }
 }
 
 @end

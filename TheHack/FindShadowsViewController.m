@@ -14,31 +14,58 @@
 @interface FindShadowsViewController ()
 
 @property (nonatomic, strong) FetchSuggestions *fetcher;
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+
+@property (nonatomic, strong) NSMutableArray *headerContainer;
+
 @property (nonatomic, strong) NSArray *logsData;
+@property (nonatomic, strong) IBOutlet UISegmentedControl *segmentControl;
 
 @end
 
 @implementation FindShadowsViewController
 
+- (void)refresh:(UIRefreshControl *)refreshControl {
+    NSLog(@"Called");
+    [_fetcher getFetchFromIndex:_swipeView.currentPage];
+    [refreshControl endRefreshing];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
+    _headerContainer =  [[NSMutableArray alloc] initWithObjects:@[], @[], @[], nil];
+    
+    
     _fetcher = [[FetchSuggestions alloc] init];
     _fetcher.delegate = self;
+    
+    for (int i = 0; i < [_headerContainer count]; i++)
+    {
+        [_fetcher getFetchFromIndex:i];
+    }
+    
     MDCSwipeToChooseView *swipeView = [self createNewMDCSwipeToChoose];
     UIImage *swipeImage = [self getImageFromURL:@"http://tupleapp.com/someImageHosting/emailLogo.png"];
     
     
-    
+    _swipeView.hidden = YES;
     swipeView.imageView.image = swipeImage;
     [self.view addSubview:swipeView];
+    
+    [_segmentControl addTarget:self action:@selector(segmentValueChanged:) forControlEvents:UIControlEventValueChanged];
+    
+    [self configureSwipeView];
+
+}
+-(void)segmentValueChanged:(UISegmentedControl *)sender
+{
+    [_swipeView setCurrentPage:sender.selectedSegmentIndex];
 }
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [_fetcher getAllLogs];
-    _tableView.hidden = YES;
+    [_fetcher getFetchFromIndex:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +77,8 @@
 #pragma mark - UITableView Delegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_logsData count];
+    NSArray *header = [_headerContainer objectAtIndex:tableView.tag];
+    return [header count];
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -62,10 +90,21 @@
         cell = [nib objectAtIndex:0];
         
     }
-    PFObject *log = [_logsData objectAtIndex:indexPath.row];
+    NSArray *dataLogs = [_headerContainer objectAtIndex:tableView.tag];
+    PFObject *log = [dataLogs objectAtIndex:indexPath.row];
     
     cell.whyFollow.text = log[@"whyShadow"];
     cell.username.text = log[@"username"];
+    NSString *followText;
+    if (_segmentControl.selectedSegmentIndex == 1)
+    {
+        followText = @"Following";
+    }
+    else
+    {
+        followText = @"Follow";
+    }
+    cell.follow.titleLabel.text = followText;
     
     return cell;
 }
@@ -119,20 +158,71 @@
     }
     if ([self isLastCard])
     {
-        _tableView.hidden = NO;
+        _swipeView.hidden = NO;
     }
 }
 
 #pragma mark - Fetch Delegate
--(void)fetchSuccess:(NSArray*)data
+-(void)fetchSuccess:(NSArray*)data withIndex:(int)index
 {
+    NSArray *header = [_headerContainer objectAtIndex:index];
+    header = data;
+    [_headerContainer replaceObjectAtIndex:index withObject:header];
     _logsData = data;
-    [_tableView reloadData];
+    
+    UIView *viewItem = [_swipeView itemViewAtIndex:index];
+    UITableView *tableView = [viewItem.subviews lastObject];
+    [tableView reloadData];
 }
 -(void)fetchFailureWithError:(NSError *)error
 {
     NSLog(@"Error Fetch: %@", error);
 }
+
+#pragma mark - Swipe View
+- (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView
+{
+    return [_headerContainer count];
+}
+
+
+-(void)swipeViewCurrentItemIndexDidChange:(SwipeView *)swipeView
+{
+    [_segmentControl setSelectedSegmentIndex:swipeView.currentPage];
+    
+}
+- (UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
+{
+    NSLog(@"Index: %d", index);
+    view = nil;
+    if (view == nil)
+    {
+        //load new item view instance from nib
+        //control events are bound to view controller in nib file
+        view = [[UIView alloc] initWithFrame:self.swipeView.bounds];
+        //note that it is only safe to use the reusingView if we return the same nib for each
+        //item view, if different items have different contents, ignore the reusingView value
+        UITableView *tableView = [[UITableView alloc] initWithFrame:self.swipeView.bounds];
+        // Initialize the refresh control.
+        [self removeInsetsFrom:tableView];
+        UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+        [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+        [tableView addSubview:refreshControl];
+        tableView.delegate = self;
+        tableView.dataSource = self;
+        tableView.tag = index;
+        [view addSubview:tableView];
+//        [_fetcher getFetchFromIndex:index];
+        
+    }
+    
+    return view;
+}
+- (CGSize)swipeViewItemSize:(SwipeView *)swipeView
+{
+    return self.swipeView.bounds.size;
+}
+
 
 #pragma mark - Helper functions
 
@@ -169,6 +259,24 @@
 -(BOOL)isLastCard
 {
     return YES;
+}
+-(void)configureSwipeView
+{
+    //configure swipe view
+    _swipeView.alignment = SwipeViewAlignmentCenter;
+    _swipeView.pagingEnabled = YES;
+    _swipeView.itemsPerPage = 1;
+    _swipeView.truncateFinalPage = YES;
+    _swipeView.wrapEnabled = YES;
+    [self swipeViewCurrentItemIndexDidChange:0];
+}
+-(void)removeInsetsFrom:(UITableView *)tableView
+{
+    if ([tableView respondsToSelector:@selector(setSeparatorInset:)])
+        [tableView setSeparatorInset:UIEdgeInsetsZero];
+    
+    if ([tableView respondsToSelector:@selector(setSeparatorStyle:)])
+        [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
 

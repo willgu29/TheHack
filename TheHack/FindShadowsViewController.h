@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MDCSwipeToChoose/MDCSwipeToChoose.h>
 #import "FetchSuggestions.h"
+#import "SwipeView.h"
 
-@interface FindShadowsViewController : UIViewController <MDCSwipeToChooseDelegate, UITableViewDataSource, UITableViewDelegate,FetchSuggestionsDelegate>
+@interface FindShadowsViewController : UIViewController <MDCSwipeToChooseDelegate, UITableViewDataSource, UITableViewDelegate,FetchSuggestionsDelegate, SwipeViewDataSource, SwipeViewDelegate>
+
+@property (nonatomic, strong) IBOutlet SwipeView *swipeView;
+
 
 @end

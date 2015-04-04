@@ -25,6 +25,9 @@
                         <state key="normal" title="Follow">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
+                        <connections>
+                            <action selector="followButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fG7-zs-tVw"/>
+                        </connections>
                     </button>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-BR-b7j">
                         <rect key="frame" x="8" y="0.0" width="251" height="81"/>

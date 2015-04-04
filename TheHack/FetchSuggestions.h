@@ -10,7 +10,7 @@
 
 @protocol FetchSuggestionsDelegate <NSObject>
 
--(void)fetchSuccess:(NSArray *)data;
+-(void)fetchSuccess:(NSArray *)data withIndex:(int)index;
 -(void)fetchFailureWithError:(NSError *)error;
 
 @end
@@ -19,6 +19,6 @@
 
 @property (nonatomic, assign) id delegate;
 
--(void)getAllLogs;
+-(void)getFetchFromIndex:(int)index;
 
 @end

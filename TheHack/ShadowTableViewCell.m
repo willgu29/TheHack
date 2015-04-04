@@ -7,6 +7,7 @@
 //
 
 #import "ShadowTableViewCell.h"
+#import <Parse/Parse.h>
 
 @interface ShadowTableViewCell()
 
@@ -23,5 +24,17 @@
 
     // Configure the view for the selected state
 }
+-(IBAction)followButton:(UIButton *)sender
+{
+    if ([sender.titleLabel.text isEqualToString:@"Follow"])
+    {
+        
+    }
+    else if ([sender.titleLabel.text isEqualToString:@"Following"])
+    {
+        
+    }
+}
+
 
 @end
