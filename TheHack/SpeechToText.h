@@ -7,10 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <OpenEars/OEEventsObserver.h>
 
-@interface SpeechToText : NSObject
+@interface SpeechToText : NSObject <OEEventsObserverDelegate>
 
 
--(void)prepareAcousticModel;
+-(void)startAcousticModel;
+-(void)stopAcousticModel;
+-(instancetype)init;
 
 @end

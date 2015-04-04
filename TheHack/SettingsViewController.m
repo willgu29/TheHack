@@ -8,10 +8,13 @@
 
 #import "SettingsViewController.h"
 #import "Audio.h"
+#import "SpeechToText.h"
 
 @interface SettingsViewController ()
 
 @property (nonatomic, strong) Audio *audioPlayer;
+@property (nonatomic, strong) SpeechToText *speechConverter;
+
 
 @end
 
@@ -20,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _audioPlayer = [[Audio alloc] init];
+    _speechConverter = [[SpeechToText alloc] init];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -32,6 +36,19 @@
 }
 
 #pragma mark - IBActions
+-(IBAction)testOpenEars:(UIButton *)sender
+{
+    if ([sender.titleLabel.text isEqualToString:@"Open"])
+    {
+        [_speechConverter startAcousticModel];
+        [sender setTitle:@"Closed" forState:UIControlStateNormal];
+    }
+    else
+    {
+        [_speechConverter stopAcousticModel];
+        [sender setTitle:@"Open" forState:UIControlStateNormal];
+    }
+}
 -(IBAction)recordAudio:(UIButton *)sender
 {
     if([sender.titleLabel.text isEqualToString:@"Record"])
