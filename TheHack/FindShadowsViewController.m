@@ -104,7 +104,7 @@
     {
         followText = @"Follow";
     }
-    cell.follow.titleLabel.text = followText;
+    [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;
 }

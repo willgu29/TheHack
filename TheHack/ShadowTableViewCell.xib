@@ -21,7 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-om-MYu">
-                        <rect key="frame" x="267" y="51" width="45" height="30"/>
+                        <rect key="frame" x="238" y="9" width="74" height="74"/>
                         <state key="normal" title="Follow">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -30,7 +30,7 @@
                         </connections>
                     </button>
                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-BR-b7j">
-                        <rect key="frame" x="8" y="0.0" width="251" height="81"/>
+                        <rect key="frame" x="8" y="1" width="222" height="81"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </tableView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miF-WL-jBL">
@@ -47,7 +47,7 @@
                 <outlet property="username" destination="miF-WL-jBL" id="049-sb-Euo"/>
                 <outlet property="whyFollow" destination="IU5-si-lv4" id="Qv2-u2-crt"/>
             </connections>
-            <point key="canvasLocation" x="245" y="402"/>
+            <point key="canvasLocation" x="245" y="399"/>
         </tableViewCell>
     </objects>
 </document>
