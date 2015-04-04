@@ -21,6 +21,10 @@
     [super viewDidLoad];
     _audioPlayer = [[Audio alloc] init];
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    self.navigationController.navigationBarHidden = YES;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
