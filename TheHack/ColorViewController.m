@@ -29,5 +29,6 @@
 -(void)testColor
 {
     NSLog(@"hi");
+    NSLog(@"hi");
 }
 @end
