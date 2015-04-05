@@ -34,9 +34,9 @@
         if ([sender.titleLabel.text isEqualToString:@"Follow"])
         {
             [self followUser:_username.text];
-            [sender setTitle:@"Following" forState:UIControlStateNormal];
+            [sender setTitle:@"Unfollow" forState:UIControlStateNormal];
         }
-        else if ([sender.titleLabel.text isEqualToString:@"Following"])
+        else if ([sender.titleLabel.text isEqualToString:@"Unfollow"])
         {
             [self unfollowUser:_username.text];
             [sender setTitle:@"Follow" forState:UIControlStateNormal];
