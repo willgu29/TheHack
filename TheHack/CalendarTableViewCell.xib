@@ -49,7 +49,7 @@
                         <color key="progressTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </progressView>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jda-bc-iOv">
-                        <rect key="frame" x="0.0" y="0.0" width="37" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="38" height="100"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </subviews>

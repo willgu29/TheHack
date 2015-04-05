@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "FetchSuggestions.h"
-
-@interface DataViewController : UIViewController <FetchSuggestionsDelegate>
+#import "DataCruncher.h"
+@interface DataViewController : UIViewController <FetchSuggestionsDelegate, DataCruncherDelegate>
 
 @end

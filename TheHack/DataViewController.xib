@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="followersCount" destination="TdC-LD-yD7" id="EqK-ix-HSO"/>
                 <outlet property="followingCount" destination="ZaC-0c-8iH" id="FeP-Xd-XXd"/>
+                <outlet property="interestingFact" destination="Stp-yt-la9" id="Vgu-tg-u0u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,6 +18,9 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-cl-aNy">
+                    <rect key="frame" x="14" y="65" width="279" height="135"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OW-b5-Kkb">
                     <rect key="frame" x="235" y="8" width="77" height="69"/>
                     <state key="normal" title="Settings">
@@ -50,27 +54,36 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMH-4b-3DL">
-                    <rect key="frame" x="125" y="420" width="70" height="30"/>
-                    <state key="normal" title="Test Color">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="FxR-Cy-5pb">
+                    <rect key="frame" x="14" y="208" width="279" height="135"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="zZr-am-AJz">
+                    <rect key="frame" x="14" y="351" width="279" height="135"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Did you know..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6QQ-bl-UOp">
+                    <rect key="frame" x="40" y="225" width="119" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-yt-la9">
+                    <rect key="frame" x="46" y="247" width="229" height="74"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZ2-Js-QZJ">
+                    <rect key="frame" x="103" y="404" width="100" height="30"/>
+                    <state key="normal" title="Get a new fact">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
-                    <connections>
-                        <action selector="testColor:" destination="-1" eventType="touchUpInside" id="g8T-b0-tkv"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzu-Wm-hpA">
-                    <rect key="frame" x="140" y="466" width="40" height="30"/>
-                    <state key="normal" title="RYAN">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="ryan:" destination="-1" eventType="touchUpInside" id="OmK-ej-HXN"/>
-                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.60668677091598511" green="0.77728736400604248" blue="0.65119105577468872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
+    <resources>
+        <image name="namecard-1" width="279" height="135"/>
+    </resources>
 </document>
