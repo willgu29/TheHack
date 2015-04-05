@@ -347,6 +347,9 @@
         }
     };
     
+    cardView.layer.borderColor = [UIColor blackColor].CGColor;
+    cardView.layer.borderWidth = 1.0f;
+    
     [cardView setFrame:CGRectMake(40, 180, cardView.frame.size.width, cardView.frame.size.height)];
     [cardView mdc_swipeToChooseSetup:options];
     
@@ -385,7 +388,8 @@
         }
     };
     
-    
+    cardView2.layer.borderColor = [UIColor blackColor].CGColor;
+    cardView2.layer.borderWidth = 1.0f;
     [cardView2 setFrame:CGRectMake(42, 182, cardView2.frame.size.width, cardView2.frame.size.height)];
     [cardView2 mdc_swipeToChooseSetup:options];
     [self.view insertSubview:cardView2 aboveSubview:_swipeView];
@@ -415,7 +419,8 @@
     };
     
     
-    
+    cardView3.layer.borderColor = [UIColor blackColor].CGColor;
+    cardView3.layer.borderWidth = 1.0f;
     [cardView3 setFrame:CGRectMake(44, 184, cardView3.frame.size.width, cardView3.frame.size.height)];
     [cardView3 mdc_swipeToChooseSetup:options];
     [self.view insertSubview:cardView3 aboveSubview:_swipeView];
@@ -443,7 +448,8 @@
             //            NSLog(@"Let go now to delete the photo!");
         }
     };
-    
+    cardView4.layer.borderColor = [UIColor blackColor].CGColor;
+    cardView4.layer.borderWidth = 1.0f;
     [cardView4 setFrame:CGRectMake(46, 186, cardView4.frame.size.width, cardView4.frame.size.height)];
     [cardView4 mdc_swipeToChooseSetup:options];
     [self.view insertSubview:cardView4 aboveSubview:_swipeView];
@@ -457,7 +463,7 @@
 
     CardView *cardView5  = [nib objectAtIndex:0];
     cardView5.catchPhrase.text = @"Focused Creator";
-    cardView5.interestingFact.text = @"Jeremy doesn't have a life outside of film, but he doesn like to travel every other year.";
+    cardView5.interestingFact.text = @"Jeremy doesn't have a life outside of film, but he does like to travel every other year.";
     cardView5.username.text = @"Jeremy Lui";
     cardView5.profession.text = @"Film Editor";
     

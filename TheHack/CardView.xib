@@ -30,7 +30,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-V5-Ngn">
-                    <rect key="frame" x="19" y="87" width="21" height="96"/>
+                    <rect key="frame" x="19" y="86" width="21" height="97"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool fact" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kln-b3-AVb">
                     <rect key="frame" x="48" y="71" width="185" height="125"/>

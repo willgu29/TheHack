@@ -18,6 +18,9 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-cl-aNy">
+                    <rect key="frame" x="14" y="65" width="279" height="135"/>
+                </imageView>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OW-b5-Kkb">
                     <rect key="frame" x="235" y="8" width="77" height="69"/>
                     <state key="normal" title="Settings">
@@ -78,9 +81,6 @@
                         <action selector="newFact:" destination="-1" eventType="touchUpInside" id="eud-5q-Ngu"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-cl-aNy">
-                    <rect key="frame" x="14" y="65" width="279" height="135"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.60668677091598511" green="0.77728736400604248" blue="0.65119105577468872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
