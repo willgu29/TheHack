@@ -13,5 +13,5 @@
 @property (nonatomic, strong) NSArray *hoursDuration;
 
 -(NSArray *)createViewsArrayWithKeys:(NSArray *)keys;
-
++(UIColor *)getBackgroundColorFromKey:(NSString *)key;
 @end

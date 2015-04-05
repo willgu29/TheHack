@@ -10,16 +10,19 @@
 #import "CalendarTableViewCell.h"
 #import "AppDelegate.h"
 #include <stdlib.h>
-
+#import "ColorViewCreator.h"
 @interface DisplayLogViewController ()
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
 @property (nonatomic, weak) IBOutlet UILabel *username;
 @property (nonatomic, weak) IBOutlet UILabel *day;
+@property (nonatomic, strong) NSArray *categories;
 @property (nonatomic, strong) NSArray *activities;
 @property (nonatomic, strong) NSArray *time;
 @property (nonatomic, strong) NSString *startDate;
+@property (nonatomic, strong) NSString *endDate;
+@property (nonatomic, strong) NSMutableArray *displayTime;
 
 
 @end
@@ -28,11 +31,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _displayTime = [[NSMutableArray alloc] init];
     _time = _log[@"calendarData"];
     _activities = _log[@"activitiesData"];
+    _categories = _log[@"categories"];
     _startDate = _log[@"dayStartTime"];
+    _endDate = _log[@"dayEndTime"];
     _username.text = _log[@"username"];
     _day.text = [self selectRandomDay];
+    [self why];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -67,7 +74,17 @@
     
     
     cell.activity.text = [_activities objectAtIndex:indexPath.row];
-    cell.durationHours.text = [_time objectAtIndex:indexPath.row];
+    cell.durationHours.text = [_displayTime objectAtIndex:indexPath.row];
+    cell.colorView.backgroundColor = [ColorViewCreator getBackgroundColorFromKey:[_categories objectAtIndex:indexPath.row]];
+    
+    if (indexPath.row == [_activities count] - 1)
+    {
+        cell.p1.hidden = NO;
+        cell.p2.hidden = NO;
+        cell.lastEvent.hidden = NO;
+        cell.lastEvent.text = [_displayTime objectAtIndex:indexPath.row+1];
+    }
+    
     return cell;
 }
 
@@ -130,19 +147,8 @@
 {
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
     
-    int modifier = 0;
-    if ([timeAMPM containsString:@"pm"]) {
-        modifier = 12;
-    } else if ([timeAMPM containsString:@"am"]) {
-        modifier = 0;
-    } else {
-        NSLog(@"ERROR");
-    }
-    NSString *onlyTime = [[timeAMPM componentsSeparatedByCharactersInSet:
-                            [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
-                           componentsJoinedByString:@""];
-    int timeInInt = onlyTime.intValue;
-    [dateComponents setHour:(timeInInt+modifier)];
+    int totalTime = [self timeInAMPMFromString:timeAMPM];
+    [dateComponents setHour:totalTime];
     NSCalendar *gregorian = [[NSCalendar alloc]
                             initWithCalendarIdentifier:NSGregorianCalendar];
     NSDate *date = [gregorian dateFromComponents:dateComponents];
@@ -179,11 +185,63 @@
 }
 -(void)why
 {
-    
+    int totalTime = 0;
+    for (int i = 0; i < [_time count] ; i++)
+    {
+        if (i == 0)
+        {
+            totalTime = [self timeInAMPMFromString:_startDate];
+        }
+        [_displayTime addObject:[self convertHourDurationToTimeStamp:totalTime]];
+        totalTime = totalTime + [[_time objectAtIndex:i] integerValue];
+    }
+    int damnit = [self timeInAMPMFromString:_endDate];
+    [_displayTime addObject:[self convertHourDurationToTimeStamp:damnit]];
 }
+
 -(NSString *)convertHourDurationToTimeStamp:(int)hourDuration
 {
-    return @"1";
+    if (hourDuration == 12)
+    {
+//        int newDuration = hourDuration - 12;
+        return [NSString stringWithFormat:@"%d:00 PM", hourDuration];
+    }
+    else if (hourDuration > 12)
+    {
+        int newDuration = hourDuration -12;
+        return [NSString stringWithFormat:@"%d:00 PM", newDuration];
+    }
+    else if (hourDuration < 12)
+    {
+        return [NSString stringWithFormat:@"%d:00 AM", hourDuration];
+    }
+    else if (hourDuration == 0)
+    {
+        int newDuration = hourDuration + 12;
+        return [NSString stringWithFormat:@"%d:00 AM", hourDuration];
+    }
+    return @"12:00 AM";
+}
+-(int)timeInAMPMFromString:(NSString *)timeAMPM
+{
+    int modifier = 0;
+    if ([timeAMPM containsString:@"pm"]) {
+        modifier = 12;
+    } else if ([timeAMPM containsString:@"am"]) {
+        modifier = 0;
+    } else {
+        NSLog(@"ERROR");
+    }
+    NSString *onlyTime = [[timeAMPM componentsSeparatedByCharactersInSet:
+                           [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
+                          componentsJoinedByString:@""];
+    int timeInInt = onlyTime.intValue;
+    int timeHours = timeInInt + modifier;
+    if (timeHours > 24)
+    {
+        timeHours = timeHours - 24;
+    }
+    return timeHours;
 }
 @end
 

@@ -12,6 +12,9 @@
 
 @property (nonatomic, weak) IBOutlet UILabel *activity;
 @property (nonatomic, weak) IBOutlet UILabel *durationHours;
+@property (nonatomic, weak) IBOutlet UIView *colorView;
 
-
+@property (nonatomic, weak) IBOutlet UILabel *lastEvent;
+@property (nonatomic, weak) IBOutlet UIProgressView *p1;
+@property (nonatomic, weak) IBOutlet UIProgressView *p2;
 @end

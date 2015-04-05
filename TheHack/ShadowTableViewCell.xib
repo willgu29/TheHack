@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="namecard" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-6c-ebZ">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="namecard-1" translatesAutoresizingMaskIntoConstraints="NO" id="FaM-6c-ebZ">
                         <rect key="frame" x="8" y="5" width="304" height="162"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You should shadow me b/c I erun" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-si-lv4">
@@ -57,6 +57,6 @@
     </objects>
     <resources>
         <image name="binocbtnh" width="31" height="24"/>
-        <image name="namecard" width="279" height="135"/>
+        <image name="namecard-1" width="279" height="135"/>
     </resources>
 </document>

@@ -109,7 +109,7 @@
     cell.username.text = log[@"username"];
     _colorCreator.hoursDuration = log[@"calendarData"];
     NSArray *categories = log[@"categories"]; //VV place below
-    [cell.colorView addViewsFromArrayToColoredView:[_colorCreator createViewsArrayWithKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure", @"Leisure", @"Social", @"Leisure", @"Work"]]];
+    [cell.colorView addViewsFromArrayToColoredView:[_colorCreator createViewsArrayWithKeys:categories]];
     [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;
@@ -126,11 +126,11 @@
 
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 160;
+    return 172;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 160;
+    return 172;
 }
 
 
@@ -234,7 +234,7 @@
         UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
         [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
         [tableView addSubview:refreshControl];
-        [tableView setBackgroundColor:[UIColor colorWithRed:0.596 green:0.776 blue:0.662 alpha:1]];
+        [tableView setBackgroundColor:[UIColor colorWithRed:0.596 green:0.776 blue:0.662 alpha:1.0]];
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.tag = index;

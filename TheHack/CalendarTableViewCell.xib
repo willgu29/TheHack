@@ -14,33 +14,55 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration Hours" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbW-Nf-VsP">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anU-tb-lqP">
+                        <rect key="frame" x="35" y="51" width="258" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbW-Nf-VsP">
                         <rect key="frame" x="159" y="19" width="82" height="21"/>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="yuc-ph-mXh">
-                        <rect key="frame" x="8" y="28" width="150" height="2"/>
+                        <rect key="frame" x="35" y="30" width="123" height="2"/>
                         <color key="progressTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </progressView>
                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="bce-Tu-RK5">
                         <rect key="frame" x="246" y="29" width="73" height="2"/>
                         <color key="progressTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </progressView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Activity" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anU-tb-lqP">
-                        <rect key="frame" x="17" y="50" width="276" height="34"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Duration Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcI-rs-UeV">
+                        <rect key="frame" x="160" y="79" width="82" height="21"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="cOr-kC-Ghb">
+                        <rect key="frame" x="36" y="90" width="123" height="2"/>
+                        <color key="progressTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </progressView>
+                    <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="gis-8Q-IB0">
+                        <rect key="frame" x="247" y="89" width="73" height="2"/>
+                        <color key="progressTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </progressView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jda-bc-iOv">
+                        <rect key="frame" x="0.0" y="0.0" width="37" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="activity" destination="anU-tb-lqP" id="g7p-2E-Yap"/>
+                <outlet property="colorView" destination="jda-bc-iOv" id="bbo-yR-2cr"/>
                 <outlet property="durationHours" destination="sbW-Nf-VsP" id="GDU-la-RmZ"/>
+                <outlet property="lastEvent" destination="wcI-rs-UeV" id="SDM-mN-F46"/>
+                <outlet property="p1" destination="cOr-kC-Ghb" id="EYZ-lm-lCj"/>
+                <outlet property="p2" destination="gis-8Q-IB0" id="FoW-Mt-pId"/>
             </connections>
-            <point key="canvasLocation" x="245" y="271"/>
+            <point key="canvasLocation" x="245" y="266"/>
         </tableViewCell>
     </objects>
 </document>
