@@ -37,6 +37,7 @@ const NSInteger xlimit = 280;
 +(int)convertHoursToPixels:(int)hours
 {
     //TODO: AVG
+    
     return 30*hours;
 }
 +(int)getAverageHourPixels:(NSArray *)hoursDurations
