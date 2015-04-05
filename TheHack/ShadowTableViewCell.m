@@ -55,7 +55,7 @@
 -(void)followUser:(NSString *)username
 {
     PFUser *currentUser = [PFUser currentUser];
-    [currentUser addObject:username forKey:@"Following"];
+    [currentUser addUniqueObject:username forKey:@"Following"];
     [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded)
         {
@@ -67,7 +67,7 @@
         }
     }];
     PFUser *otherUser = [ParseDatabase lookupUsername:username];
-    [otherUser addObject:currentUser.username forKey:@"Followers"];
+    [otherUser addUniqueObject:currentUser.username forKey:@"Followers"];
     [otherUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         
     }];

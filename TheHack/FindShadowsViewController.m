@@ -13,9 +13,11 @@
 #import "DisplayLogViewController.h"
 #import "ColoredView.h"
 #import "ColorViewCreator.h"
+#import "CreateAccountOnServer.h"
 @interface FindShadowsViewController ()
 
 @property (nonatomic, strong) FetchSuggestions *fetcher;
+@property (nonatomic, strong) CreateAccountOnServer *createAccount;
 
 @property (nonatomic, strong) NSMutableArray *headerContainer;
 
@@ -34,7 +36,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    NSLog(@"PFUSER: %@" ,[PFUser currentUser]);
+    _createAccount = [[CreateAccountOnServer alloc] init];
+    [_createAccount loginUserName:[PFUser currentUser].username andPassword:[PFUser currentUser].password];
     
     _headerContainer =  [[NSMutableArray alloc] initWithObjects:@[], @[], @[], nil];
     

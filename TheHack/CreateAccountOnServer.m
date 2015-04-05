@@ -71,6 +71,7 @@
         if (!error) {
             // Hooray! Let them use the app now.
             [_delegate createAccountSuccess];
+            [self loginUserName:_username andPassword:_password];
         } else {
             [_delegate createAccountWithFailure:error];
             // Show the errorString somewhere and let the user try again.
@@ -88,6 +89,7 @@
         if (succeeded)
         {
             [_delegate updateAccountSuccess];
+            [self loginUserName:_username andPassword:_password];
         }
         else
         {
@@ -95,6 +97,20 @@
         }
     }];
     
+}
+-(void)loginUserName:(NSString *)username andPassword:(NSString *)password
+{
+    
+    [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser *user, NSError *error) {
+        if (user)
+        {
+            NSLog(@"User logged in!");
+        }
+        else
+        {
+            NSLog(@"Error User Login: %@", error);
+        }
+    }];
 }
 
 
