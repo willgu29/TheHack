@@ -68,6 +68,7 @@
 		8404CBCF1AD0BB6B0088D14F /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBCD1AD0BB6B0088D14F /* ColorViewController.m */; };
 		8404CBD01AD0BB6B0088D14F /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */; };
 		8404CBD31AD0CC8B0088D14F /* ColorViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD21AD0CC8B0088D14F /* ColorViewCreator.m */; };
+		8404CBD71AD0EE5F0088D14F /* ArraySearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD61AD0EE5F0088D14F /* ArraySearcher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,8 @@
 		8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
 		8404CBD11AD0CC8B0088D14F /* ColorViewCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewCreator.h; sourceTree = "<group>"; };
 		8404CBD21AD0CC8B0088D14F /* ColorViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewCreator.m; sourceTree = "<group>"; };
+		8404CBD51AD0EE5F0088D14F /* ArraySearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraySearcher.h; sourceTree = "<group>"; };
+		8404CBD61AD0EE5F0088D14F /* ArraySearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArraySearcher.m; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -237,6 +240,7 @@
 		8404CB0C1ACFB5BF0088D14F /* TheHack */ = {
 			isa = PBXGroup;
 			children = (
+				8404CBD41AD0EE4D0088D14F /* Search */,
 				8404CB9F1AD0641D0088D14F /* CustomViews */,
 				8404CB981AD0558E0088D14F /* Ryan */,
 				8404CB891ACFE7200088D14F /* External */,
@@ -458,6 +462,15 @@
 			name = Parse;
 			sourceTree = "<group>";
 		};
+		8404CBD41AD0EE4D0088D14F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8404CBD51AD0EE5F0088D14F /* ArraySearcher.h */,
+				8404CBD61AD0EE5F0088D14F /* ArraySearcher.m */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
 		C54AEAC80D47AC589A55721A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +636,7 @@
 			files = (
 				8404CB761ACFC8360088D14F /* ViewUserProfileViewController.m in Sources */,
 				8404CBD31AD0CC8B0088D14F /* ColorViewCreator.m in Sources */,
+				8404CBD71AD0EE5F0088D14F /* ArraySearcher.m in Sources */,
 				8404CB6A1ACFC6F00088D14F /* DataViewController.m in Sources */,
 				8404CB881ACFE21C0088D14F /* Audio.m in Sources */,
 				8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */,
