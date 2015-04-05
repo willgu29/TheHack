@@ -115,7 +115,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DisplayLogViewController *displayVC = [[DisplayLogViewController alloc] initWithNibName:@"DisplayLogViewController" bundle:nil];
-    displayVC.log = [_logsData objectAtIndex:indexPath.row];
+    NSArray *logData = [_headerContainer objectAtIndex:tableView.tag];
+    displayVC.log = [logData objectAtIndex:indexPath.row];
     [self presentViewController:displayVC animated:YES completion:nil];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
