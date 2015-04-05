@@ -35,10 +35,7 @@
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    NSLog(@"PFUSER: %@" ,[PFUser currentUser]);
-    _createAccount = [[CreateAccountOnServer alloc] init];
-    [_createAccount loginUserName:[PFUser currentUser].username andPassword:[PFUser currentUser].password];
+    [super viewDidLoad];   
     
     _headerContainer =  [[NSMutableArray alloc] initWithObjects:@[], @[], @[], nil];
     

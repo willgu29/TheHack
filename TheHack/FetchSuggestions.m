@@ -15,10 +15,13 @@
 -(void)getAllLogs
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser)
+    {
+        NSArray *following = [ParseDatabase lookupFollowListForUsername:currentUser.username];
+        [query whereKey:@"username" notContainedIn:following];
+    }
     
-    NSArray *following = [ParseDatabase lookupFollowListForUsername:[PFUser currentUser].username];
-    
-    [query whereKey:@"username" notContainedIn:following];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)
         {
@@ -33,8 +36,12 @@
 -(void)getFollowingLogs
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
-    NSArray *following = [ParseDatabase lookupFollowListForUsername:[PFUser currentUser].username];
-    [query whereKey:@"username" containedIn:following];
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser)
+    {
+        NSArray *following = [ParseDatabase lookupFollowListForUsername:currentUser.username];
+        [query whereKey:@"username" containedIn:following];
+    }
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)

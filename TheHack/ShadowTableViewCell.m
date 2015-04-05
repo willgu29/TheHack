@@ -55,6 +55,11 @@
 -(void)followUser:(NSString *)username
 {
     PFUser *currentUser = [PFUser currentUser];
+    if ( ! currentUser)
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Oops" message:@"Please create an account under data -> settings to follow accounts" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+        [alertView show];
+    }
     [currentUser addUniqueObject:username forKey:@"Following"];
     [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded)
