@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A0752E19-AAC6-4738-A0F9-71B09A608102</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TheHack</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EE0EF2A608A24A45B4384CE65EF44D7C6782AAAC</key>
+		<string>https://github.com/willgu29/TheHack.git</string>
+		<key>F52D68F5-9C43-48BF-A397-F1F7AC8FA6AA</key>
+		<string>https://github.com/willgu29/TheHack.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TheHack.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EE0EF2A608A24A45B4384CE65EF44D7C6782AAAC</key>
+		<string>..</string>
+		<key>F52D68F5-9C43-48BF-A397-F1F7AC8FA6AA</key>
+		<string>../TheHack</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/willgu29/TheHack.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EE0EF2A608A24A45B4384CE65EF44D7C6782AAAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EE0EF2A608A24A45B4384CE65EF44D7C6782AAAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheHack</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F52D68F5-9C43-48BF-A397-F1F7AC8FA6AA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TheHack</string>
+		</dict>
+	</array>
+</dict>
+</plist>
