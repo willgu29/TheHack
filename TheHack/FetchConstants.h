@@ -13,6 +13,6 @@
 #define FETCH_FIND 0
 #define FETCH_FOLLOWING 1
 #define FETCH_TRENDING 2
-
+#define FETCH_ALL 20
 
 #endif

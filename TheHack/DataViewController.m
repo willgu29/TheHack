@@ -8,14 +8,18 @@
 
 #import "DataViewController.h"
 #import "SettingsViewController.h"
-#import "RyanViewController.h"
 #import "ColorViewController.h"
+#import "FetchConstants.h"
+#import "DataCruncher.h"
 
 #import <Parse/Parse.h>
 @interface DataViewController ()
 
 @property (nonatomic, weak) IBOutlet UILabel *followingCount;
 @property (nonatomic, weak) IBOutlet UILabel *followersCount;
+@property (nonatomic, strong) FetchSuggestions *fetcher;
+@property (nonatomic, strong) DataCruncher *dataCrunch;
+
 
 @end
 
@@ -23,15 +27,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    _fetcher = [[FetchSuggestions alloc] init];
+    _fetcher.delegate = self;
+    _dataCrunch = [[DataCruncher alloc] init];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
+    [_fetcher getFetchFromIndex:FETCH_ALL];
     [self setupLabels];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+#pragma mark - Fetch Delegate
+-(void)fetchSuccess:(NSArray *)data withIndex:(int)index
+{
+    [_dataCrunch feedDataCrunch:data];
+    //TODO: RELOAD
+}
+-(void)fetchFailureWithError:(NSError *)error
+{
+    
 }
 
 -(IBAction)testColor:(UIButton *)sender

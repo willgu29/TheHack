@@ -1,5 +1,5 @@
 //
-//  DataViewController.h
+//  CardView.h
 //  TheHack
 //
 //  Created by William Gu on 4/4/15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FetchSuggestions.h"
 
-@interface DataViewController : UIViewController <FetchSuggestionsDelegate>
+@interface CardView : UIView
 
 @end

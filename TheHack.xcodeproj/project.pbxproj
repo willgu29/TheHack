@@ -67,6 +67,9 @@
 		8404CBD01AD0BB6B0088D14F /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */; };
 		8404CBD31AD0CC8B0088D14F /* ColorViewCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD21AD0CC8B0088D14F /* ColorViewCreator.m */; };
 		8404CBD71AD0EE5F0088D14F /* ArraySearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD61AD0EE5F0088D14F /* ArraySearcher.m */; };
+		8404CBDA1AD10FB20088D14F /* GetCardSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD91AD10FB20088D14F /* GetCardSuggestions.m */; };
+		8404CBDD1AD1124E0088D14F /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBDC1AD1124E0088D14F /* CardView.m */; };
+		8404CBDF1AD112580088D14F /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBDE1AD112580088D14F /* CardView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +175,11 @@
 		8404CBD21AD0CC8B0088D14F /* ColorViewCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewCreator.m; sourceTree = "<group>"; };
 		8404CBD51AD0EE5F0088D14F /* ArraySearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArraySearcher.h; sourceTree = "<group>"; };
 		8404CBD61AD0EE5F0088D14F /* ArraySearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArraySearcher.m; sourceTree = "<group>"; };
+		8404CBD81AD10FB20088D14F /* GetCardSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetCardSuggestions.h; sourceTree = "<group>"; };
+		8404CBD91AD10FB20088D14F /* GetCardSuggestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetCardSuggestions.m; sourceTree = "<group>"; };
+		8404CBDB1AD1124E0088D14F /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
+		8404CBDC1AD1124E0088D14F /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
+		8404CBDE1AD112580088D14F /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -353,6 +361,8 @@
 				8404CB961ACFEAE40088D14F /* SpeechToText.m */,
 				8404CBC41AD0B5060088D14F /* DataCruncher.h */,
 				8404CBC51AD0B5070088D14F /* DataCruncher.m */,
+				8404CBD81AD10FB20088D14F /* GetCardSuggestions.h */,
+				8404CBD91AD10FB20088D14F /* GetCardSuggestions.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -439,6 +449,9 @@
 				8404CBC71AD0BA770088D14F /* ColoredView.h */,
 				8404CBC81AD0BA770088D14F /* ColoredView.m */,
 				8404CBCA1AD0BA890088D14F /* ColoredView.xib */,
+				8404CBDB1AD1124E0088D14F /* CardView.h */,
+				8404CBDC1AD1124E0088D14F /* CardView.m */,
+				8404CBDE1AD112580088D14F /* CardView.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -562,6 +575,7 @@
 			files = (
 				8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */,
 				8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */,
+				8404CBDF1AD112580088D14F /* CardView.xib in Resources */,
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
 				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
 				8404CBCB1AD0BA890088D14F /* ColoredView.xib in Resources */,
@@ -631,6 +645,7 @@
 				8404CB6A1ACFC6F00088D14F /* DataViewController.m in Sources */,
 				8404CB881ACFE21C0088D14F /* Audio.m in Sources */,
 				8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */,
+				8404CBDD1AD1124E0088D14F /* CardView.m in Sources */,
 				8404CBC61AD0B5070088D14F /* DataCruncher.m in Sources */,
 				8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */,
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
@@ -650,6 +665,7 @@
 				8404CBCF1AD0BB6B0088D14F /* ColorViewController.m in Sources */,
 				8404CB711ACFC7F80088D14F /* Router.m in Sources */,
 				8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */,
+				8404CBDA1AD10FB20088D14F /* GetCardSuggestions.m in Sources */,
 				8404CB511ACFBD960088D14F /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

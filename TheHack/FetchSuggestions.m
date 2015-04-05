@@ -15,6 +15,20 @@
 -(void)getAllLogs
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (objects)
+        {
+            [_delegate fetchSuccess:objects withIndex:FETCH_ALL];
+        }
+        else
+        {
+            [_delegate fetchFailureWithError:error];
+        }
+    }];
+}
+-(void)getNonFollowingLogs
+{
+    PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser)
     {
@@ -75,17 +89,21 @@
 }
 -(void)getFetchFromIndex:(int)index
 {
-    if (index == 0)
+    if (index == FETCH_FIND)
     {
-        [self getAllLogs];
+        [self getNonFollowingLogs];
     }
-    else if (index == 1)
+    else if (index == FETCH_FOLLOWING)
     {
         [self getFollowingLogs];
     }
-    else if (index == 2)
+    else if (index == FETCH_TRENDING)
     {
         [self getTrendingLogs];
+    }
+    else if (index == FETCH_ALL)
+    {
+        [self getAllLogs];
     }
 }
 
