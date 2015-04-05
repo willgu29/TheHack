@@ -103,7 +103,7 @@
     }
     cell.whyFollow.text = log[@"whyShadow"];
     cell.username.text = log[@"username"];
-   
+    [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;
 }

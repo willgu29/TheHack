@@ -63,6 +63,10 @@
 		8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */; };
 		8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC11AD0A24E0088D14F /* SwipeView.m */; };
 		8404CBC61AD0B5070088D14F /* DataCruncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC51AD0B5070088D14F /* DataCruncher.m */; };
+		8404CBC91AD0BA770088D14F /* ColoredView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC81AD0BA770088D14F /* ColoredView.m */; };
+		8404CBCB1AD0BA890088D14F /* ColoredView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBCA1AD0BA890088D14F /* ColoredView.xib */; };
+		8404CBCF1AD0BB6B0088D14F /* ColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBCD1AD0BB6B0088D14F /* ColorViewController.m */; };
+		8404CBD01AD0BB6B0088D14F /* ColorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,6 +165,12 @@
 		8404CBC31AD0A55F0088D14F /* FetchConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchConstants.h; sourceTree = "<group>"; };
 		8404CBC41AD0B5060088D14F /* DataCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCruncher.h; sourceTree = "<group>"; };
 		8404CBC51AD0B5070088D14F /* DataCruncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCruncher.m; sourceTree = "<group>"; };
+		8404CBC71AD0BA770088D14F /* ColoredView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColoredView.h; sourceTree = "<group>"; };
+		8404CBC81AD0BA770088D14F /* ColoredView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColoredView.m; sourceTree = "<group>"; };
+		8404CBCA1AD0BA890088D14F /* ColoredView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColoredView.xib; sourceTree = "<group>"; };
+		8404CBCC1AD0BB6B0088D14F /* ColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorViewController.h; sourceTree = "<group>"; };
+		8404CBCD1AD0BB6B0088D14F /* ColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorViewController.m; sourceTree = "<group>"; };
+		8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorViewController.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -402,6 +412,9 @@
 				8404CB991AD055BF0088D14F /* RyanViewController.h */,
 				8404CB9A1AD055BF0088D14F /* RyanViewController.m */,
 				8404CB9B1AD055BF0088D14F /* RyanViewController.xib */,
+				8404CBCC1AD0BB6B0088D14F /* ColorViewController.h */,
+				8404CBCD1AD0BB6B0088D14F /* ColorViewController.m */,
+				8404CBCE1AD0BB6B0088D14F /* ColorViewController.xib */,
 			);
 			name = Ryan;
 			sourceTree = "<group>";
@@ -422,6 +435,9 @@
 				8404CBBB1AD092000088D14F /* CalendarTableViewCell.h */,
 				8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */,
 				8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */,
+				8404CBC71AD0BA770088D14F /* ColoredView.h */,
+				8404CBC81AD0BA770088D14F /* ColoredView.m */,
+				8404CBCA1AD0BA890088D14F /* ColoredView.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -539,6 +555,8 @@
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
 				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
 				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
+				8404CBCB1AD0BA890088D14F /* ColoredView.xib in Resources */,
+				8404CBD01AD0BB6B0088D14F /* ColorViewController.xib in Resources */,
 				8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */,
 				8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */,
 				8404CB771ACFC8360088D14F /* ViewUserProfileViewController.xib in Resources */,
@@ -617,7 +635,9 @@
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
 				8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */,
 				8404CB5B1ACFBF7A0088D14F /* Converter.m in Sources */,
+				8404CBC91AD0BA770088D14F /* ColoredView.m in Sources */,
 				8404CBAF1AD06B940088D14F /* CreateAccountOnServer.m in Sources */,
+				8404CBCF1AD0BB6B0088D14F /* ColorViewController.m in Sources */,
 				8404CB711ACFC7F80088D14F /* Router.m in Sources */,
 				8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */,
 				8404CB511ACFBD960088D14F /* LoginViewController.m in Sources */,

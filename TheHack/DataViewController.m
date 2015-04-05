@@ -9,6 +9,8 @@
 #import "DataViewController.h"
 #import "SettingsViewController.h"
 #import "RyanViewController.h"
+#import "ColorViewController.h"
+
 #import <Parse/Parse.h>
 @interface DataViewController ()
 
@@ -32,6 +34,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)testColor:(UIButton *)sender
+{
+    ColorViewController *colorVC = [[ColorViewController alloc] initWithNibName:@"ColorViewController" bundle:nil];
+    [self presentViewController:colorVC animated:YES completion:nil];
+}
 -(IBAction)ryan:(UIButton *)sender
 {
     RyanViewController *ryanVC = [[RyanViewController alloc] initWithNibName:@"RyanViewController" bundle:nil];
