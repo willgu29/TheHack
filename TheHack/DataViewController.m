@@ -39,12 +39,7 @@
     ColorViewController *colorVC = [[ColorViewController alloc] initWithNibName:@"ColorViewController" bundle:nil];
     [self presentViewController:colorVC animated:YES completion:nil];
 }
--(IBAction)ryan:(UIButton *)sender
-{
-    RyanViewController *ryanVC = [[RyanViewController alloc] initWithNibName:@"RyanViewController" bundle:nil];
-    [self presentViewController:ryanVC animated:YES completion:nil];
-                
-}
+
 -(IBAction)settings:(UIButton *)sender
 {
     SettingsViewController *settingsVC = [[SettingsViewController alloc] initWithNibName:@"SettingsViewController" bundle:nil];

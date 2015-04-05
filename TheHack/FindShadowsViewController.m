@@ -99,7 +99,7 @@
     NSString *followText;
     if (tableView.tag == 1)
     {
-        followText = @"Following";
+        followText = @"Unfollow";
     }
     else
     {
@@ -234,6 +234,7 @@
         UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
         [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
         [tableView addSubview:refreshControl];
+        [tableView setBackgroundColor:[UIColor colorWithRed:0.596 green:0.776 blue:0.662 alpha:1]];
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.tag = index;
