@@ -62,7 +62,7 @@ const NSInteger xlimit = 280;
 
 +(UIColor *)getBackgroundColorFromKey:(NSString *)key
 {
-    if ([key isEqualToString:@"Sports"])
+    if ([key isEqualToString:@"Fitness"])
     {
         return [UIColor redColor];
     }
@@ -73,6 +73,18 @@ const NSInteger xlimit = 280;
     else if ([key isEqualToString:@"Work"])
     {
         return [UIColor greenColor];
+    }
+    else if ([key isEqualToString:@"Motivated"])
+    {
+        return [UIColor purpleColor];
+    }
+    else if ([key isEqualToString:@"Social"])
+    {
+        return [UIColor yellowColor];
+    }
+    else if ([key isEqualToString:@"Routine"])
+    {
+        return [UIColor grayColor];
     }
     return [UIColor blackColor];
 }

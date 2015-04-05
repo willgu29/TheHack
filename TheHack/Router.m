@@ -21,9 +21,17 @@
     findVC.title = @"Shadow";
     dataVC.title = @"Data";
     
-    UITabBarController *tabBar = [[UITabBarController alloc] init];
-    tabBar.viewControllers = @[findVC,dataVC];
-    return tabBar;
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    tabBarController.viewControllers = @[findVC,dataVC];
+    
+    UITabBar *tabBar = tabBarController.tabBar;
+    UITabBarItem *item1 = [tabBar.items objectAtIndex:0];
+    UITabBarItem *item2 = [tabBar.items objectAtIndex:1];
+    [item1 setImage:[UIImage imageNamed:@"home.png"]];
+    [item2 setImage:[UIImage imageNamed:@"profile.png"]];
+
+    
+    return tabBarController;
 }
 +(UIViewController *)createUserProfileVCWithUsername:(NSString *)username
 {

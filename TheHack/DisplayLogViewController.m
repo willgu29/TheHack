@@ -9,11 +9,14 @@
 #import "DisplayLogViewController.h"
 #import "CalendarTableViewCell.h"
 #import "AppDelegate.h"
+#include <stdlib.h>
+
 @interface DisplayLogViewController ()
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
-
+@property (nonatomic, weak) IBOutlet UILabel *username;
+@property (nonatomic, weak) IBOutlet UILabel *day;
 @property (nonatomic, strong) NSArray *activities;
 @property (nonatomic, strong) NSArray *time;
 @property (nonatomic, strong) NSString *startDate;
@@ -28,6 +31,8 @@
     _time = _log[@"calendarData"];
     _activities = _log[@"activitiesData"];
     _startDate = _log[@"dayStartTime"];
+    _username.text = _log[@"username"];
+    _day.text = [self selectRandomDay];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -73,11 +78,11 @@
 
 -(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 100;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 50;
+    return 100;
 }
 
 -(IBAction)startShadow:(UIButton *)sender
@@ -152,4 +157,33 @@
     NSInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
     return hoursBetweenDates;
 }
+-(NSString *)selectRandomDay
+{
+    int r = arc4random_uniform(7);
+    if (r == 0)
+    {
+        return @"Monday";
+    } else if (r == 1) {
+        return @"Tuesday";
+    } else if (r == 2) {
+        return @"Wednesday";
+    } else if (r == 3) {
+        return @"Thursday";
+    } else if (r == 4 ) {
+        return @"Friday";
+    } else if (r == 5) {
+        return @"Saturday";
+    } else {
+        return @"Sunday";
+    }
+}
+-(void)why
+{
+    
+}
+-(NSString *)convertHourDurationToTimeStamp:(int)hourDuration
+{
+    return @"1";
+}
 @end
+

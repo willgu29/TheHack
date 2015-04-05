@@ -109,7 +109,7 @@
     cell.username.text = log[@"username"];
     _colorCreator.hoursDuration = log[@"calendarData"];
     NSArray *categories = log[@"categories"]; //VV place below
-    [cell.colorView addViewsFromArrayToColoredView:[_colorCreator createViewsArrayWithKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure"]]];
+    [cell.colorView addViewsFromArrayToColoredView:[_colorCreator createViewsArrayWithKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure", @"Leisure", @"Social", @"Leisure", @"Work"]]];
     [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;
