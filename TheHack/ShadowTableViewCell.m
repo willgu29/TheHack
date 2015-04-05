@@ -12,6 +12,8 @@
 
 @interface ShadowTableViewCell()
 
+
+
 @end
 
 @implementation ShadowTableViewCell

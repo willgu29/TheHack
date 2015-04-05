@@ -11,6 +11,8 @@
 #import <Parse/Parse.h>
 #import "ShadowTableViewCell.h"
 #import "DisplayLogViewController.h"
+#import "ColoredView.h"
+#import "ColorViewCreator.h"
 @interface FindShadowsViewController ()
 
 @property (nonatomic, strong) FetchSuggestions *fetcher;
@@ -103,6 +105,7 @@
     }
     cell.whyFollow.text = log[@"whyShadow"];
     cell.username.text = log[@"username"];
+    [cell.colorView addViewsFromArrayToColoredView:[ColorViewCreator createViewsArrayWithHours:log[@"calendarData"] andKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure"]]];
     [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;

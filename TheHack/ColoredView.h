@@ -10,4 +10,7 @@
 
 @interface ColoredView : UIView
 
+-(void)addViewsFromArrayToColoredView:(NSArray *)viewsToAdd;
+
+
 @end

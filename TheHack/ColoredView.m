@@ -7,12 +7,20 @@
 //
 
 #import "ColoredView.h"
+#import "ColorViewCreator.h"
 
 @implementation ColoredView
 
--(void)fillColoredView
+
+
+-(void)addViewsFromArrayToColoredView:(NSArray *)viewsToAdd
 {
     
+    for (int i=0; i < [viewsToAdd count]; i++) {
+        [self addSubview:[viewsToAdd objectAtIndex:i]];
+
+    }
 }
+
 
 @end

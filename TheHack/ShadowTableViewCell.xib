@@ -21,7 +21,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-om-MYu">
-                        <rect key="frame" x="238" y="9" width="74" height="74"/>
+                        <rect key="frame" x="238" y="8" width="74" height="74"/>
                         <state key="normal" title="Follow">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
@@ -29,25 +29,31 @@
                             <action selector="followButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fG7-zs-tVw"/>
                         </connections>
                     </button>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qCv-BR-b7j">
-                        <rect key="frame" x="8" y="1" width="222" height="81"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </tableView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miF-WL-jBL">
-                        <rect key="frame" x="5" y="99" width="218" height="21"/>
+                        <rect key="frame" x="84" y="104" width="218" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="binocbtnh" translatesAutoresizingMaskIntoConstraints="NO" id="UtJ-ck-5jf">
+                        <rect key="frame" x="8" y="18" width="60" height="80"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Jn-JwS" customClass="ColoredView">
+                        <rect key="frame" x="80" y="18" width="160" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
             </tableViewCellContentView>
             <connections>
+                <outlet property="colorView" destination="EFa-Jn-JwS" id="Evi-Wf-tSh"/>
                 <outlet property="follow" destination="8hL-om-MYu" id="Q0q-ap-Rmf"/>
-                <outlet property="tableView" destination="qCv-BR-b7j" id="ujx-Dh-A6k"/>
                 <outlet property="username" destination="miF-WL-jBL" id="049-sb-Euo"/>
                 <outlet property="whyFollow" destination="IU5-si-lv4" id="Qv2-u2-crt"/>
             </connections>
-            <point key="canvasLocation" x="245" y="399"/>
+            <point key="canvasLocation" x="245" y="397"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="binocbtnh" width="31" height="24"/>
+    </resources>
 </document>
