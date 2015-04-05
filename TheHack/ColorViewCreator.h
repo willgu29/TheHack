@@ -10,6 +10,8 @@
 
 @interface ColorViewCreator : NSObject
 
-+(NSArray *)createViewsArrayWithHours:(NSArray *)hourDurations andKeys:(NSArray *)keys;
+@property (nonatomic, strong) NSArray *hoursDuration;
+
+-(NSArray *)createViewsArrayWithKeys:(NSArray *)keys;
 
 @end

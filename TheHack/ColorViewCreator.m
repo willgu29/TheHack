@@ -15,15 +15,15 @@ const NSInteger xlimit = 280;
 
 @implementation ColorViewCreator
 
-+(NSArray *)createViewsArrayWithHours:(NSArray *)hourDurations andKeys:(NSArray *)keys
+-(NSArray *)createViewsArrayWithKeys:(NSArray *)keys
 {
     NSMutableArray *viewArray = [[NSMutableArray alloc] init];
     int x = 0;
-    for (int i = 0; i < [hourDurations count]; i++)
+    for (int i = 0; i < [_hoursDuration count]; i++)
     {
-        int hours  = [[hourDurations objectAtIndex:i] integerValue];
-        int length = [ColorViewCreator convertHoursToPixels:hours];
-        UIView *newViewSegment = [self createView:x andXLength:length andKey: [keys objectAtIndex:i]];
+        CGFloat hours  = [[_hoursDuration objectAtIndex:i] integerValue];
+        CGFloat length = [self convertHoursToPixels:hours];
+        UIView *newViewSegment = [ColorViewCreator createView:x andXLength:length andKey:[keys objectAtIndex:i]];
         x = x + length;
         [viewArray addObject:newViewSegment];
         
@@ -34,20 +34,20 @@ const NSInteger xlimit = 280;
 
 #pragma mark -Helper functions
 
-+(int)convertHoursToPixels:(int)hours
+-(CGFloat)convertHoursToPixels:(int)hours
 {
     //TODO: AVG
-    
-    return 30*hours;
+    CGFloat avg = [self getAverageHourPixels:_hoursDuration];
+    return avg*hours;
 }
-+(int)getAverageHourPixels:(NSArray *)hoursDurations
+-(CGFloat)getAverageHourPixels:(NSArray *)hoursDurations
 {
     CGFloat totalHours = 0;
     for (NSNumber *hours in hoursDurations)
     {
         totalHours = totalHours + hours.floatValue;
     }
-    return (totalHours/[hoursDurations count]);
+    return (xlimit/totalHours);
 }
 
 

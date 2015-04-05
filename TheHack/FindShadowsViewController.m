@@ -16,6 +16,7 @@
 #import "CreateAccountOnServer.h"
 @interface FindShadowsViewController ()
 
+@property (nonatomic, strong) ColorViewCreator *colorCreator;
 @property (nonatomic, strong) FetchSuggestions *fetcher;
 @property (nonatomic, strong) CreateAccountOnServer *createAccount;
 
@@ -39,7 +40,7 @@
     
     _headerContainer =  [[NSMutableArray alloc] initWithObjects:@[], @[], @[], nil];
     
-    
+    _colorCreator = [[ColorViewCreator alloc] init];
     _fetcher = [[FetchSuggestions alloc] init];
     _fetcher.delegate = self;
     
@@ -106,7 +107,9 @@
     }
     cell.whyFollow.text = log[@"whyShadow"];
     cell.username.text = log[@"username"];
-    [cell.colorView addViewsFromArrayToColoredView:[ColorViewCreator createViewsArrayWithHours:log[@"calendarData"] andKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure"]]];
+    _colorCreator.hoursDuration = log[@"calendarData"];
+    NSArray *categories = log[@"categories"]; //VV place below
+    [cell.colorView addViewsFromArrayToColoredView:[_colorCreator createViewsArrayWithKeys:@[@"Sports", @"Leisure", @"Work", @"NONE", @"Sports", @"Leisure"]]];
     [cell.follow setTitle:followText forState:UIControlStateNormal];
     
     return cell;

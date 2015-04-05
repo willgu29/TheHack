@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSArray *activities;
 @property (nonatomic, strong) NSArray *time;
+@property (nonatomic, strong) NSString *startDate;
+
 
 @end
 
@@ -24,7 +26,7 @@
     [super viewDidLoad];
     _time = _log[@"calendarData"];
     _activities = _log[@"activitiesData"];
-    
+    _startDate = _log[@"dayStartTime"];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -77,4 +79,65 @@
     return 50;
 }
 
+-(IBAction)startShadow:(UIButton *)sender
+{
+    
+}
+#pragma mark - Helper functions
+-(void)setNotificationForThisTime:(NSDate *)date
+{
+    
+}
+-(NSDate *)chooseDateBasedOnHourInterval:(CGFloat)hoursDuration
+{
+    NSDate *now = [NSDate date];
+    NSDate *later = [self timeTillSpecificedTime:_startDate];
+    NSInteger hoursTillStart = [self getHoursDifferenceBetween:now andDate:later];
+    
+    int seconds = (hoursTillStart*3600);
+    NSDate *timeToSendPushNotification = [NSDate dateWithTimeInterval:seconds sinceDate:now];
+    return timeToSendPushNotification;
+    
+}
+-(void)something
+{
+    int totalTime = 0;
+    for (int i = 0; i < [_time count]; i++)
+    {
+        totalTime = (totalTime + [[_time objectAtIndex:i] floatValue]);
+        NSDate *pushNotificationTime = [self chooseDateBasedOnHourInterval:totalTime];
+        
+    }
+}
+-(NSDate *)timeTillSpecificedTime:(NSString *)timeAMPM
+{
+    NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
+    
+    int modifier = 0;
+    if ([timeAMPM containsString:@"pm"]) {
+        modifier = 12;
+    } else if ([timeAMPM containsString:@"am"]) {
+        modifier = 0;
+    } else {
+        NSLog(@"ERROR");
+    }
+    NSString *onlyTime = [[timeAMPM componentsSeparatedByCharactersInSet:
+                            [[NSCharacterSet decimalDigitCharacterSet] invertedSet]]
+                           componentsJoinedByString:@""];
+    int timeInInt = onlyTime.intValue;
+    [dateComponents setHour:(timeInInt+modifier)];
+    NSCalendar *gregorian = [[NSCalendar alloc]
+                            initWithCalendarIdentifier:NSGregorianCalendar];
+    NSDate *date = [gregorian dateFromComponents:dateComponents];
+    return date;
+}
+-(int)getHoursDifferenceBetween:(NSDate *)dateO1 andDate:(NSDate *)dateO2
+{
+    NSDate* date1 = dateO1;
+    NSDate* date2 = dateO2;
+    NSTimeInterval distanceBetweenDates = [date1 timeIntervalSinceDate:date2];
+    double secondsInAnHour = 3600;
+    NSInteger hoursBetweenDates = distanceBetweenDates / secondsInAnHour;
+    return hoursBetweenDates;
+}
 @end
