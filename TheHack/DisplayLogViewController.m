@@ -8,6 +8,7 @@
 
 #import "DisplayLogViewController.h"
 #import "CalendarTableViewCell.h"
+#import "AppDelegate.h"
 @interface DisplayLogViewController ()
 
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
@@ -81,11 +82,31 @@
 
 -(IBAction)startShadow:(UIButton *)sender
 {
-    
+    [self something];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Sweet!" message:@"You're all set, we'll notify you when you need to start a new event for your shadow day." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alertView show];
+}
+-(void)something
+{
+    int totalTime = 0;
+    for (int i = 0; i < [_time count]; i++)
+    {
+        NSDate *pushNotificationTime = [self chooseDateBasedOnHourInterval:totalTime];
+        [self setNotificationForThisTime:pushNotificationTime andIndex:i];
+        totalTime = (totalTime + [[_time objectAtIndex:i] floatValue]);
+        
+    }
 }
 #pragma mark - Helper functions
--(void)setNotificationForThisTime:(NSDate *)date
+-(void)setNotificationForThisTime:(NSDate *)date andIndex:(NSInteger)index
 {
+    UILocalNotification *localNotif = [[UILocalNotification alloc] init];
+    [localNotif setFireDate:date];
+    [localNotif setAlertAction:@"New Task"];
+    NSString *bodyString = [NSString stringWithFormat:@"Start %@ing", [_activities objectAtIndex:index]];
+    [localNotif setAlertBody:bodyString];
+    [localNotif setSoundName:UILocalNotificationDefaultSoundName];
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
     
 }
 -(NSDate *)chooseDateBasedOnHourInterval:(CGFloat)hoursDuration
@@ -99,16 +120,7 @@
     return timeToSendPushNotification;
     
 }
--(void)something
-{
-    int totalTime = 0;
-    for (int i = 0; i < [_time count]; i++)
-    {
-        totalTime = (totalTime + [[_time objectAtIndex:i] floatValue]);
-        NSDate *pushNotificationTime = [self chooseDateBasedOnHourInterval:totalTime];
-        
-    }
-}
+
 -(NSDate *)timeTillSpecificedTime:(NSString *)timeAMPM
 {
     NSDateComponents *dateComponents = [[NSDateComponents alloc] init];
