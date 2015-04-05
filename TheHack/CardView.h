@@ -10,4 +10,10 @@
 
 @interface CardView : UIView
 
+@property (nonatomic, weak) IBOutlet UILabel *username;
+@property (nonatomic, weak) IBOutlet UILabel *catchPhrase;
+@property (nonatomic, weak) IBOutlet UILabel *profession;
+@property (nonatomic, weak) IBOutlet UILabel *interestingFact;
+
+
 @end

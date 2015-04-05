@@ -70,6 +70,8 @@
 		8404CBDA1AD10FB20088D14F /* GetCardSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBD91AD10FB20088D14F /* GetCardSuggestions.m */; };
 		8404CBDD1AD1124E0088D14F /* CardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBDC1AD1124E0088D14F /* CardView.m */; };
 		8404CBDF1AD112580088D14F /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBDE1AD112580088D14F /* CardView.xib */; };
+		848510DE1AD19E15004F2285 /* SwipeChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 848510DD1AD19E15004F2285 /* SwipeChooseView.m */; };
+		848510E01AD19E25004F2285 /* SwipeChooseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848510DF1AD19E25004F2285 /* SwipeChooseView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -180,6 +182,9 @@
 		8404CBDB1AD1124E0088D14F /* CardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardView.h; sourceTree = "<group>"; };
 		8404CBDC1AD1124E0088D14F /* CardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardView.m; sourceTree = "<group>"; };
 		8404CBDE1AD112580088D14F /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		848510DC1AD19E15004F2285 /* SwipeChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeChooseView.h; sourceTree = "<group>"; };
+		848510DD1AD19E15004F2285 /* SwipeChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeChooseView.m; sourceTree = "<group>"; };
+		848510DF1AD19E25004F2285 /* SwipeChooseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeChooseView.xib; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -452,6 +457,9 @@
 				8404CBDB1AD1124E0088D14F /* CardView.h */,
 				8404CBDC1AD1124E0088D14F /* CardView.m */,
 				8404CBDE1AD112580088D14F /* CardView.xib */,
+				848510DC1AD19E15004F2285 /* SwipeChooseView.h */,
+				848510DD1AD19E15004F2285 /* SwipeChooseView.m */,
+				848510DF1AD19E25004F2285 /* SwipeChooseView.xib */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -587,6 +595,7 @@
 				8404CBA91AD069970088D14F /* CreateAccountViewController.xib in Resources */,
 				8404CBBA1AD08F140088D14F /* DisplayLogViewController.xib in Resources */,
 				8404CB1B1ACFB5BF0088D14F /* Images.xcassets in Resources */,
+				848510E01AD19E25004F2285 /* SwipeChooseView.xib in Resources */,
 				8404CB851ACFD6C90088D14F /* SettingsViewController.xib in Resources */,
 				8404CB611ACFC1170088D14F /* FindShadowsViewController.xib in Resources */,
 			);
@@ -656,6 +665,7 @@
 				8404CB101ACFB5BF0088D14F /* main.m in Sources */,
 				8404CBBE1AD092000088D14F /* CalendarTableViewCell.m in Sources */,
 				8404CBB41AD0861E0088D14F /* EditProfileViewController.m in Sources */,
+				848510DE1AD19E15004F2285 /* SwipeChooseView.m in Sources */,
 				8404CB971ACFEAE40088D14F /* SpeechToText.m in Sources */,
 				8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */,
 				8404CBAC1AD06A6F0088D14F /* ParseDatabase.m in Sources */,

@@ -74,8 +74,10 @@
 -(void)getTrendingLogs
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Logs"];
+    PFUser *currentUser = [PFUser currentUser];
+    NSArray *following = [ParseDatabase lookupFollowListForUsername:currentUser.username];
+    [query whereKey:@"username" notContainedIn:following];
     [query whereKey:@"views" greaterThan:[NSNumber numberWithInt:10]];
-    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)
         {

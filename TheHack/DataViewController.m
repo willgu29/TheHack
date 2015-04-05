@@ -42,37 +42,37 @@
 {
     if (index == 0)
     {
-        
+        return @"Time duration of Fitness does not exceed 2 hours for most of people.";
     } else if (index == 1) {
-        
+        return @"25% of everyone using this app start their days by running.";
     } else if (index == 2) {
-        
+        return @"42.72% of people start their days before 10am.";
     } else if (index == 3) {
-        
+        return @"Only 15.52% of people sleep before 8pm.";
     } else if (index == 4) {
-        
+        return @"No activity has lasted longer than 5 hours.";
     } else if (index == 5) {
-        
+        return @"About 36.23% of total people take a nap during the day.";
     } else if (index == 6) {
-        
+        return @"Over 22.15% of people skip a meal everyday";
     } else if (index == 7) {
         return @"Don't you think you should be spending your time elsewhere?";
     } else if (index == 8) {
-        
+        return @"More time is spent eating than in fitness";
     } else if (index == 9) {
-        
+        return @"12% of people never travel farther than their homes in a given year.";
     } else if (index == 10) {
-        
+        return @"Only 10.21% of females miss showering in any given day";
     } else if (index == 11) {
-        
+        return @"The average person only reads 1 minute per day for their whole lifetime.";
     } else if (index == 12) {
-        
+        return @"The people who program the most are also most likely to skip showers.";
     } else if (index == 13) {
-        
+        return @"You've reached this far?";
     } else if (index == 14) {
-        
+        return @"About 12.52% of guys never ask a girl on a date in a given year";
     } else if (index == 15) {
-        
+        return @"People spend most of their time working...";
     }
     return @"No more facts :(";
 }

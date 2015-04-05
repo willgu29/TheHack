@@ -7,12 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardView">
             <rect key="frame" x="0.0" y="0.0" width="241" height="270"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="iOS Developer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wwL-sn-oWT">
-                    <rect key="frame" x="16" y="51" width="204" height="21"/>
+                    <rect key="frame" x="18" y="42" width="204" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -24,7 +24,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="William Gu" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9K-Kr-jWC">
-                    <rect key="frame" x="19" y="17" width="214" height="26"/>
+                    <rect key="frame" x="19" y="8" width="214" height="26"/>
                     <fontDescription key="fontDescription" type="system" pointSize="24"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -32,9 +32,22 @@
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="0jD-V5-Ngn">
                     <rect key="frame" x="19" y="87" width="21" height="96"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cool fact" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kln-b3-AVb">
+                    <rect key="frame" x="48" y="71" width="185" height="125"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="catchPhrase" destination="uLN-xg-6ev" id="96n-vS-xJN"/>
+                <outlet property="interestingFact" destination="kln-b3-AVb" id="3LD-Rq-0l2"/>
+                <outlet property="profession" destination="wwL-sn-oWT" id="8ds-Mb-elF"/>
+                <outlet property="username" destination="S9K-Kr-jWC" id="6p8-Te-r9f"/>
+            </connections>
             <point key="canvasLocation" x="284.5" y="172"/>
         </view>
     </objects>
