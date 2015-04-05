@@ -31,7 +31,7 @@
 
 -(IBAction)newFact:(UIButton *)sender
 {
-   
+    _interestingFact.shineDuration = 1;
     [self.interestingFact fadeOutWithCompletion:^{
         [_interestingFact setText:[self getFactAtIndex:_factCounter]];
         [self.interestingFact shine];
@@ -86,7 +86,7 @@
     _dataCrunch = [[DataCruncher alloc] init];
     _dataCrunch.delegate = self;
     _factCounter = 0;
-    _interestingFact.shineDuration = 1;
+    _interestingFact.shineDuration = 2.5;
     [_interestingFact setTextColor:[UIColor blackColor]];
 }
 -(void)viewWillAppear:(BOOL)animated
