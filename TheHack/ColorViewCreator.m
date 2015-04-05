@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ColorViewCreator.h"
 
-const NSInteger height = 64;
+const NSInteger height = 45;
 const NSInteger yPos = 0;
+const NSInteger xlimit = 280;
 
 @implementation ColorViewCreator
 
@@ -25,6 +26,7 @@ const NSInteger yPos = 0;
         UIView *newViewSegment = [self createView:x andXLength:length andKey: [keys objectAtIndex:i]];
         x = x + length;
         [viewArray addObject:newViewSegment];
+        
     }
     return viewArray;
     
@@ -34,16 +36,29 @@ const NSInteger yPos = 0;
 
 +(int)convertHoursToPixels:(int)hours
 {
+    //TODO: AVG
     return 30*hours;
 }
++(int)getAverageHourPixels:(NSArray *)hoursDurations
+{
+    CGFloat totalHours = 0;
+    for (NSNumber *hours in hoursDurations)
+    {
+        totalHours = totalHours + hours.floatValue;
+    }
+    return (totalHours/[hoursDurations count]);
+}
+
+
 
 +(UIView *)createView:(NSInteger)x andXLength:(NSInteger)xLength andKey:(NSString *)string
 {
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(x, yPos, xLength, height)];
     view.backgroundColor = [ColorViewCreator getBackgroundColorFromKey:string];
-    
+  
     return view;
 }
+
 +(UIColor *)getBackgroundColorFromKey:(NSString *)key
 {
     if ([key isEqualToString:@"Sports"])
