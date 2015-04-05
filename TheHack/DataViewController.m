@@ -11,6 +11,7 @@
 #import "ColorViewController.h"
 #import "FetchConstants.h"
 #import "DataCruncher.h"
+#import  <RQShineLabel/RQShineLabel.h>
 
 #import <Parse/Parse.h>
 @interface DataViewController ()
@@ -21,7 +22,7 @@
 @property (nonatomic, strong) DataCruncher *dataCrunch;
 
 
-@property (nonatomic, weak) IBOutlet UILabel *interestingFact;
+@property (nonatomic, weak) IBOutlet RQShineLabel *interestingFact;
 
 @property (nonatomic) int factCounter;
 @end
@@ -30,7 +31,11 @@
 
 -(IBAction)newFact:(UIButton *)sender
 {
-    _interestingFact.text = [self getFactAtIndex:_factCounter];
+    [self.interestingFact fadeOutWithCompletion:^{
+        [_interestingFact setText:[self getFactAtIndex:_factCounter]];
+        [self.interestingFact shine];
+    }];
+
     _factCounter++;
 }
 -(NSString *)getFactAtIndex:(int)index
@@ -69,6 +74,7 @@
     } else if (index == 15) {
         
     }
+    return @"No more facts :(";
 }
 
 - (void)viewDidLoad {
@@ -78,11 +84,16 @@
     _dataCrunch = [[DataCruncher alloc] init];
     _dataCrunch.delegate = self;
     _factCounter = 0;
+    [_interestingFact setTextColor:[UIColor blackColor]];
 }
 -(void)viewWillAppear:(BOOL)animated
 {
     [_fetcher getFetchFromIndex:FETCH_ALL];
     [self setupLabels];
+}
+-(void)viewDidAppear:(BOOL)animated
+{
+    [self.interestingFact shine];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

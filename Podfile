@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 pod "MDCSwipeToChoose"
-
+pod "RQShineLabel"
 target 'TheHack' do
 
 end

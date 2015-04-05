@@ -66,7 +66,7 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-yt-la9">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stp-yt-la9" customClass="RQShineLabel">
                     <rect key="frame" x="46" y="247" width="229" height="74"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -77,6 +77,9 @@
                     <state key="normal" title="Get a new fact">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="newFact:" destination="-1" eventType="touchUpInside" id="eud-5q-Ngu"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="0.60668677091598511" green="0.77728736400604248" blue="0.65119105577468872" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
