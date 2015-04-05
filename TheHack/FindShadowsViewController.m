@@ -191,7 +191,6 @@
     NSArray *header = [_headerContainer objectAtIndex:index];
     header = data;
     [_headerContainer replaceObjectAtIndex:index withObject:header];
-    _logsData = data;
     
     UIView *viewItem = [_swipeView itemViewAtIndex:index];
     UITableView *tableView = [viewItem.subviews lastObject];

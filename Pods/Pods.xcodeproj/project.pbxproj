@@ -7,552 +7,484 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0495389590EFE8EBA5DA111C /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 424BE099A06387DFDFB7F35F /* MDCSwipeDirection.h */; };
-		04B24862D9D23F90F11FE4BC /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4665B085D4D215934FF017FF /* MDCSwipeOptions.h */; };
-		098C09595C49D5EC55D1E1F1 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 424BE099A06387DFDFB7F35F /* MDCSwipeDirection.h */; };
-		0B6A0D86393A127EF21679F9 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 592C04585EB4DDA61F5E4747 /* MDCPanState.h */; };
-		0C1D049C749A3EAB3C1729AC /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3650777630E10B97F62D3FCB /* MDCSwipeToChooseView.h */; };
-		0FBF832C327CA2DC793BE414 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6A92718A5248343BD3F9E /* UIColor+MDCRGB8Bit.m */; };
-		11A4101A71D865FB8852561F /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68B06A2B644B26B72B065B /* MDCViewState.m */; };
-		2033E04C2A1810515364F615 /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF8AB1EF075EA7546814B3A /* MDCSwipeToChooseDelegate.h */; };
-		219EDB6C0CA2605C42F11748 /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68B06A2B644B26B72B065B /* MDCViewState.m */; };
-		2253E9B228563E0BDD3CDF9D /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D733BD62DB1D83787018C1 /* UIView+MDCSwipeToChoose.m */; };
-		247E80245DD14063ACD1DCB6 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 592C04585EB4DDA61F5E4747 /* MDCPanState.h */; };
-		280B96ED41B8312F406254F0 /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E68B06A2B644B26B72B065B /* MDCViewState.m */; };
-		2A16B5D8D74D5E3F9FD2694B /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 804ECD5EB6CFFEEA3AD61547 /* MDCPanState.m */; };
-		2A1AC2E940C0F726ACB41FC2 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A910BEABA2EC7728C6860C /* MDCGeometry.m */; };
-		2D55A0805B4BF23F744A4F85 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = EB92A9031F95D43EC5A0282C /* MDCGeometry.h */; };
-		2E0E34DA361EF6E63A16EFFF /* Pods-TheHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAE3E4246E5527A6A7F8F036 /* Pods-TheHack-dummy.m */; };
-		3518DEEFBB79338B78D10D92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28444B895375C1AE4813B3F2 /* UIKit.framework */; };
-		36A8583EBD787A7DBD73AA31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		37460AC01E92FC8F21386E37 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D733BD62DB1D83787018C1 /* UIView+MDCSwipeToChoose.m */; };
-		3A991841D6F1A93EAEFC35E9 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 804ECD5EB6CFFEEA3AD61547 /* MDCPanState.m */; };
-		3B9031ADBC4D0F2276968468 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 52411C65396B12FFB2013B83 /* MDCViewState.h */; };
-		3BF3BFD2981398EE71058CEB /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 061C16D9DA4F1A3296751E8B /* MDCSwipeResult.h */; };
-		3E92161B93CAE54BECF59663 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 52411C65396B12FFB2013B83 /* MDCViewState.h */; };
-		42FB17735B733343EDBF6A1A /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F614924E8A987B9326A2C391 /* MDCSwipeToChooseViewOptions.m */; };
-		46956257C34DB888B9EB8B20 /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D02F1E15EBB6F399BB492 /* MDCSwipeOptions.m */; };
-		46E713F56B89C4E8A9C1D996 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 245E352DC292DF73546CF638 /* UIColor+MDCRGB8Bit.h */; };
-		47A961EBBFED2A20A256394E /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF8AB1EF075EA7546814B3A /* MDCSwipeToChooseDelegate.h */; };
-		47D82AC6A0E62A1C881F0215 /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E78521FE43617862D2D6801B /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */; };
-		48C0EF0E8AC6811ABDA07924 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = EB92A9031F95D43EC5A0282C /* MDCGeometry.h */; };
-		49F1B8EFC54AFA89190C6864 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 592C04585EB4DDA61F5E4747 /* MDCPanState.h */; };
-		54AECE06583A437425617273 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		57A45261DD2929F4B022CDC8 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A910BEABA2EC7728C6860C /* MDCGeometry.m */; };
-		585F62C814BE484AE98C56AC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28444B895375C1AE4813B3F2 /* UIKit.framework */; };
-		5998D17464F2A7BA137365E5 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8162DD122A7ADC90ADC03870 /* UIView+MDCBorderedLabel.h */; };
-		5B86E36088E3C1742E569F1E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		5C2224081856B9B9620140D7 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 0288481BC0445C837D7F24D7 /* MDCSwipeToChoose.h */; };
-		6B8D26B84A5E62F66EC32EDB /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A910BEABA2EC7728C6860C /* MDCGeometry.m */; };
-		7037A51F4DBA28A63FE2A27E /* Pods-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00492FA80A0DE81E171454C4 /* Pods-MDCSwipeToChoose-dummy.m */; };
-		79E503EB974BD4A015BB8EC7 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E280EC3040FCB16417415BCD /* MDCSwipeResult.m */; };
-		7BE986E3C3E52993CC6D665C /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB35B3C5E7CFF930C03CD250 /* Pods-dummy.m */; };
-		8334A0A8AA721F3ADE6B9C70 /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D02F1E15EBB6F399BB492 /* MDCSwipeOptions.m */; };
-		85F4A368C9486D5082508D3D /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8162DD122A7ADC90ADC03870 /* UIView+MDCBorderedLabel.h */; };
-		86567464CCB684A5AAF59CFE /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033B3BFDB6849BAEB86EFBA /* UIView+MDCBorderedLabel.m */; };
-		8C464C6B095D0627127BF121 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28444B895375C1AE4813B3F2 /* UIKit.framework */; };
-		8D4C7129CD2462AD79F2B74B /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 424BE099A06387DFDFB7F35F /* MDCSwipeDirection.h */; };
-		945CA71EE51BED9AB46B4927 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E280EC3040FCB16417415BCD /* MDCSwipeResult.m */; };
-		94752247A520C231E250BE84 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E280EC3040FCB16417415BCD /* MDCSwipeResult.m */; };
-		96D97A08FA5234F718248328 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 804ECD5EB6CFFEEA3AD61547 /* MDCPanState.m */; };
-		979B7B62B6F349B848280BC2 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 0288481BC0445C837D7F24D7 /* MDCSwipeToChoose.h */; };
-		A2C2ED7509795AC3EBE5531D /* Pods-TheHack-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E6DE25F735559A3CEAC2014 /* Pods-TheHack-MDCSwipeToChoose-dummy.m */; };
-		A6476ECA0EE9B8C5852C44CD /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 061C16D9DA4F1A3296751E8B /* MDCSwipeResult.h */; };
-		ACE77F3C82429DEBB76DD5CE /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 0288481BC0445C837D7F24D7 /* MDCSwipeToChoose.h */; };
-		AFF74521C34BE7F92BCEB997 /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E9073C1A461CDA31A4580E /* MDCSwipeToChooseViewOptions.h */; };
-		B1C442CC1915FF40869356CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		BAE0A9C6330BAC1BF4FAAE89 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013690661BD22685E9156A0D /* MDCSwipeToChooseView.m */; };
-		BC8C733BE169BDC1AF9AA2A9 /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F614924E8A987B9326A2C391 /* MDCSwipeToChooseViewOptions.m */; };
-		BD6805296C2E9B9949CA1661 /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3650777630E10B97F62D3FCB /* MDCSwipeToChooseView.h */; };
-		BEDBEEC4B4F72CEE07EB03BA /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 056D02F1E15EBB6F399BB492 /* MDCSwipeOptions.m */; };
-		BFDDD048CF99942757A136A2 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 245E352DC292DF73546CF638 /* UIColor+MDCRGB8Bit.h */; };
-		C34E1534EB07BBC8D527C836 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6A92718A5248343BD3F9E /* UIColor+MDCRGB8Bit.m */; };
-		C5118AB20D61123C4EBD19D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		C5D60CD75FFE9C7D8BAC2E2A /* Pods-TheHackTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF4A7842DFC092081AD8A82 /* Pods-TheHackTests-dummy.m */; };
-		C8689AC3CEB598418A647854 /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033B3BFDB6849BAEB86EFBA /* UIView+MDCBorderedLabel.m */; };
-		CA5E8FB94333AA6FF7D65B37 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013690661BD22685E9156A0D /* MDCSwipeToChooseView.m */; };
-		CD800E409C946FF40193BEF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29D0C7E64663A08918A0C57E /* Foundation.framework */; };
-		CF8B19E295A78FCDC83E2679 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA1E3F9E3CB066C3589F2E2 /* UIView+MDCSwipeToChoose.h */; };
-		D1FB7AE7FE2D5301402D790F /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E9073C1A461CDA31A4580E /* MDCSwipeToChooseViewOptions.h */; };
-		D491864DA0E741BCF8B54D99 /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 061C16D9DA4F1A3296751E8B /* MDCSwipeResult.h */; };
-		D6A025755AA8B24846028AC6 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = EB92A9031F95D43EC5A0282C /* MDCGeometry.h */; };
-		D88937E58CD486057CEE81E0 /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3650777630E10B97F62D3FCB /* MDCSwipeToChooseView.h */; };
-		DBAB55F2D16F4056AFC9ED4E /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 013690661BD22685E9156A0D /* MDCSwipeToChooseView.m */; };
-		DDAB66CCE02EBC786CAF685E /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E9073C1A461CDA31A4580E /* MDCSwipeToChooseViewOptions.h */; };
-		DF151ED2D2B86EC9E61EE131 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA1E3F9E3CB066C3589F2E2 /* UIView+MDCSwipeToChoose.h */; };
-		DFF90A030257580E64A00993 /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1033B3BFDB6849BAEB86EFBA /* UIView+MDCBorderedLabel.m */; };
-		E31F342F3DF336FD5344FFE8 /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF8AB1EF075EA7546814B3A /* MDCSwipeToChooseDelegate.h */; };
-		E7EE354327E4E3BA6EB3D30B /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4665B085D4D215934FF017FF /* MDCSwipeOptions.h */; };
-		EA0963DC2AD74A911153E08B /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = F614924E8A987B9326A2C391 /* MDCSwipeToChooseViewOptions.m */; };
-		ED0A65CC833DB65952760F7F /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 245E352DC292DF73546CF638 /* UIColor+MDCRGB8Bit.h */; };
-		F2A5E0650B53D4EF08C080E6 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8162DD122A7ADC90ADC03870 /* UIView+MDCBorderedLabel.h */; };
-		F547FC006076CFA35D662394 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 52411C65396B12FFB2013B83 /* MDCViewState.h */; };
-		F6E3998A0F95D66CEE96F65D /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA1E3F9E3CB066C3589F2E2 /* UIView+MDCSwipeToChoose.h */; };
-		F938FEF63D8E97A373C82DB0 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D733BD62DB1D83787018C1 /* UIView+MDCSwipeToChoose.m */; };
-		F96F8D66E84E4C3CC2C57A0C /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4665B085D4D215934FF017FF /* MDCSwipeOptions.h */; };
-		FD2CD59B6D1547895990BA24 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = 62B6A92718A5248343BD3F9E /* UIColor+MDCRGB8Bit.m */; };
+		00B0AEDF1E259EF7B7D8FDC8 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 23834E77D632BB25803AE603 /* MDCPanState.m */; };
+		01DE7EB5F3896C7AEE0AB809 /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0A36353BC15BBFC10D3A10 /* MDCSwipeToChooseViewOptions.h */; };
+		0423E04976A330ED0B80338F /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDCF54B2378DEE015C6CABC /* MDCSwipeResult.h */; };
+		04C7CDD953232E8C7F0E09D8 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AB56BDD8AB13EB01D698E /* MDCSwipeResult.m */; };
+		06DE6FAB13A9B77522A66554 /* Pods-TheHack-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C2823E236F9B2033D76D138 /* Pods-TheHack-dummy.m */; };
+		0AAC94679ECEB10E5481B6DF /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D050C9564EF29933041BC36 /* MDCSwipeOptions.m */; };
+		0B0D14185AE09463FECA7BAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		0B58CF9003C8B770CF48B0C8 /* Pods-TheHack-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F186A21C1D34A2F16AB8121C /* Pods-TheHack-MDCSwipeToChoose-dummy.m */; };
+		0DF14EF04C936BA471CCEC53 /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B29D63B65FEA47021CA1118D /* MDCSwipeOptions.h */; };
+		12216B259917D2B35BABABF4 /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0A36353BC15BBFC10D3A10 /* MDCSwipeToChooseViewOptions.h */; };
+		1714AA5F420264E0F944D6DF /* MDCSwipeToChooseViewOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0A36353BC15BBFC10D3A10 /* MDCSwipeToChooseViewOptions.h */; };
+		19E160DDB9EAD74B5F925D91 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BD1378362FDCFE0E5E2B3D /* MDCViewState.h */; };
+		1B820ED0839CA61EB0D65FFB /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ECDF21AA5C9F71FEEED2C2 /* UIView+MDCSwipeToChoose.h */; };
+		207DD039FAA7CA9E5277E3F5 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 23834E77D632BB25803AE603 /* MDCPanState.m */; };
+		24A9F8F85919607E690970BE /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDCF54B2378DEE015C6CABC /* MDCSwipeResult.h */; };
+		268CF9832F7F223D0D7B6539 /* MDCPanState.m in Sources */ = {isa = PBXBuildFile; fileRef = 23834E77D632BB25803AE603 /* MDCPanState.m */; };
+		2709A6E0BF9B963D9433E5F7 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA305DDB0823E97B264B03 /* UIView+MDCSwipeToChoose.m */; };
+		29D7E35198DBB9146C919742 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = D72EDE77DBE03DC4182D323B /* MDCSwipeDirection.h */; };
+		2A64926475F72780C5250256 /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0077E6D8A20171B601105479 /* MDCSwipeToChooseView.h */; };
+		2B7DBA9FED4F72A871D319C8 /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0293179505769DEBDBADCC47 /* MDCSwipeToChooseDelegate.h */; };
+		2F7112B72EF5DFD3E801DA51 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA786C55FD93D4BB2A921EE /* MDCSwipeToChooseView.m */; };
+		3046BB375AD3421B0F3F5364 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA305DDB0823E97B264B03 /* UIView+MDCSwipeToChoose.m */; };
+		32FB33E2934AC1C86E9492AF /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C134DDF1D4D1BE2BB2051BC /* MDCPanState.h */; };
+		393F6C2410147A5B14DB68F2 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB68F86B5FDA4A1AC3633BA /* MDCSwipeToChoose.h */; };
+		405F772DE5AAD6CF6A182B44 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F203D447BD6F30F82184BEA /* MDCGeometry.h */; };
+		4125F64B32F7300556890C48 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB68F86B5FDA4A1AC3633BA /* MDCSwipeToChoose.h */; };
+		44B52F8CC71352C4C5C8A318 /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AB56BDD8AB13EB01D698E /* MDCSwipeResult.m */; };
+		452CAA418E5D3D6E708E80E7 /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4E70302C33B4A6CDF16C /* MDCSwipeToChooseViewOptions.m */; };
+		4949D7FA811F32F68AAC2587 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486887ABBBEBC63856ABC48 /* MDCGeometry.m */; };
+		4D148837F8D98967D337AC94 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5539F93E27E1D73DC77A96EA /* UIColor+MDCRGB8Bit.h */; };
+		4E403D67968B38B5A56E8C11 /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0077E6D8A20171B601105479 /* MDCSwipeToChooseView.h */; };
+		4F2B8FB6C365FBB18AC65255 /* MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = BAB68F86B5FDA4A1AC3633BA /* MDCSwipeToChoose.h */; };
+		508DBE7604428D6B18CE4FCC /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486887ABBBEBC63856ABC48 /* MDCGeometry.m */; };
+		53C6D1C58466E5C91F5F15A7 /* MDCGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486887ABBBEBC63856ABC48 /* MDCGeometry.m */; };
+		58B8CD7B247CCAD07733F666 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5539F93E27E1D73DC77A96EA /* UIColor+MDCRGB8Bit.h */; };
+		5AD65791ECA6F8885150D0D9 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ECDF21AA5C9F71FEEED2C2 /* UIView+MDCSwipeToChoose.h */; };
+		5DD1BCCBA59FD320BE718FAB /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = C52828C5C58B014D13A70331 /* UIColor+MDCRGB8Bit.m */; };
+		635514CBCFCFFC299EDBCF36 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = C52828C5C58B014D13A70331 /* UIColor+MDCRGB8Bit.m */; };
+		73A7E58229C0C8024E853E7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		74395CDA9A4449192D272DC7 /* UIColor+MDCRGB8Bit.m in Sources */ = {isa = PBXBuildFile; fileRef = C52828C5C58B014D13A70331 /* UIColor+MDCRGB8Bit.m */; };
+		762F3E0AD3B253DC74119495 /* Pods-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E23C95B12138CCFE1AA94076 /* Pods-MDCSwipeToChoose-dummy.m */; };
+		7A08FFAC96AC1A89D005D1FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		7A4A7EF58A40AF03A4592EED /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C134DDF1D4D1BE2BB2051BC /* MDCPanState.h */; };
+		7BBEC0C5D492A72DDC4ACA52 /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA786C55FD93D4BB2A921EE /* MDCSwipeToChooseView.m */; };
+		7E77CBFC1984371435584EE1 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F203D447BD6F30F82184BEA /* MDCGeometry.h */; };
+		830C4339D18F09287CC94926 /* UIView+MDCSwipeToChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EA305DDB0823E97B264B03 /* UIView+MDCSwipeToChoose.m */; };
+		84C2C210BA43A2B1375ED946 /* MDCPanState.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C134DDF1D4D1BE2BB2051BC /* MDCPanState.h */; };
+		85A31744FF01C323A5FFF985 /* Pods-TheHackTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 305823542ECB1CD8386F10A0 /* Pods-TheHackTests-dummy.m */; };
+		8BC1D8B10CB1972D65E2568E /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18716BA686EA63658D6A081A /* MDCViewState.m */; };
+		8C51A7F5CAB8D2B212E0C16A /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF12A728394D57FD94FD7A25 /* UIView+MDCBorderedLabel.m */; };
+		8C9642408F5007933278087F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		8FA08A92F38B6A77C0E8AC99 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BD1378362FDCFE0E5E2B3D /* MDCViewState.h */; };
+		917D639EC2224DD9DF1E557F /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0293179505769DEBDBADCC47 /* MDCSwipeToChooseDelegate.h */; };
+		91CC9827D5C63DAEB267EBA4 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = D72EDE77DBE03DC4182D323B /* MDCSwipeDirection.h */; };
+		9294812833AAFFB3F6D92BCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E2E809E0CE6405523EE933 /* UIKit.framework */; };
+		9A9AA8A6B55AF98D852EA4EC /* MDCSwipeToChooseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0077E6D8A20171B601105479 /* MDCSwipeToChooseView.h */; };
+		9EF22C96DC216D0E89C53B44 /* MDCSwipeToChooseDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0293179505769DEBDBADCC47 /* MDCSwipeToChooseDelegate.h */; };
+		A21E1E6BACBC8404EB655476 /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B29D63B65FEA47021CA1118D /* MDCSwipeOptions.h */; };
+		A9669D53FBA9E6899B056F81 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4844FD450BE62F0F1DD9B1 /* UIView+MDCBorderedLabel.h */; };
+		B534635AB054B4E4BD570944 /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D050C9564EF29933041BC36 /* MDCSwipeOptions.m */; };
+		B534A04963B4ADFA55C3D09A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		B66E4FCFB6D32B77E7F2DF51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469ABC64B9162F85137158C /* Foundation.framework */; };
+		B852587009679D3D0A902413 /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF12A728394D57FD94FD7A25 /* UIView+MDCBorderedLabel.m */; };
+		BF3C232932FB050652521EE9 /* MDCSwipeDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = D72EDE77DBE03DC4182D323B /* MDCSwipeDirection.h */; };
+		BF7905D9BAD927EFDE43BFF3 /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18716BA686EA63658D6A081A /* MDCViewState.m */; };
+		C00E9DF939A61E63BE077CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E2E809E0CE6405523EE933 /* UIKit.framework */; };
+		C18791D524B7BA099393B23A /* MDCSwipeOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = B29D63B65FEA47021CA1118D /* MDCSwipeOptions.h */; };
+		C18BDC25884C2DE9B5AE554F /* MDCSwipeToChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA786C55FD93D4BB2A921EE /* MDCSwipeToChooseView.m */; };
+		C52DD2C36168855B1CF19312 /* UIColor+MDCRGB8Bit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5539F93E27E1D73DC77A96EA /* UIColor+MDCRGB8Bit.h */; };
+		CAB7F0B7E52509E34A73F4A1 /* MDCViewState.h in Headers */ = {isa = PBXBuildFile; fileRef = 21BD1378362FDCFE0E5E2B3D /* MDCViewState.h */; };
+		CE20D63AD09CE4F1B5737617 /* MDCSwipeResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FDCF54B2378DEE015C6CABC /* MDCSwipeResult.h */; };
+		CE3D85F94A4F302461D07E96 /* MDCGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F203D447BD6F30F82184BEA /* MDCGeometry.h */; };
+		D6301990EA9B9B128E92AA6E /* UIView+MDCBorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF12A728394D57FD94FD7A25 /* UIView+MDCBorderedLabel.m */; };
+		D67ED9875D59A836685F5A0E /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4E70302C33B4A6CDF16C /* MDCSwipeToChooseViewOptions.m */; };
+		D7348730314E06246EA19D2D /* MDCSwipeOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D050C9564EF29933041BC36 /* MDCSwipeOptions.m */; };
+		D73DB72B6DC1DE2240F52F81 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4844FD450BE62F0F1DD9B1 /* UIView+MDCBorderedLabel.h */; };
+		D91A2845242702A8E5E4F89E /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 132375787CF15114A535580C /* Pods-dummy.m */; };
+		DBEC5BC1C1CFD0D03ABE920D /* MDCSwipeResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4AB56BDD8AB13EB01D698E /* MDCSwipeResult.m */; };
+		DEDCF94C191C4D1E4D488940 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E2E809E0CE6405523EE933 /* UIKit.framework */; };
+		E07D4740AA74B905E1683AF4 /* MDCViewState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18716BA686EA63658D6A081A /* MDCViewState.m */; };
+		E07F57D30CA5371385A68854 /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3889903FF4E46D83F61F839A /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */; };
+		E29C9D667DF28D8729AF7C28 /* UIView+MDCSwipeToChoose.h in Headers */ = {isa = PBXBuildFile; fileRef = 00ECDF21AA5C9F71FEEED2C2 /* UIView+MDCSwipeToChoose.h */; };
+		EC347D2949DBDA5E8A0C226F /* MDCSwipeToChooseViewOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5B4E70302C33B4A6CDF16C /* MDCSwipeToChooseViewOptions.m */; };
+		FA8461ADFC821FEF7EC97ED7 /* UIView+MDCBorderedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B4844FD450BE62F0F1DD9B1 /* UIView+MDCBorderedLabel.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3778B939F0950525CB85DDD6 /* PBXContainerItemProxy */ = {
+		6425432CEACED56829317DC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF801CE6E69B00E7B9567C0F /* Project object */;
+			containerPortal = C3A131460AB7C2B3AE306799 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5B78DE2C4395B343472A286A;
+			remoteGlobalIDString = BA48485FCC86BB35AFA8617B;
+			remoteInfo = "Pods-TheHack-MDCSwipeToChoose";
+		};
+		80D4F5DDA5298B55913CDAAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3A131460AB7C2B3AE306799 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EECB6E4B97AEA1EDF7F80A4;
 			remoteInfo = "Pods-MDCSwipeToChoose";
 		};
-		8A1BDB649A416E2B97268F9A /* PBXContainerItemProxy */ = {
+		EB8C367F85C1401A5B67A814 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = FF801CE6E69B00E7B9567C0F /* Project object */;
+			containerPortal = C3A131460AB7C2B3AE306799 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B2D44811B172DB304F6B9129;
+			remoteGlobalIDString = 17CFAEA19B20C6FE1A0A77EF;
 			remoteInfo = "Pods-TheHackTests-MDCSwipeToChoose";
-		};
-		C903E36CE28EB4CC41BE4FAC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FF801CE6E69B00E7B9567C0F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8625AECDBEA208CE8522C5A4;
-			remoteInfo = "Pods-TheHack-MDCSwipeToChoose";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00492FA80A0DE81E171454C4 /* Pods-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
-		013690661BD22685E9156A0D /* MDCSwipeToChooseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseView.m; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.m; sourceTree = "<group>"; };
-		0288481BC0445C837D7F24D7 /* MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChoose.h; path = MDCSwipeToChoose/Public/MDCSwipeToChoose.h; sourceTree = "<group>"; };
-		0447D892E381466FB42EB4A1 /* Pods-TheHackTests-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TheHackTests-MDCSwipeToChoose-prefix.pch"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
-		056D02F1E15EBB6F399BB492 /* MDCSwipeOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.m; sourceTree = "<group>"; };
-		061C16D9DA4F1A3296751E8B /* MDCSwipeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeResult.h; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.h; sourceTree = "<group>"; };
-		067C69FD29C08A839E681D21 /* Pods-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
-		0AF8AB1EF075EA7546814B3A /* MDCSwipeToChooseDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseDelegate.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseDelegate.h; sourceTree = "<group>"; };
-		0C6EA28C408FFEAA02888F43 /* Pods-TheHackTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheHackTests-resources.sh"; sourceTree = "<group>"; };
-		1033B3BFDB6849BAEB86EFBA /* UIView+MDCBorderedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCBorderedLabel.m"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.m"; sourceTree = "<group>"; };
-		1B1DB46360DD127191872955 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		1E6DE25F735559A3CEAC2014 /* Pods-TheHack-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-TheHack-MDCSwipeToChoose-dummy.m"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
-		207DEF337A97A804A13DE1DD /* Pods-TheHack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheHack-acknowledgements.plist"; sourceTree = "<group>"; };
-		23A910BEABA2EC7728C6860C /* MDCGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCGeometry.m; path = MDCSwipeToChoose/Internal/MDCGeometry.m; sourceTree = "<group>"; };
-		245E352DC292DF73546CF638 /* UIColor+MDCRGB8Bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MDCRGB8Bit.h"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.h"; sourceTree = "<group>"; };
-		28444B895375C1AE4813B3F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		29D0C7E64663A08918A0C57E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3329B55D8B6E6D1747DF58CB /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		344C8724DB7152DBF9E59FAA /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		3650777630E10B97F62D3FCB /* MDCSwipeToChooseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseView.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.h; sourceTree = "<group>"; };
-		37550071DE55AB45731AAC03 /* libPods-TheHackTests-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHackTests-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AD37D541BED87D6E19F45B1 /* libPods-TheHackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FF36537E85304940C879FC6 /* Pods-TheHackTests-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHackTests-MDCSwipeToChoose.xcconfig"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
-		424BE099A06387DFDFB7F35F /* MDCSwipeDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeDirection.h; path = MDCSwipeToChoose/Public/State/MDCSwipeDirection.h; sourceTree = "<group>"; };
-		4665B085D4D215934FF017FF /* MDCSwipeOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.h; sourceTree = "<group>"; };
-		48C73BA4CD5C1D4056304217 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		492BCF8953AADF91C97C82E8 /* Pods-TheHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHackTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4B0404AF25D5EAD54989A6BE /* libPods-TheHack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52411C65396B12FFB2013B83 /* MDCViewState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCViewState.h; path = MDCSwipeToChoose/Internal/State/MDCViewState.h; sourceTree = "<group>"; };
-		592C04585EB4DDA61F5E4747 /* MDCPanState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPanState.h; path = MDCSwipeToChoose/Public/State/MDCPanState.h; sourceTree = "<group>"; };
-		596CD1F10C752743167E9873 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHack-MDCSwipeToChoose-Private.xcconfig"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
-		6297C649B0C800586E95C311 /* Pods-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
-		62B6A92718A5248343BD3F9E /* UIColor+MDCRGB8Bit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MDCRGB8Bit.m"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.m"; sourceTree = "<group>"; };
-		804ECD5EB6CFFEEA3AD61547 /* MDCPanState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPanState.m; path = MDCSwipeToChoose/Public/State/MDCPanState.m; sourceTree = "<group>"; };
-		8162DD122A7ADC90ADC03870 /* UIView+MDCBorderedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCBorderedLabel.h"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.h"; sourceTree = "<group>"; };
-		81D53F7F78B59E758515440E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		82CCC266EB2BDFC91C2C19A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		82D3218D3E7FF55A0ED7EF04 /* Pods-TheHack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheHack-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83BF525119812E5B0526A7AF /* libPods-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		85B649B1555812321F6678B6 /* Pods-TheHackTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheHackTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		85F90EF2DD109BAB04C848D3 /* Pods-TheHackTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheHackTests-environment.h"; sourceTree = "<group>"; };
-		8E0853897F6A07FD6C18A081 /* Pods-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
-		8E68B06A2B644B26B72B065B /* MDCViewState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCViewState.m; path = MDCSwipeToChoose/Internal/State/MDCViewState.m; sourceTree = "<group>"; };
-		9283A16E25FC696038E376D3 /* Pods-TheHack-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheHack-environment.h"; sourceTree = "<group>"; };
-		9C009577028CBB781082025F /* Pods-TheHack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheHack-resources.sh"; sourceTree = "<group>"; };
-		9FF76FE93201D3E0397BFB14 /* Pods-TheHack-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHack-MDCSwipeToChoose.xcconfig"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
-		A9E9073C1A461CDA31A4580E /* MDCSwipeToChooseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseViewOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.h; sourceTree = "<group>"; };
-		AB7BAE72ACF318D0E031420E /* libPods-TheHack-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHack-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B39AE70DB3806230469793DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BAE3E4246E5527A6A7F8F036 /* Pods-TheHack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheHack-dummy.m"; sourceTree = "<group>"; };
-		BFA1E3F9E3CB066C3589F2E2 /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCSwipeToChoose.h"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
-		C58A9FD985CAEF3ED562DBD6 /* Pods-TheHack-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TheHack-MDCSwipeToChoose-prefix.pch"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
-		CB2C3A3155E3A13E0F8480B7 /* Pods-TheHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHack.debug.xcconfig"; sourceTree = "<group>"; };
-		D4D733BD62DB1D83787018C1 /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCSwipeToChoose.m"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
-		D52EDBEEDE57F3A7D210D8F8 /* Pods-TheHackTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheHackTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D58B87F8F661295D7A3CC1BD /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
-		E280ADA3D91CD16A1AC41D0B /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
-		E280EC3040FCB16417415BCD /* MDCSwipeResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeResult.m; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.m; sourceTree = "<group>"; };
-		E78521FE43617862D2D6801B /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-TheHackTests-MDCSwipeToChoose-dummy.m"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
-		EB35B3C5E7CFF930C03CD250 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
-		EB92A9031F95D43EC5A0282C /* MDCGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCGeometry.h; path = MDCSwipeToChoose/Internal/MDCGeometry.h; sourceTree = "<group>"; };
-		EBF4A7842DFC092081AD8A82 /* Pods-TheHackTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheHackTests-dummy.m"; sourceTree = "<group>"; };
-		F3A4ECB5676C00F429E61D91 /* Pods-TheHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHackTests.release.xcconfig"; sourceTree = "<group>"; };
-		F614924E8A987B9326A2C391 /* MDCSwipeToChooseViewOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseViewOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.m; sourceTree = "<group>"; };
-		FF886731CEA98EBFFE208B86 /* Pods-TheHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHack.release.xcconfig"; sourceTree = "<group>"; };
+		0077E6D8A20171B601105479 /* MDCSwipeToChooseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseView.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.h; sourceTree = "<group>"; };
+		00ECDF21AA5C9F71FEEED2C2 /* UIView+MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCSwipeToChoose.h"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.h"; sourceTree = "<group>"; };
+		0293179505769DEBDBADCC47 /* MDCSwipeToChooseDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseDelegate.h; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseDelegate.h; sourceTree = "<group>"; };
+		03E2E809E0CE6405523EE933 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0486887ABBBEBC63856ABC48 /* MDCGeometry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCGeometry.m; path = MDCSwipeToChoose/Internal/MDCGeometry.m; sourceTree = "<group>"; };
+		0948F7FAFD03F572D9370444 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		132375787CF15114A535580C /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		14FE5BFEA9D4E48F51183D51 /* Pods-TheHack-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHack-MDCSwipeToChoose.xcconfig"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
+		18716BA686EA63658D6A081A /* MDCViewState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCViewState.m; path = MDCSwipeToChoose/Internal/State/MDCViewState.m; sourceTree = "<group>"; };
+		20BFFAF8242255D083E3E0B5 /* libPods-TheHack-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHack-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BD1378362FDCFE0E5E2B3D /* MDCViewState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCViewState.h; path = MDCSwipeToChoose/Internal/State/MDCViewState.h; sourceTree = "<group>"; };
+		23834E77D632BB25803AE603 /* MDCPanState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCPanState.m; path = MDCSwipeToChoose/Public/State/MDCPanState.m; sourceTree = "<group>"; };
+		25FFFA2657526F358057E0B4 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		292DFB25C56B7B8B1432A416 /* Pods-TheHack-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TheHack-MDCSwipeToChoose-prefix.pch"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
+		2D050C9564EF29933041BC36 /* MDCSwipeOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.m; sourceTree = "<group>"; };
+		2D2BDC465FA099A9A7AD7A69 /* libPods-TheHack.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHack.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		305823542ECB1CD8386F10A0 /* Pods-TheHackTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheHackTests-dummy.m"; sourceTree = "<group>"; };
+		318B5913E94A8B0285DA211E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3889903FF4E46D83F61F839A /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-TheHackTests-MDCSwipeToChoose-dummy.m"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
+		3B0A36353BC15BBFC10D3A10 /* MDCSwipeToChooseViewOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChooseViewOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.h; sourceTree = "<group>"; };
+		3F203D447BD6F30F82184BEA /* MDCGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCGeometry.h; path = MDCSwipeToChoose/Internal/MDCGeometry.h; sourceTree = "<group>"; };
+		418EE1E093533C91A161A4EB /* libPods-TheHackTests-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHackTests-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45F3616C0B16163AC95456A3 /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
+		485963636CB9EB28A8868718 /* Pods-TheHackTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheHackTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4EEFB971EA65FA908AD1E552 /* Pods-TheHack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHack.release.xcconfig"; sourceTree = "<group>"; };
+		4F4AB56BDD8AB13EB01D698E /* MDCSwipeResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeResult.m; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.m; sourceTree = "<group>"; };
+		51111E0D52F64482606BA4A4 /* Pods-TheHackTests-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-TheHackTests-MDCSwipeToChoose-prefix.pch"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
+		51A18C6E41CC53FDAD094B71 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		5539F93E27E1D73DC77A96EA /* UIColor+MDCRGB8Bit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+MDCRGB8Bit.h"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.h"; sourceTree = "<group>"; };
+		58D45411C76F3FF15C09B2CA /* Pods-TheHackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHackTests.release.xcconfig"; sourceTree = "<group>"; };
+		5B4844FD450BE62F0F1DD9B1 /* UIView+MDCBorderedLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+MDCBorderedLabel.h"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.h"; sourceTree = "<group>"; };
+		5C134DDF1D4D1BE2BB2051BC /* MDCPanState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCPanState.h; path = MDCSwipeToChoose/Public/State/MDCPanState.h; sourceTree = "<group>"; };
+		6727DE96693ADEE242538D99 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHack-MDCSwipeToChoose-Private.xcconfig"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
+		6C28ECF1976EA9F396D1FBEF /* libPods-TheHackTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHackTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6210003C0DA0BE64F404D8 /* Pods-TheHack-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheHack-resources.sh"; sourceTree = "<group>"; };
+		6FDCF54B2378DEE015C6CABC /* MDCSwipeResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeResult.h; path = MDCSwipeToChoose/Public/State/MDCSwipeResult.h; sourceTree = "<group>"; };
+		71CB247CA58977F2C8989A16 /* libPods-MDCSwipeToChoose.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MDCSwipeToChoose.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71F94388392CA35125D5004B /* Pods-TheHackTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHackTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7469ABC64B9162F85137158C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C2823E236F9B2033D76D138 /* Pods-TheHack-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TheHack-dummy.m"; sourceTree = "<group>"; };
+		837B8D5BC695762BA13D1AFA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		8A8054ABFCEAA576F41666D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BA786C55FD93D4BB2A921EE /* MDCSwipeToChooseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseView.m; path = MDCSwipeToChoose/Public/Views/MDCSwipeToChooseView.m; sourceTree = "<group>"; };
+		8E47EA892F0D0A99B3D7CE5E /* Pods-TheHack-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheHack-environment.h"; sourceTree = "<group>"; };
+		90AD9D7D768156CBD2651287 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		94EB0E99C480EDC6051543D7 /* Pods-TheHack-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheHack-acknowledgements.markdown"; sourceTree = "<group>"; };
+		979475EA315BB9EA0365F49C /* Pods-TheHack-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TheHack-acknowledgements.plist"; sourceTree = "<group>"; };
+		9B00B19454902565FB807AFE /* Pods-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
+		A5E0C31674FE896D72EEB65B /* Pods-TheHackTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TheHackTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AA4F1E7071F4DC5DE1A2F593 /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig"; sourceTree = "<group>"; };
+		B29D63B65FEA47021CA1118D /* MDCSwipeOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeOptions.h; path = MDCSwipeToChoose/Public/Options/MDCSwipeOptions.h; sourceTree = "<group>"; };
+		BAB68F86B5FDA4A1AC3633BA /* MDCSwipeToChoose.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeToChoose.h; path = MDCSwipeToChoose/Public/MDCSwipeToChoose.h; sourceTree = "<group>"; };
+		BF2A03E41808440EB1C1D4C2 /* Pods-TheHack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TheHack.debug.xcconfig"; sourceTree = "<group>"; };
+		C15D9637D1F78F95D99A1C94 /* Pods-TheHackTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TheHackTests-resources.sh"; sourceTree = "<group>"; };
+		C52828C5C58B014D13A70331 /* UIColor+MDCRGB8Bit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+MDCRGB8Bit.m"; path = "MDCSwipeToChoose/Internal/UIColor+MDCRGB8Bit.m"; sourceTree = "<group>"; };
+		CA9FBA75E3EED19D5D62B044 /* Pods-TheHackTests-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHackTests-MDCSwipeToChoose.xcconfig"; path = "../Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
+		CEA7E68DEB3BA24028149493 /* Pods-MDCSwipeToChoose.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MDCSwipeToChoose.xcconfig"; sourceTree = "<group>"; };
+		D4697294A77078377815BC82 /* Pods-TheHackTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TheHackTests-environment.h"; sourceTree = "<group>"; };
+		D72EDE77DBE03DC4182D323B /* MDCSwipeDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MDCSwipeDirection.h; path = MDCSwipeToChoose/Public/State/MDCSwipeDirection.h; sourceTree = "<group>"; };
+		D9EA305DDB0823E97B264B03 /* UIView+MDCSwipeToChoose.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCSwipeToChoose.m"; path = "MDCSwipeToChoose/Public/Views/UIView+MDCSwipeToChoose.m"; sourceTree = "<group>"; };
+		DA03ED9CA175BF7632C0876B /* Pods-MDCSwipeToChoose-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MDCSwipeToChoose-prefix.pch"; sourceTree = "<group>"; };
+		DF12A728394D57FD94FD7A25 /* UIView+MDCBorderedLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+MDCBorderedLabel.m"; path = "MDCSwipeToChoose/Internal/Views/UIView+MDCBorderedLabel.m"; sourceTree = "<group>"; };
+		E23C95B12138CCFE1AA94076 /* Pods-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
+		F186A21C1D34A2F16AB8121C /* Pods-TheHack-MDCSwipeToChoose-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-TheHack-MDCSwipeToChoose-dummy.m"; path = "../Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-dummy.m"; sourceTree = "<group>"; };
+		FB5B4E70302C33B4A6CDF16C /* MDCSwipeToChooseViewOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MDCSwipeToChooseViewOptions.m; path = MDCSwipeToChoose/Public/Options/MDCSwipeToChooseViewOptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00A91308F7447DF2955B3093 /* Frameworks */ = {
+		0058B715FDF980D76C189D38 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36A8583EBD787A7DBD73AA31 /* Foundation.framework in Frameworks */,
-				3518DEEFBB79338B78D10D92 /* UIKit.framework in Frameworks */,
+				B66E4FCFB6D32B77E7F2DF51 /* Foundation.framework in Frameworks */,
+				DEDCF94C191C4D1E4D488940 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		121A1D66CCA78848FCE87A21 /* Frameworks */ = {
+		3A75B1216E4DB4C6180CA1A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54AECE06583A437425617273 /* Foundation.framework in Frameworks */,
-				585F62C814BE484AE98C56AC /* UIKit.framework in Frameworks */,
+				73A7E58229C0C8024E853E7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2CB5301AFB3DB05D5EABBD2A /* Frameworks */ = {
+		85ADC22D439314C68509CAD0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B86E36088E3C1742E569F1E /* Foundation.framework in Frameworks */,
+				0B0D14185AE09463FECA7BAC /* Foundation.framework in Frameworks */,
+				C00E9DF939A61E63BE077CF2 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4246590041F3FB28C045256A /* Frameworks */ = {
+		DFB3484F58F913EBBC5385AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5118AB20D61123C4EBD19D7 /* Foundation.framework in Frameworks */,
-				8C464C6B095D0627127BF121 /* UIKit.framework in Frameworks */,
+				8C9642408F5007933278087F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A95EFBE79ECE858EE16E6A4 /* Frameworks */ = {
+		F386ECE65CE8F677D19A98DC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD800E409C946FF40193BEF5 /* Foundation.framework in Frameworks */,
+				B534A04963B4ADFA55C3D09A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E3BD8E8D26D2BD36E072462 /* Frameworks */ = {
+		FE154D5B1D402E5311898A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1C442CC1915FF40869356CB /* Foundation.framework in Frameworks */,
+				7A08FFAC96AC1A89D005D1FB /* Foundation.framework in Frameworks */,
+				9294812833AAFFB3F6D92BCE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2A2011C00625490C5738A4A6 /* Support Files */ = {
+		0379368A2A4EB5A3BC92F91B /* MDCSwipeToChoose */ = {
 			isa = PBXGroup;
 			children = (
-				8E0853897F6A07FD6C18A081 /* Pods-MDCSwipeToChoose.xcconfig */,
-				6297C649B0C800586E95C311 /* Pods-MDCSwipeToChoose-Private.xcconfig */,
-				00492FA80A0DE81E171454C4 /* Pods-MDCSwipeToChoose-dummy.m */,
-				067C69FD29C08A839E681D21 /* Pods-MDCSwipeToChoose-prefix.pch */,
-				9FF76FE93201D3E0397BFB14 /* Pods-TheHack-MDCSwipeToChoose.xcconfig */,
-				596CD1F10C752743167E9873 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */,
-				1E6DE25F735559A3CEAC2014 /* Pods-TheHack-MDCSwipeToChoose-dummy.m */,
-				C58A9FD985CAEF3ED562DBD6 /* Pods-TheHack-MDCSwipeToChoose-prefix.pch */,
-				3FF36537E85304940C879FC6 /* Pods-TheHackTests-MDCSwipeToChoose.xcconfig */,
-				D58B87F8F661295D7A3CC1BD /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */,
-				E78521FE43617862D2D6801B /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */,
-				0447D892E381466FB42EB4A1 /* Pods-TheHackTests-MDCSwipeToChoose-prefix.pch */,
+				3F203D447BD6F30F82184BEA /* MDCGeometry.h */,
+				0486887ABBBEBC63856ABC48 /* MDCGeometry.m */,
+				5C134DDF1D4D1BE2BB2051BC /* MDCPanState.h */,
+				23834E77D632BB25803AE603 /* MDCPanState.m */,
+				D72EDE77DBE03DC4182D323B /* MDCSwipeDirection.h */,
+				B29D63B65FEA47021CA1118D /* MDCSwipeOptions.h */,
+				2D050C9564EF29933041BC36 /* MDCSwipeOptions.m */,
+				6FDCF54B2378DEE015C6CABC /* MDCSwipeResult.h */,
+				4F4AB56BDD8AB13EB01D698E /* MDCSwipeResult.m */,
+				BAB68F86B5FDA4A1AC3633BA /* MDCSwipeToChoose.h */,
+				0293179505769DEBDBADCC47 /* MDCSwipeToChooseDelegate.h */,
+				0077E6D8A20171B601105479 /* MDCSwipeToChooseView.h */,
+				8BA786C55FD93D4BB2A921EE /* MDCSwipeToChooseView.m */,
+				3B0A36353BC15BBFC10D3A10 /* MDCSwipeToChooseViewOptions.h */,
+				FB5B4E70302C33B4A6CDF16C /* MDCSwipeToChooseViewOptions.m */,
+				21BD1378362FDCFE0E5E2B3D /* MDCViewState.h */,
+				18716BA686EA63658D6A081A /* MDCViewState.m */,
+				5539F93E27E1D73DC77A96EA /* UIColor+MDCRGB8Bit.h */,
+				C52828C5C58B014D13A70331 /* UIColor+MDCRGB8Bit.m */,
+				5B4844FD450BE62F0F1DD9B1 /* UIView+MDCBorderedLabel.h */,
+				DF12A728394D57FD94FD7A25 /* UIView+MDCBorderedLabel.m */,
+				00ECDF21AA5C9F71FEEED2C2 /* UIView+MDCSwipeToChoose.h */,
+				D9EA305DDB0823E97B264B03 /* UIView+MDCSwipeToChoose.m */,
+				4DAF40DD2E491BDC41DD7226 /* Support Files */,
+			);
+			path = MDCSwipeToChoose;
+			sourceTree = "<group>";
+		};
+		047F16A344B18321B642A653 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB80599E47107ED031D1E337 /* Pods */,
+				8E176EE4282CA306EC044039 /* Pods-TheHack */,
+				BE7CF3ADE6BD811BC9B94FB6 /* Pods-TheHackTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1059CC157D3841DEBF1EBA33 = {
+			isa = PBXGroup;
+			children = (
+				318B5913E94A8B0285DA211E /* Podfile */,
+				F91ACF24CF3BDB880BE592A8 /* Frameworks */,
+				A29859082C304FC5A3FDEF6D /* Pods */,
+				790FBEA53F45B8FF7A12483E /* Products */,
+				047F16A344B18321B642A653 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		4DAF40DD2E491BDC41DD7226 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7E68DEB3BA24028149493 /* Pods-MDCSwipeToChoose.xcconfig */,
+				9B00B19454902565FB807AFE /* Pods-MDCSwipeToChoose-Private.xcconfig */,
+				E23C95B12138CCFE1AA94076 /* Pods-MDCSwipeToChoose-dummy.m */,
+				DA03ED9CA175BF7632C0876B /* Pods-MDCSwipeToChoose-prefix.pch */,
+				14FE5BFEA9D4E48F51183D51 /* Pods-TheHack-MDCSwipeToChoose.xcconfig */,
+				6727DE96693ADEE242538D99 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */,
+				F186A21C1D34A2F16AB8121C /* Pods-TheHack-MDCSwipeToChoose-dummy.m */,
+				292DFB25C56B7B8B1432A416 /* Pods-TheHack-MDCSwipeToChoose-prefix.pch */,
+				CA9FBA75E3EED19D5D62B044 /* Pods-TheHackTests-MDCSwipeToChoose.xcconfig */,
+				AA4F1E7071F4DC5DE1A2F593 /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */,
+				3889903FF4E46D83F61F839A /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m */,
+				51111E0D52F64482606BA4A4 /* Pods-TheHackTests-MDCSwipeToChoose-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Pods-MDCSwipeToChoose";
 			sourceTree = "<group>";
 		};
-		35AE2C69810C820C470ED15A /* Pods-TheHackTests */ = {
+		790FBEA53F45B8FF7A12483E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D52EDBEEDE57F3A7D210D8F8 /* Pods-TheHackTests-acknowledgements.markdown */,
-				85B649B1555812321F6678B6 /* Pods-TheHackTests-acknowledgements.plist */,
-				EBF4A7842DFC092081AD8A82 /* Pods-TheHackTests-dummy.m */,
-				85F90EF2DD109BAB04C848D3 /* Pods-TheHackTests-environment.h */,
-				0C6EA28C408FFEAA02888F43 /* Pods-TheHackTests-resources.sh */,
-				492BCF8953AADF91C97C82E8 /* Pods-TheHackTests.debug.xcconfig */,
-				F3A4ECB5676C00F429E61D91 /* Pods-TheHackTests.release.xcconfig */,
+				8A8054ABFCEAA576F41666D1 /* libPods.a */,
+				71CB247CA58977F2C8989A16 /* libPods-MDCSwipeToChoose.a */,
+				2D2BDC465FA099A9A7AD7A69 /* libPods-TheHack.a */,
+				20BFFAF8242255D083E3E0B5 /* libPods-TheHack-MDCSwipeToChoose.a */,
+				6C28ECF1976EA9F396D1FBEF /* libPods-TheHackTests.a */,
+				418EE1E093533C91A161A4EB /* libPods-TheHackTests-MDCSwipeToChoose.a */,
 			);
-			name = "Pods-TheHackTests";
-			path = "Target Support Files/Pods-TheHackTests";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		4D3E71F60C1B085FB75859E0 /* Frameworks */ = {
+		8D9BDCF07E4595924C7F2742 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				A0E40303BDF4CC4BBB647927 /* iOS */,
+				7469ABC64B9162F85137158C /* Foundation.framework */,
+				03E2E809E0CE6405523EE933 /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		54BD7F14A017122A49144CA4 = {
+		8E176EE4282CA306EC044039 /* Pods-TheHack */ = {
 			isa = PBXGroup;
 			children = (
-				48C73BA4CD5C1D4056304217 /* Podfile */,
-				4D3E71F60C1B085FB75859E0 /* Frameworks */,
-				F32A2E39F47004F6C450ADF7 /* Pods */,
-				B04DE2ACF553BE21F735A6A6 /* Products */,
-				D63C41435CB9B6118738DE58 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		9917AD8C3266312EB857A250 /* Pods-TheHack */ = {
-			isa = PBXGroup;
-			children = (
-				82D3218D3E7FF55A0ED7EF04 /* Pods-TheHack-acknowledgements.markdown */,
-				207DEF337A97A804A13DE1DD /* Pods-TheHack-acknowledgements.plist */,
-				BAE3E4246E5527A6A7F8F036 /* Pods-TheHack-dummy.m */,
-				9283A16E25FC696038E376D3 /* Pods-TheHack-environment.h */,
-				9C009577028CBB781082025F /* Pods-TheHack-resources.sh */,
-				CB2C3A3155E3A13E0F8480B7 /* Pods-TheHack.debug.xcconfig */,
-				FF886731CEA98EBFFE208B86 /* Pods-TheHack.release.xcconfig */,
+				94EB0E99C480EDC6051543D7 /* Pods-TheHack-acknowledgements.markdown */,
+				979475EA315BB9EA0365F49C /* Pods-TheHack-acknowledgements.plist */,
+				7C2823E236F9B2033D76D138 /* Pods-TheHack-dummy.m */,
+				8E47EA892F0D0A99B3D7CE5E /* Pods-TheHack-environment.h */,
+				6E6210003C0DA0BE64F404D8 /* Pods-TheHack-resources.sh */,
+				BF2A03E41808440EB1C1D4C2 /* Pods-TheHack.debug.xcconfig */,
+				4EEFB971EA65FA908AD1E552 /* Pods-TheHack.release.xcconfig */,
 			);
 			name = "Pods-TheHack";
 			path = "Target Support Files/Pods-TheHack";
 			sourceTree = "<group>";
 		};
-		A0E40303BDF4CC4BBB647927 /* iOS */ = {
+		A29859082C304FC5A3FDEF6D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				29D0C7E64663A08918A0C57E /* Foundation.framework */,
-				28444B895375C1AE4813B3F2 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		B04DE2ACF553BE21F735A6A6 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B39AE70DB3806230469793DE /* libPods.a */,
-				83BF525119812E5B0526A7AF /* libPods-MDCSwipeToChoose.a */,
-				4B0404AF25D5EAD54989A6BE /* libPods-TheHack.a */,
-				AB7BAE72ACF318D0E031420E /* libPods-TheHack-MDCSwipeToChoose.a */,
-				3AD37D541BED87D6E19F45B1 /* libPods-TheHackTests.a */,
-				37550071DE55AB45731AAC03 /* libPods-TheHackTests-MDCSwipeToChoose.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C0B008C4BC5C770CD7CB83EC /* MDCSwipeToChoose */ = {
-			isa = PBXGroup;
-			children = (
-				EB92A9031F95D43EC5A0282C /* MDCGeometry.h */,
-				23A910BEABA2EC7728C6860C /* MDCGeometry.m */,
-				592C04585EB4DDA61F5E4747 /* MDCPanState.h */,
-				804ECD5EB6CFFEEA3AD61547 /* MDCPanState.m */,
-				424BE099A06387DFDFB7F35F /* MDCSwipeDirection.h */,
-				4665B085D4D215934FF017FF /* MDCSwipeOptions.h */,
-				056D02F1E15EBB6F399BB492 /* MDCSwipeOptions.m */,
-				061C16D9DA4F1A3296751E8B /* MDCSwipeResult.h */,
-				E280EC3040FCB16417415BCD /* MDCSwipeResult.m */,
-				0288481BC0445C837D7F24D7 /* MDCSwipeToChoose.h */,
-				0AF8AB1EF075EA7546814B3A /* MDCSwipeToChooseDelegate.h */,
-				3650777630E10B97F62D3FCB /* MDCSwipeToChooseView.h */,
-				013690661BD22685E9156A0D /* MDCSwipeToChooseView.m */,
-				A9E9073C1A461CDA31A4580E /* MDCSwipeToChooseViewOptions.h */,
-				F614924E8A987B9326A2C391 /* MDCSwipeToChooseViewOptions.m */,
-				52411C65396B12FFB2013B83 /* MDCViewState.h */,
-				8E68B06A2B644B26B72B065B /* MDCViewState.m */,
-				245E352DC292DF73546CF638 /* UIColor+MDCRGB8Bit.h */,
-				62B6A92718A5248343BD3F9E /* UIColor+MDCRGB8Bit.m */,
-				8162DD122A7ADC90ADC03870 /* UIView+MDCBorderedLabel.h */,
-				1033B3BFDB6849BAEB86EFBA /* UIView+MDCBorderedLabel.m */,
-				BFA1E3F9E3CB066C3589F2E2 /* UIView+MDCSwipeToChoose.h */,
-				D4D733BD62DB1D83787018C1 /* UIView+MDCSwipeToChoose.m */,
-				2A2011C00625490C5738A4A6 /* Support Files */,
-			);
-			path = MDCSwipeToChoose;
-			sourceTree = "<group>";
-		};
-		D63C41435CB9B6118738DE58 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F85949E3BA874F2474383503 /* Pods */,
-				9917AD8C3266312EB857A250 /* Pods-TheHack */,
-				35AE2C69810C820C470ED15A /* Pods-TheHackTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F32A2E39F47004F6C450ADF7 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C0B008C4BC5C770CD7CB83EC /* MDCSwipeToChoose */,
+				0379368A2A4EB5A3BC92F91B /* MDCSwipeToChoose */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		F85949E3BA874F2474383503 /* Pods */ = {
+		BE7CF3ADE6BD811BC9B94FB6 /* Pods-TheHackTests */ = {
 			isa = PBXGroup;
 			children = (
-				3329B55D8B6E6D1747DF58CB /* Pods-acknowledgements.markdown */,
-				344C8724DB7152DBF9E59FAA /* Pods-acknowledgements.plist */,
-				EB35B3C5E7CFF930C03CD250 /* Pods-dummy.m */,
-				E280ADA3D91CD16A1AC41D0B /* Pods-environment.h */,
-				1B1DB46360DD127191872955 /* Pods-resources.sh */,
-				81D53F7F78B59E758515440E /* Pods.debug.xcconfig */,
-				82CCC266EB2BDFC91C2C19A2 /* Pods.release.xcconfig */,
+				A5E0C31674FE896D72EEB65B /* Pods-TheHackTests-acknowledgements.markdown */,
+				485963636CB9EB28A8868718 /* Pods-TheHackTests-acknowledgements.plist */,
+				305823542ECB1CD8386F10A0 /* Pods-TheHackTests-dummy.m */,
+				D4697294A77078377815BC82 /* Pods-TheHackTests-environment.h */,
+				C15D9637D1F78F95D99A1C94 /* Pods-TheHackTests-resources.sh */,
+				71F94388392CA35125D5004B /* Pods-TheHackTests.debug.xcconfig */,
+				58D45411C76F3FF15C09B2CA /* Pods-TheHackTests.release.xcconfig */,
+			);
+			name = "Pods-TheHackTests";
+			path = "Target Support Files/Pods-TheHackTests";
+			sourceTree = "<group>";
+		};
+		EB80599E47107ED031D1E337 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25FFFA2657526F358057E0B4 /* Pods-acknowledgements.markdown */,
+				0948F7FAFD03F572D9370444 /* Pods-acknowledgements.plist */,
+				132375787CF15114A535580C /* Pods-dummy.m */,
+				45F3616C0B16163AC95456A3 /* Pods-environment.h */,
+				837B8D5BC695762BA13D1AFA /* Pods-resources.sh */,
+				90AD9D7D768156CBD2651287 /* Pods.debug.xcconfig */,
+				51A18C6E41CC53FDAD094B71 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		F91ACF24CF3BDB880BE592A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D9BDCF07E4595924C7F2742 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3A246F77CB2718CAEFDDFBF9 /* Headers */ = {
+		89769445D90CEB4870FD49F7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48C0EF0E8AC6811ABDA07924 /* MDCGeometry.h in Headers */,
-				247E80245DD14063ACD1DCB6 /* MDCPanState.h in Headers */,
-				8D4C7129CD2462AD79F2B74B /* MDCSwipeDirection.h in Headers */,
-				E7EE354327E4E3BA6EB3D30B /* MDCSwipeOptions.h in Headers */,
-				A6476ECA0EE9B8C5852C44CD /* MDCSwipeResult.h in Headers */,
-				ACE77F3C82429DEBB76DD5CE /* MDCSwipeToChoose.h in Headers */,
-				E31F342F3DF336FD5344FFE8 /* MDCSwipeToChooseDelegate.h in Headers */,
-				D88937E58CD486057CEE81E0 /* MDCSwipeToChooseView.h in Headers */,
-				D1FB7AE7FE2D5301402D790F /* MDCSwipeToChooseViewOptions.h in Headers */,
-				3E92161B93CAE54BECF59663 /* MDCViewState.h in Headers */,
-				BFDDD048CF99942757A136A2 /* UIColor+MDCRGB8Bit.h in Headers */,
-				F2A5E0650B53D4EF08C080E6 /* UIView+MDCBorderedLabel.h in Headers */,
-				DF151ED2D2B86EC9E61EE131 /* UIView+MDCSwipeToChoose.h in Headers */,
+				7E77CBFC1984371435584EE1 /* MDCGeometry.h in Headers */,
+				32FB33E2934AC1C86E9492AF /* MDCPanState.h in Headers */,
+				91CC9827D5C63DAEB267EBA4 /* MDCSwipeDirection.h in Headers */,
+				C18791D524B7BA099393B23A /* MDCSwipeOptions.h in Headers */,
+				0423E04976A330ED0B80338F /* MDCSwipeResult.h in Headers */,
+				4F2B8FB6C365FBB18AC65255 /* MDCSwipeToChoose.h in Headers */,
+				9EF22C96DC216D0E89C53B44 /* MDCSwipeToChooseDelegate.h in Headers */,
+				2A64926475F72780C5250256 /* MDCSwipeToChooseView.h in Headers */,
+				1714AA5F420264E0F944D6DF /* MDCSwipeToChooseViewOptions.h in Headers */,
+				CAB7F0B7E52509E34A73F4A1 /* MDCViewState.h in Headers */,
+				4D148837F8D98967D337AC94 /* UIColor+MDCRGB8Bit.h in Headers */,
+				A9669D53FBA9E6899B056F81 /* UIView+MDCBorderedLabel.h in Headers */,
+				5AD65791ECA6F8885150D0D9 /* UIView+MDCSwipeToChoose.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3D8429C645F18BA1ED0E21A4 /* Headers */ = {
+		98AAA0DA9AC02846DAB60BC4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D55A0805B4BF23F744A4F85 /* MDCGeometry.h in Headers */,
-				49F1B8EFC54AFA89190C6864 /* MDCPanState.h in Headers */,
-				0495389590EFE8EBA5DA111C /* MDCSwipeDirection.h in Headers */,
-				F96F8D66E84E4C3CC2C57A0C /* MDCSwipeOptions.h in Headers */,
-				D491864DA0E741BCF8B54D99 /* MDCSwipeResult.h in Headers */,
-				5C2224081856B9B9620140D7 /* MDCSwipeToChoose.h in Headers */,
-				47A961EBBFED2A20A256394E /* MDCSwipeToChooseDelegate.h in Headers */,
-				BD6805296C2E9B9949CA1661 /* MDCSwipeToChooseView.h in Headers */,
-				DDAB66CCE02EBC786CAF685E /* MDCSwipeToChooseViewOptions.h in Headers */,
-				3B9031ADBC4D0F2276968468 /* MDCViewState.h in Headers */,
-				ED0A65CC833DB65952760F7F /* UIColor+MDCRGB8Bit.h in Headers */,
-				5998D17464F2A7BA137365E5 /* UIView+MDCBorderedLabel.h in Headers */,
-				CF8B19E295A78FCDC83E2679 /* UIView+MDCSwipeToChoose.h in Headers */,
+				405F772DE5AAD6CF6A182B44 /* MDCGeometry.h in Headers */,
+				7A4A7EF58A40AF03A4592EED /* MDCPanState.h in Headers */,
+				29D7E35198DBB9146C919742 /* MDCSwipeDirection.h in Headers */,
+				A21E1E6BACBC8404EB655476 /* MDCSwipeOptions.h in Headers */,
+				CE20D63AD09CE4F1B5737617 /* MDCSwipeResult.h in Headers */,
+				393F6C2410147A5B14DB68F2 /* MDCSwipeToChoose.h in Headers */,
+				917D639EC2224DD9DF1E557F /* MDCSwipeToChooseDelegate.h in Headers */,
+				9A9AA8A6B55AF98D852EA4EC /* MDCSwipeToChooseView.h in Headers */,
+				01DE7EB5F3896C7AEE0AB809 /* MDCSwipeToChooseViewOptions.h in Headers */,
+				8FA08A92F38B6A77C0E8AC99 /* MDCViewState.h in Headers */,
+				C52DD2C36168855B1CF19312 /* UIColor+MDCRGB8Bit.h in Headers */,
+				FA8461ADFC821FEF7EC97ED7 /* UIView+MDCBorderedLabel.h in Headers */,
+				1B820ED0839CA61EB0D65FFB /* UIView+MDCSwipeToChoose.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56F2BE1814297BCCE9E1725A /* Headers */ = {
+		B2BDAEC971AF173374A100A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6A025755AA8B24846028AC6 /* MDCGeometry.h in Headers */,
-				0B6A0D86393A127EF21679F9 /* MDCPanState.h in Headers */,
-				098C09595C49D5EC55D1E1F1 /* MDCSwipeDirection.h in Headers */,
-				04B24862D9D23F90F11FE4BC /* MDCSwipeOptions.h in Headers */,
-				3BF3BFD2981398EE71058CEB /* MDCSwipeResult.h in Headers */,
-				979B7B62B6F349B848280BC2 /* MDCSwipeToChoose.h in Headers */,
-				2033E04C2A1810515364F615 /* MDCSwipeToChooseDelegate.h in Headers */,
-				0C1D049C749A3EAB3C1729AC /* MDCSwipeToChooseView.h in Headers */,
-				AFF74521C34BE7F92BCEB997 /* MDCSwipeToChooseViewOptions.h in Headers */,
-				F547FC006076CFA35D662394 /* MDCViewState.h in Headers */,
-				46E713F56B89C4E8A9C1D996 /* UIColor+MDCRGB8Bit.h in Headers */,
-				85F4A368C9486D5082508D3D /* UIView+MDCBorderedLabel.h in Headers */,
-				F6E3998A0F95D66CEE96F65D /* UIView+MDCSwipeToChoose.h in Headers */,
+				CE3D85F94A4F302461D07E96 /* MDCGeometry.h in Headers */,
+				84C2C210BA43A2B1375ED946 /* MDCPanState.h in Headers */,
+				BF3C232932FB050652521EE9 /* MDCSwipeDirection.h in Headers */,
+				0DF14EF04C936BA471CCEC53 /* MDCSwipeOptions.h in Headers */,
+				24A9F8F85919607E690970BE /* MDCSwipeResult.h in Headers */,
+				4125F64B32F7300556890C48 /* MDCSwipeToChoose.h in Headers */,
+				2B7DBA9FED4F72A871D319C8 /* MDCSwipeToChooseDelegate.h in Headers */,
+				4E403D67968B38B5A56E8C11 /* MDCSwipeToChooseView.h in Headers */,
+				12216B259917D2B35BABABF4 /* MDCSwipeToChooseViewOptions.h in Headers */,
+				19E160DDB9EAD74B5F925D91 /* MDCViewState.h in Headers */,
+				58B8CD7B247CCAD07733F666 /* UIColor+MDCRGB8Bit.h in Headers */,
+				D73DB72B6DC1DE2240F52F81 /* UIView+MDCBorderedLabel.h in Headers */,
+				E29C9D667DF28D8729AF7C28 /* UIView+MDCSwipeToChoose.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1EC244A65A69E6857C1083DB /* Pods */ = {
+		06E1414D81F7A02C37378190 /* Pods-TheHackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58F18A569CC9AB04893CEE3B /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildConfigurationList = 99DF2E70BF7340A1A0428966 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests" */;
 			buildPhases = (
-				8C7FB40BCF12B48F6A0D79E6 /* Sources */,
-				5A95EFBE79ECE858EE16E6A4 /* Frameworks */,
+				5B45441B8E45C62BB8E56957 /* Sources */,
+				DFB3484F58F913EBBC5385AB /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1701FB8A41775E438E62A393 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = B39AE70DB3806230469793DE /* libPods.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		5B78DE2C4395B343472A286A /* Pods-MDCSwipeToChoose */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA08AE48B8F1117BB0C82B1E /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */;
-			buildPhases = (
-				3E474C96A6E66ACD3709A7C4 /* Sources */,
-				121A1D66CCA78848FCE87A21 /* Frameworks */,
-				56F2BE1814297BCCE9E1725A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-MDCSwipeToChoose";
-			productName = "Pods-MDCSwipeToChoose";
-			productReference = 83BF525119812E5B0526A7AF /* libPods-MDCSwipeToChoose.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		6F6B4E4B172979CB08CB73A7 /* Pods-TheHack */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5ECD4E358028C1A27AF72BC /* Build configuration list for PBXNativeTarget "Pods-TheHack" */;
-			buildPhases = (
-				2D1145F39DFC321A05D15F74 /* Sources */,
-				2CB5301AFB3DB05D5EABBD2A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2A6780BC0B5DE615713AD52B /* PBXTargetDependency */,
-			);
-			name = "Pods-TheHack";
-			productName = "Pods-TheHack";
-			productReference = 4B0404AF25D5EAD54989A6BE /* libPods-TheHack.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8625AECDBEA208CE8522C5A4 /* Pods-TheHack-MDCSwipeToChoose */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F15373C70C7B40C21B854E2B /* Build configuration list for PBXNativeTarget "Pods-TheHack-MDCSwipeToChoose" */;
-			buildPhases = (
-				7741F77BD3EC91C66603DB46 /* Sources */,
-				00A91308F7447DF2955B3093 /* Frameworks */,
-				3D8429C645F18BA1ED0E21A4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-TheHack-MDCSwipeToChoose";
-			productName = "Pods-TheHack-MDCSwipeToChoose";
-			productReference = AB7BAE72ACF318D0E031420E /* libPods-TheHack-MDCSwipeToChoose.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		9893B3EF4C28A5D608CAC366 /* Pods-TheHackTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0BD266706815B523B3678DD0 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests" */;
-			buildPhases = (
-				34345022E0596821BF8EDAA2 /* Sources */,
-				7E3BD8E8D26D2BD36E072462 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4047F5868C8DB22A234122E1 /* PBXTargetDependency */,
+				42548244B6E0C0F9FE84B0D0 /* PBXTargetDependency */,
 			);
 			name = "Pods-TheHackTests";
 			productName = "Pods-TheHackTests";
-			productReference = 3AD37D541BED87D6E19F45B1 /* libPods-TheHackTests.a */;
+			productReference = 6C28ECF1976EA9F396D1FBEF /* libPods-TheHackTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B2D44811B172DB304F6B9129 /* Pods-TheHackTests-MDCSwipeToChoose */ = {
+		17CFAEA19B20C6FE1A0A77EF /* Pods-TheHackTests-MDCSwipeToChoose */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C4DB2D13A860F41BAE7D27D /* Build configuration list for PBXNativeTarget "Pods-TheHackTests-MDCSwipeToChoose" */;
+			buildConfigurationList = 65F6E59288C92068DC2F69F2 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests-MDCSwipeToChoose" */;
 			buildPhases = (
-				C7378D40BD80EE3304240578 /* Sources */,
-				4246590041F3FB28C045256A /* Frameworks */,
-				3A246F77CB2718CAEFDDFBF9 /* Headers */,
+				743063F4B31871AF64F4DCB7 /* Sources */,
+				FE154D5B1D402E5311898A17 /* Frameworks */,
+				98AAA0DA9AC02846DAB60BC4 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -560,143 +492,291 @@
 			);
 			name = "Pods-TheHackTests-MDCSwipeToChoose";
 			productName = "Pods-TheHackTests-MDCSwipeToChoose";
-			productReference = 37550071DE55AB45731AAC03 /* libPods-TheHackTests-MDCSwipeToChoose.a */;
+			productReference = 418EE1E093533C91A161A4EB /* libPods-TheHackTests-MDCSwipeToChoose.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7EECB6E4B97AEA1EDF7F80A4 /* Pods-MDCSwipeToChoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63A750E6D67B7A5FAABE10FB /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */;
+			buildPhases = (
+				C93BE1639D5198C4970E5FFC /* Sources */,
+				0058B715FDF980D76C189D38 /* Frameworks */,
+				89769445D90CEB4870FD49F7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-MDCSwipeToChoose";
+			productName = "Pods-MDCSwipeToChoose";
+			productReference = 71CB247CA58977F2C8989A16 /* libPods-MDCSwipeToChoose.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BA48485FCC86BB35AFA8617B /* Pods-TheHack-MDCSwipeToChoose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DE499A0360F2BD344AABFE /* Build configuration list for PBXNativeTarget "Pods-TheHack-MDCSwipeToChoose" */;
+			buildPhases = (
+				9EB17A4C007FA81699FD9C6E /* Sources */,
+				85ADC22D439314C68509CAD0 /* Frameworks */,
+				B2BDAEC971AF173374A100A7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TheHack-MDCSwipeToChoose";
+			productName = "Pods-TheHack-MDCSwipeToChoose";
+			productReference = 20BFFAF8242255D083E3E0B5 /* libPods-TheHack-MDCSwipeToChoose.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D83A81B3603C0801FDBEAD33 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 866CEF31A2DBDC3AAFEA339E /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				7839A8C4BEFC2968B0ADB353 /* Sources */,
+				F386ECE65CE8F677D19A98DC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D80257620A54673C6C4DF6A /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 8A8054ABFCEAA576F41666D1 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EBD2B8CC3DA52C647F76E0C7 /* Pods-TheHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF8E2E91307E91147609CEDA /* Build configuration list for PBXNativeTarget "Pods-TheHack" */;
+			buildPhases = (
+				D82542E0F38C387FE107FDAD /* Sources */,
+				3A75B1216E4DB4C6180CA1A2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D484FAA80D390926CC197167 /* PBXTargetDependency */,
+			);
+			name = "Pods-TheHack";
+			productName = "Pods-TheHack";
+			productReference = 2D2BDC465FA099A9A7AD7A69 /* libPods-TheHack.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FF801CE6E69B00E7B9567C0F /* Project object */ = {
+		C3A131460AB7C2B3AE306799 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 			};
-			buildConfigurationList = 79208D5FDC2A777E2F7480A6 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = EEF6BFC318D913F24904AD3C /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 54BD7F14A017122A49144CA4;
-			productRefGroup = B04DE2ACF553BE21F735A6A6 /* Products */;
+			mainGroup = 1059CC157D3841DEBF1EBA33;
+			productRefGroup = 790FBEA53F45B8FF7A12483E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EC244A65A69E6857C1083DB /* Pods */,
-				5B78DE2C4395B343472A286A /* Pods-MDCSwipeToChoose */,
-				6F6B4E4B172979CB08CB73A7 /* Pods-TheHack */,
-				8625AECDBEA208CE8522C5A4 /* Pods-TheHack-MDCSwipeToChoose */,
-				9893B3EF4C28A5D608CAC366 /* Pods-TheHackTests */,
-				B2D44811B172DB304F6B9129 /* Pods-TheHackTests-MDCSwipeToChoose */,
+				D83A81B3603C0801FDBEAD33 /* Pods */,
+				7EECB6E4B97AEA1EDF7F80A4 /* Pods-MDCSwipeToChoose */,
+				EBD2B8CC3DA52C647F76E0C7 /* Pods-TheHack */,
+				BA48485FCC86BB35AFA8617B /* Pods-TheHack-MDCSwipeToChoose */,
+				06E1414D81F7A02C37378190 /* Pods-TheHackTests */,
+				17CFAEA19B20C6FE1A0A77EF /* Pods-TheHackTests-MDCSwipeToChoose */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2D1145F39DFC321A05D15F74 /* Sources */ = {
+		5B45441B8E45C62BB8E56957 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E0E34DA361EF6E63A16EFFF /* Pods-TheHack-dummy.m in Sources */,
+				85A31744FF01C323A5FFF985 /* Pods-TheHackTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		34345022E0596821BF8EDAA2 /* Sources */ = {
+		743063F4B31871AF64F4DCB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5D60CD75FFE9C7D8BAC2E2A /* Pods-TheHackTests-dummy.m in Sources */,
+				508DBE7604428D6B18CE4FCC /* MDCGeometry.m in Sources */,
+				268CF9832F7F223D0D7B6539 /* MDCPanState.m in Sources */,
+				B534635AB054B4E4BD570944 /* MDCSwipeOptions.m in Sources */,
+				DBEC5BC1C1CFD0D03ABE920D /* MDCSwipeResult.m in Sources */,
+				7BBEC0C5D492A72DDC4ACA52 /* MDCSwipeToChooseView.m in Sources */,
+				452CAA418E5D3D6E708E80E7 /* MDCSwipeToChooseViewOptions.m in Sources */,
+				E07D4740AA74B905E1683AF4 /* MDCViewState.m in Sources */,
+				E07F57D30CA5371385A68854 /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m in Sources */,
+				74395CDA9A4449192D272DC7 /* UIColor+MDCRGB8Bit.m in Sources */,
+				D6301990EA9B9B128E92AA6E /* UIView+MDCBorderedLabel.m in Sources */,
+				2709A6E0BF9B963D9433E5F7 /* UIView+MDCSwipeToChoose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3E474C96A6E66ACD3709A7C4 /* Sources */ = {
+		7839A8C4BEFC2968B0ADB353 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57A45261DD2929F4B022CDC8 /* MDCGeometry.m in Sources */,
-				96D97A08FA5234F718248328 /* MDCPanState.m in Sources */,
-				46956257C34DB888B9EB8B20 /* MDCSwipeOptions.m in Sources */,
-				945CA71EE51BED9AB46B4927 /* MDCSwipeResult.m in Sources */,
-				CA5E8FB94333AA6FF7D65B37 /* MDCSwipeToChooseView.m in Sources */,
-				BC8C733BE169BDC1AF9AA2A9 /* MDCSwipeToChooseViewOptions.m in Sources */,
-				11A4101A71D865FB8852561F /* MDCViewState.m in Sources */,
-				7037A51F4DBA28A63FE2A27E /* Pods-MDCSwipeToChoose-dummy.m in Sources */,
-				FD2CD59B6D1547895990BA24 /* UIColor+MDCRGB8Bit.m in Sources */,
-				86567464CCB684A5AAF59CFE /* UIView+MDCBorderedLabel.m in Sources */,
-				2253E9B228563E0BDD3CDF9D /* UIView+MDCSwipeToChoose.m in Sources */,
+				D91A2845242702A8E5E4F89E /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7741F77BD3EC91C66603DB46 /* Sources */ = {
+		9EB17A4C007FA81699FD9C6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8D26B84A5E62F66EC32EDB /* MDCGeometry.m in Sources */,
-				2A16B5D8D74D5E3F9FD2694B /* MDCPanState.m in Sources */,
-				8334A0A8AA721F3ADE6B9C70 /* MDCSwipeOptions.m in Sources */,
-				79E503EB974BD4A015BB8EC7 /* MDCSwipeResult.m in Sources */,
-				BAE0A9C6330BAC1BF4FAAE89 /* MDCSwipeToChooseView.m in Sources */,
-				42FB17735B733343EDBF6A1A /* MDCSwipeToChooseViewOptions.m in Sources */,
-				280B96ED41B8312F406254F0 /* MDCViewState.m in Sources */,
-				A2C2ED7509795AC3EBE5531D /* Pods-TheHack-MDCSwipeToChoose-dummy.m in Sources */,
-				0FBF832C327CA2DC793BE414 /* UIColor+MDCRGB8Bit.m in Sources */,
-				C8689AC3CEB598418A647854 /* UIView+MDCBorderedLabel.m in Sources */,
-				37460AC01E92FC8F21386E37 /* UIView+MDCSwipeToChoose.m in Sources */,
+				4949D7FA811F32F68AAC2587 /* MDCGeometry.m in Sources */,
+				207DD039FAA7CA9E5277E3F5 /* MDCPanState.m in Sources */,
+				0AAC94679ECEB10E5481B6DF /* MDCSwipeOptions.m in Sources */,
+				04C7CDD953232E8C7F0E09D8 /* MDCSwipeResult.m in Sources */,
+				C18BDC25884C2DE9B5AE554F /* MDCSwipeToChooseView.m in Sources */,
+				EC347D2949DBDA5E8A0C226F /* MDCSwipeToChooseViewOptions.m in Sources */,
+				8BC1D8B10CB1972D65E2568E /* MDCViewState.m in Sources */,
+				0B58CF9003C8B770CF48B0C8 /* Pods-TheHack-MDCSwipeToChoose-dummy.m in Sources */,
+				5DD1BCCBA59FD320BE718FAB /* UIColor+MDCRGB8Bit.m in Sources */,
+				8C51A7F5CAB8D2B212E0C16A /* UIView+MDCBorderedLabel.m in Sources */,
+				830C4339D18F09287CC94926 /* UIView+MDCSwipeToChoose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C7FB40BCF12B48F6A0D79E6 /* Sources */ = {
+		C93BE1639D5198C4970E5FFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BE986E3C3E52993CC6D665C /* Pods-dummy.m in Sources */,
+				53C6D1C58466E5C91F5F15A7 /* MDCGeometry.m in Sources */,
+				00B0AEDF1E259EF7B7D8FDC8 /* MDCPanState.m in Sources */,
+				D7348730314E06246EA19D2D /* MDCSwipeOptions.m in Sources */,
+				44B52F8CC71352C4C5C8A318 /* MDCSwipeResult.m in Sources */,
+				2F7112B72EF5DFD3E801DA51 /* MDCSwipeToChooseView.m in Sources */,
+				D67ED9875D59A836685F5A0E /* MDCSwipeToChooseViewOptions.m in Sources */,
+				BF7905D9BAD927EFDE43BFF3 /* MDCViewState.m in Sources */,
+				762F3E0AD3B253DC74119495 /* Pods-MDCSwipeToChoose-dummy.m in Sources */,
+				635514CBCFCFFC299EDBCF36 /* UIColor+MDCRGB8Bit.m in Sources */,
+				B852587009679D3D0A902413 /* UIView+MDCBorderedLabel.m in Sources */,
+				3046BB375AD3421B0F3F5364 /* UIView+MDCSwipeToChoose.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C7378D40BD80EE3304240578 /* Sources */ = {
+		D82542E0F38C387FE107FDAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A1AC2E940C0F726ACB41FC2 /* MDCGeometry.m in Sources */,
-				3A991841D6F1A93EAEFC35E9 /* MDCPanState.m in Sources */,
-				BEDBEEC4B4F72CEE07EB03BA /* MDCSwipeOptions.m in Sources */,
-				94752247A520C231E250BE84 /* MDCSwipeResult.m in Sources */,
-				DBAB55F2D16F4056AFC9ED4E /* MDCSwipeToChooseView.m in Sources */,
-				EA0963DC2AD74A911153E08B /* MDCSwipeToChooseViewOptions.m in Sources */,
-				219EDB6C0CA2605C42F11748 /* MDCViewState.m in Sources */,
-				47D82AC6A0E62A1C881F0215 /* Pods-TheHackTests-MDCSwipeToChoose-dummy.m in Sources */,
-				C34E1534EB07BBC8D527C836 /* UIColor+MDCRGB8Bit.m in Sources */,
-				DFF90A030257580E64A00993 /* UIView+MDCBorderedLabel.m in Sources */,
-				F938FEF63D8E97A373C82DB0 /* UIView+MDCSwipeToChoose.m in Sources */,
+				06DE6FAB13A9B77522A66554 /* Pods-TheHack-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1701FB8A41775E438E62A393 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-MDCSwipeToChoose";
-			target = 5B78DE2C4395B343472A286A /* Pods-MDCSwipeToChoose */;
-			targetProxy = 3778B939F0950525CB85DDD6 /* PBXContainerItemProxy */;
-		};
-		2A6780BC0B5DE615713AD52B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-TheHack-MDCSwipeToChoose";
-			target = 8625AECDBEA208CE8522C5A4 /* Pods-TheHack-MDCSwipeToChoose */;
-			targetProxy = C903E36CE28EB4CC41BE4FAC /* PBXContainerItemProxy */;
-		};
-		4047F5868C8DB22A234122E1 /* PBXTargetDependency */ = {
+		42548244B6E0C0F9FE84B0D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TheHackTests-MDCSwipeToChoose";
-			target = B2D44811B172DB304F6B9129 /* Pods-TheHackTests-MDCSwipeToChoose */;
-			targetProxy = 8A1BDB649A416E2B97268F9A /* PBXContainerItemProxy */;
+			target = 17CFAEA19B20C6FE1A0A77EF /* Pods-TheHackTests-MDCSwipeToChoose */;
+			targetProxy = EB8C367F85C1401A5B67A814 /* PBXContainerItemProxy */;
+		};
+		8D80257620A54673C6C4DF6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MDCSwipeToChoose";
+			target = 7EECB6E4B97AEA1EDF7F80A4 /* Pods-MDCSwipeToChoose */;
+			targetProxy = 80D4F5DDA5298B55913CDAAB /* PBXContainerItemProxy */;
+		};
+		D484FAA80D390926CC197167 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-TheHack-MDCSwipeToChoose";
+			target = BA48485FCC86BB35AFA8617B /* Pods-TheHack-MDCSwipeToChoose */;
+			targetProxy = 6425432CEACED56829317DC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00BD010024736BD9874999B8 /* Release */ = {
+		0C8D068AF3A06727AC9B19BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B00B19454902565FB807AFE /* Pods-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1EC336A039B4326918FECCEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF2A03E41808440EB1C1D4C2 /* Pods-TheHack.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3B0A3E97CF78AC62C665780E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B00B19454902565FB807AFE /* Pods-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		439EEF5110123EAF9A202F4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4F1E7071F4DC5DE1A2F593 /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5494AECB3987EB7A8043DE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4F1E7071F4DC5DE1A2F593 /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		75BE341B02F278C82758F91A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -730,121 +810,9 @@
 			};
 			name = Release;
 		};
-		0A926DCFEAE9AD5267042C0B /* Release */ = {
+		825E993A6B0ADA81FF0A9186 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6297C649B0C800586E95C311 /* Pods-MDCSwipeToChoose-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1834BDB60F5FC777D5537C75 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 492BCF8953AADF91C97C82E8 /* Pods-TheHackTests.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		23789C16F4613D7E02517ED3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82CCC266EB2BDFC91C2C19A2 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		2823B8F8BABE8F8D4F5684C5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D58B87F8F661295D7A3CC1BD /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		32FA66A85516C77E29291AC0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF886731CEA98EBFFE208B86 /* Pods-TheHack.release.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		47E9F3A565D4603A4E8DA3A6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D58B87F8F661295D7A3CC1BD /* Pods-TheHackTests-MDCSwipeToChoose-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHackTests-MDCSwipeToChoose/Pods-TheHackTests-MDCSwipeToChoose-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		5D4A9319237578B34EBFCBEB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB2C3A3155E3A13E0F8480B7 /* Pods-TheHack.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		82992D50CABA1F5746C9D2C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 596CD1F10C752743167E9873 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */;
+			baseConfigurationReference = 6727DE96693ADEE242538D99 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-prefix.pch";
@@ -858,7 +826,23 @@
 			};
 			name = Release;
 		};
-		981B5D81573EBD9AF0077BCE /* Debug */ = {
+		8D46E9D35134984C236E48BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6727DE96693ADEE242538D99 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9198D5BACB57F1D31531ACE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -897,41 +881,9 @@
 			};
 			name = Debug;
 		};
-		AAE999D297B87AE76EC5FA15 /* Debug */ = {
+		9AF94322239B648A959BD449 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81D53F7F78B59E758515440E /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DA2F1BF02363450714199907 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 596CD1F10C752743167E9873 /* Pods-TheHack-MDCSwipeToChoose-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-TheHack-MDCSwipeToChoose/Pods-TheHack-MDCSwipeToChoose-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E6FC8337BABFC5E214D8F491 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3A4ECB5676C00F429E61D91 /* Pods-TheHackTests.release.xcconfig */;
+			baseConfigurationReference = 58D45411C76F3FF15C09B2CA /* Pods-TheHackTests.release.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -945,89 +897,137 @@
 			};
 			name = Release;
 		};
-		F8117D06F475B86AB13FF12B /* Debug */ = {
+		A8975923D69120C9F13F66FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6297C649B0C800586E95C311 /* Pods-MDCSwipeToChoose-Private.xcconfig */;
+			baseConfigurationReference = 90AD9D7D768156CBD2651287 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-MDCSwipeToChoose/Pods-MDCSwipeToChoose-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
+		B7A11BFF58FC4CC9A94F1961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51A18C6E41CC53FDAD094B71 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D31A83E51DCFE9F14BB21E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71F94388392CA35125D5004B /* Pods-TheHackTests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F425CBF709E94502D2FF6273 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EEFB971EA65FA908AD1E552 /* Pods-TheHack.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0BD266706815B523B3678DD0 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests" */ = {
+		14DE499A0360F2BD344AABFE /* Build configuration list for PBXNativeTarget "Pods-TheHack-MDCSwipeToChoose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1834BDB60F5FC777D5537C75 /* Debug */,
-				E6FC8337BABFC5E214D8F491 /* Release */,
+				8D46E9D35134984C236E48BB /* Debug */,
+				825E993A6B0ADA81FF0A9186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58F18A569CC9AB04893CEE3B /* Build configuration list for PBXNativeTarget "Pods" */ = {
+		63A750E6D67B7A5FAABE10FB /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				AAE999D297B87AE76EC5FA15 /* Debug */,
-				23789C16F4613D7E02517ED3 /* Release */,
+				3B0A3E97CF78AC62C665780E /* Debug */,
+				0C8D068AF3A06727AC9B19BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C4DB2D13A860F41BAE7D27D /* Build configuration list for PBXNativeTarget "Pods-TheHackTests-MDCSwipeToChoose" */ = {
+		65F6E59288C92068DC2F69F2 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests-MDCSwipeToChoose" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				47E9F3A565D4603A4E8DA3A6 /* Debug */,
-				2823B8F8BABE8F8D4F5684C5 /* Release */,
+				439EEF5110123EAF9A202F4E /* Debug */,
+				5494AECB3987EB7A8043DE07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79208D5FDC2A777E2F7480A6 /* Build configuration list for PBXProject "Pods" */ = {
+		866CEF31A2DBDC3AAFEA339E /* Build configuration list for PBXNativeTarget "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				981B5D81573EBD9AF0077BCE /* Debug */,
-				00BD010024736BD9874999B8 /* Release */,
+				A8975923D69120C9F13F66FA /* Debug */,
+				B7A11BFF58FC4CC9A94F1961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5ECD4E358028C1A27AF72BC /* Build configuration list for PBXNativeTarget "Pods-TheHack" */ = {
+		99DF2E70BF7340A1A0428966 /* Build configuration list for PBXNativeTarget "Pods-TheHackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D4A9319237578B34EBFCBEB /* Debug */,
-				32FA66A85516C77E29291AC0 /* Release */,
+				D31A83E51DCFE9F14BB21E1A /* Debug */,
+				9AF94322239B648A959BD449 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA08AE48B8F1117BB0C82B1E /* Build configuration list for PBXNativeTarget "Pods-MDCSwipeToChoose" */ = {
+		EEF6BFC318D913F24904AD3C /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8117D06F475B86AB13FF12B /* Debug */,
-				0A926DCFEAE9AD5267042C0B /* Release */,
+				9198D5BACB57F1D31531ACE9 /* Debug */,
+				75BE341B02F278C82758F91A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F15373C70C7B40C21B854E2B /* Build configuration list for PBXNativeTarget "Pods-TheHack-MDCSwipeToChoose" */ = {
+		FF8E2E91307E91147609CEDA /* Build configuration list for PBXNativeTarget "Pods-TheHack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA2F1BF02363450714199907 /* Debug */,
-				82992D50CABA1F5746C9D2C2 /* Release */,
+				1EC336A039B4326918FECCEB /* Debug */,
+				F425CBF709E94502D2FF6273 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FF801CE6E69B00E7B9567C0F /* Project object */;
+	rootObject = C3A131460AB7C2B3AE306799 /* Project object */;
 }

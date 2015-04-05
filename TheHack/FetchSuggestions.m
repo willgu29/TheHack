@@ -42,7 +42,10 @@
         NSArray *following = [ParseDatabase lookupFollowListForUsername:currentUser.username];
         [query whereKey:@"username" containedIn:following];
     }
-    
+    else
+    {
+        [_delegate fetchSuccess:nil withIndex:FETCH_FOLLOWING];
+    }
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)
         {
