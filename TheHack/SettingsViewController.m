@@ -51,48 +51,14 @@
         [sender setTitle:@"Open" forState:UIControlStateNormal];
     }
 }
--(IBAction)recordAudio:(UIButton *)sender
-{
-    if([sender.titleLabel.text isEqualToString:@"Record"])
-    {
-        [_audioPlayer setupRecorder];
-        [_audioPlayer startRecording];
-        [sender setTitle:@"Stop" forState:UIControlStateNormal];
-    }
-    else
-    {
-        [_audioPlayer stopRecording];
-        [sender setTitle:@"Record" forState:UIControlStateNormal];
-    }
-  
-}
--(IBAction)playAudio:(UIButton *)sender
-{
-    if ([sender.titleLabel.text isEqualToString:@"Play"])
-    {
-        [_audioPlayer startPlayback];
-        [sender setTitle:@"Pause" forState:UIControlStateNormal];
-    }
-    else
-    {
-        [_audioPlayer stopRecording];
-        [sender setTitle:@"Play" forState:UIControlStateNormal];
-    }
-}
--(IBAction)archive:(UIButton *)sender
-{
-    
-}
+
 
 -(IBAction)back:(UIButton *)sender
 {
     [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
--(IBAction)updateInfo:(UIButton *)sender
-{
-    
-}
+
 -(IBAction)adminLogin:(UIButton *)sender
 {
     LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];

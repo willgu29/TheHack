@@ -105,7 +105,7 @@ const NSString *LanguageModelFiles = @"NameIWantForMyLanguageModelFiles";
 {
     _lmGenerator = [[OELanguageModelGenerator alloc] init];
     
-    NSArray *words = [NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", @"FOUR", @"FIVE", @"SIX", @"SEVEN", @"EIGHT", @"NINE", @"TEN", @"ELEVEN", @"TWELVE", @"AM", @"PM",  nil];
+    NSArray *words = [NSArray arrayWithObjects:@"ONE", @"TWO", @"THREE", @"FOUR", @"FIVE", @"SIX", @"SEVEN", @"EIGHT", @"NINE", @"TEN", @"ELEVEN", @"TWELVE", @"AM", @"PM", @"RUN", @"SLEEP", @"WAKE UP", @"SHOWER", @"EAT", @"LISTEN TO MUSIC", @"HANG OUT WITH FRIENDS", @"MEETINGS", @"WORK", @"STUDY", @"PROGRAM", @"SWIM", @"BIKE", @"HACKATHON", @"SEX", @"MAKE LOVE", @"BRUSH TEETH", @"GROOMING", @"WENT TO THE", @"BEACH", @"TRAVEL", @"PLAYED WITH PETS", @"DRIVE", @"READING", @"TWITTER", @"FACEBOOK", @"PINTEREST", @"SNAPCHAT", @"RELAXED", @"NAP", nil];
     NSString *name = (NSString *)LanguageModelFiles;
     NSError *err = [_lmGenerator generateLanguageModelFromArray:words withFilesNamed:name forAcousticModelAtPath:[OEAcousticModel pathToModel:@"AcousticModelEnglish"]]; // Change "AcousticModelEnglish" to "AcousticModelSpanish" to create a Spanish language model instead of an English one.
     

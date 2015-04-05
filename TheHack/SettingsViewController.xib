@@ -24,48 +24,6 @@
                         <action selector="back:" destination="-1" eventType="touchUpInside" id="bu5-RM-ngc"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlI-fE-wVn">
-                    <rect key="frame" x="135" y="140" width="50" height="30"/>
-                    <state key="normal" title="Record">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="recordAudio:" destination="-1" eventType="touchUpInside" id="vdj-Ft-dhh"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kk-3y-1kS">
-                    <rect key="frame" x="135" y="269" width="51" height="30"/>
-                    <state key="normal" title="Archive">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="archive:" destination="-1" eventType="touchUpInside" id="r5X-vn-mYS"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jal-Rs-pIk">
-                    <rect key="frame" x="115" y="378" width="91" height="30"/>
-                    <state key="normal" title="Report a Bug">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hvo-9Q-E0d">
-                    <rect key="frame" x="145" y="178" width="30" height="31"/>
-                    <state key="normal" title="Play">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="playAudio:" destination="-1" eventType="touchUpInside" id="dgw-Hu-aCR"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-Wk-H4i">
-                    <rect key="frame" x="141" y="331" width="38" height="30"/>
-                    <state key="normal" title="Open">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="testOpenEars:" destination="-1" eventType="touchUpInside" id="7ks-7x-sTl"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AoD-Xy-SmG">
                     <rect key="frame" x="107" y="231" width="107" height="30"/>
                     <state key="normal" title="Create Account">
@@ -73,15 +31,6 @@
                     </state>
                     <connections>
                         <action selector="createAccount:" destination="-1" eventType="touchUpInside" id="7M0-jK-lyn"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwY-Zm-4ah">
-                    <rect key="frame" x="116" y="102" width="88" height="30"/>
-                    <state key="normal" title="Edit Account">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="updateInfo:" destination="-1" eventType="touchUpInside" id="IiN-jP-5KZ"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-hc-SKk">
@@ -93,6 +42,21 @@
                         <action selector="adminLogin:" destination="-1" eventType="touchUpInside" id="gni-dZ-s8p"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-Wk-H4i">
+                    <rect key="frame" x="103" y="300" width="115" height="58"/>
+                    <state key="normal" title="Open">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="testOpenEars:" destination="-1" eventType="touchUpInside" id="7ks-7x-sTl"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="BY: Will Gu, Aaron Yih, Ryan Kim  " translatesAutoresizingMaskIntoConstraints="NO" id="Afq-zV-WH3">
+                    <rect key="frame" x="40" y="67" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>

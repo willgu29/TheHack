@@ -113,17 +113,17 @@
     NSString *randomCategory = [self chooseRandomCategory];
     if ([randomCategory isEqualToString:@"Motivated"])
     {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time being motivated", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.motivatedHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time being motivated.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.motivatedHours]];
     } else if ([randomCategory isEqualToString:@"Social"]) {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time being social", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.socialHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time being social.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.socialHours]];
     } else if ([randomCategory isEqualToString:@"Leisure"]) {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time at leisure", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.leisureHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time at leisure.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.leisureHours]];
     } else if ([randomCategory isEqualToString:@"Work"]) {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time working", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.workHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time working.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.workHours]];
     } else if ([randomCategory isEqualToString:@"Routine"]) {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time doing routine tasks", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.routineHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time doing routine tasks.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.routineHours]];
     } else if ([randomCategory isEqualToString:@"Fitness"]) {
-        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time excerising", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.fitnessHours]];
+        _interestingFact.text = [NSString stringWithFormat:@"Of all the people using this app, they spent %@ of their time excercising.", [_dataCrunch getPercentageOfTotalHours:_dataCrunch.fitnessHours]];
     } else {
         _interestingFact.text = @"Sorry, we could not come up with a fact today. Please come again tomorrow!";
     }
