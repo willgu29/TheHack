@@ -44,7 +44,7 @@
     }
     else
     {
-        [_delegate fetchSuccess:nil withIndex:FETCH_FOLLOWING];
+        [_delegate fetchSuccess:@[] withIndex:FETCH_FOLLOWING];
     }
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (objects)
