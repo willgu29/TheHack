@@ -92,11 +92,8 @@
     }
     NSArray *dataLogs = [_headerContainer objectAtIndex:tableView.tag];
     PFObject *log = [dataLogs objectAtIndex:indexPath.row];
-    
-    cell.whyFollow.text = log[@"whyShadow"];
-    cell.username.text = log[@"username"];
     NSString *followText;
-    if (_segmentControl.selectedSegmentIndex == 1)
+    if (tableView.tag == 1)
     {
         followText = @"Following";
     }
@@ -104,7 +101,9 @@
     {
         followText = @"Follow";
     }
-    [cell.follow setTitle:followText forState:UIControlStateNormal];
+    cell.whyFollow.text = log[@"whyShadow"];
+    cell.username.text = log[@"username"];
+   
     
     return cell;
 }

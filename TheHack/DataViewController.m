@@ -9,7 +9,11 @@
 #import "DataViewController.h"
 #import "SettingsViewController.h"
 #import "RyanViewController.h"
+#import <Parse/Parse.h>
 @interface DataViewController ()
+
+@property (nonatomic, weak) IBOutlet UILabel *followingCount;
+@property (nonatomic, weak) IBOutlet UILabel *followersCount;
 
 @end
 
@@ -19,7 +23,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self setupLabels];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -37,6 +44,14 @@
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:settingsVC];
     
     [self presentViewController:navVC animated:YES completion:nil];
+}
+
+#pragma mark - Helper functions
+-(void)setupLabels
+{
+    PFUser *currentUser = [PFUser currentUser];
+    _followersCount.text = [NSString stringWithFormat:@"%d",[currentUser[@"Followers"] count]];
+    _followingCount.text = [NSString stringWithFormat:@"%d",[currentUser[@"Following"] count]];
 }
 
 @end

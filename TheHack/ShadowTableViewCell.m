@@ -8,6 +8,7 @@
 
 #import "ShadowTableViewCell.h"
 #import <Parse/Parse.h>
+#import "ParseDatabase.h"
 
 @interface ShadowTableViewCell()
 
@@ -63,6 +64,11 @@
             
         }
     }];
+    PFUser *otherUser = [ParseDatabase lookupUsername:username];
+    [otherUser addObject:currentUser.username forKey:@"Followers"];
+    [otherUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+    }];
 }
 -(void)unfollowUser:(NSString *)username
 {
@@ -77,6 +83,11 @@
         {
             
         }
+    }];
+    PFUser *otherUser = [ParseDatabase lookupUsername:username];
+    [otherUser removeObject:currentUser.username forKey:@"Followers"];
+    [otherUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
     }];
 }
 

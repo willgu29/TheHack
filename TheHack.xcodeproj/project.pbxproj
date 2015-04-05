@@ -30,8 +30,6 @@
 		8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB5A1ACFBF7A0088D14F /* NSDataConvert.m */; };
 		8404CB601ACFC1170088D14F /* FindShadowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB5E1ACFC1170088D14F /* FindShadowsViewController.m */; };
 		8404CB611ACFC1170088D14F /* FindShadowsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB5F1ACFC1170088D14F /* FindShadowsViewController.xib */; };
-		8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB631ACFC5DF0088D14F /* FollowingViewController.m */; };
-		8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB641ACFC5DF0088D14F /* FollowingViewController.xib */; };
 		8404CB6A1ACFC6F00088D14F /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB681ACFC6F00088D14F /* DataViewController.m */; };
 		8404CB6B1ACFC6F00088D14F /* DataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CB691ACFC6F00088D14F /* DataViewController.xib */; };
 		8404CB711ACFC7F80088D14F /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CB701ACFC7F80088D14F /* Router.m */; };
@@ -64,6 +62,7 @@
 		8404CBBE1AD092000088D14F /* CalendarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBBC1AD092000088D14F /* CalendarTableViewCell.m */; };
 		8404CBBF1AD092000088D14F /* CalendarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8404CBBD1AD092000088D14F /* CalendarTableViewCell.xib */; };
 		8404CBC21AD0A24E0088D14F /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC11AD0A24E0088D14F /* SwipeView.m */; };
+		8404CBC61AD0B5070088D14F /* DataCruncher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8404CBC51AD0B5070088D14F /* DataCruncher.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,9 +110,6 @@
 		8404CB5D1ACFC1170088D14F /* FindShadowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindShadowsViewController.h; sourceTree = "<group>"; };
 		8404CB5E1ACFC1170088D14F /* FindShadowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindShadowsViewController.m; sourceTree = "<group>"; };
 		8404CB5F1ACFC1170088D14F /* FindShadowsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindShadowsViewController.xib; sourceTree = "<group>"; };
-		8404CB621ACFC5DF0088D14F /* FollowingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowingViewController.h; sourceTree = "<group>"; };
-		8404CB631ACFC5DF0088D14F /* FollowingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowingViewController.m; sourceTree = "<group>"; };
-		8404CB641ACFC5DF0088D14F /* FollowingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FollowingViewController.xib; sourceTree = "<group>"; };
 		8404CB671ACFC6F00088D14F /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		8404CB681ACFC6F00088D14F /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
 		8404CB691ACFC6F00088D14F /* DataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataViewController.xib; sourceTree = "<group>"; };
@@ -163,6 +159,8 @@
 		8404CBC01AD0A24E0088D14F /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
 		8404CBC11AD0A24E0088D14F /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		8404CBC31AD0A55F0088D14F /* FetchConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FetchConstants.h; sourceTree = "<group>"; };
+		8404CBC41AD0B5060088D14F /* DataCruncher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCruncher.h; sourceTree = "<group>"; };
+		8404CBC51AD0B5070088D14F /* DataCruncher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCruncher.m; sourceTree = "<group>"; };
 		9EF8A0CEA36FE138D591102B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D271285710E0F499D0E751AD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -322,9 +320,6 @@
 				8404CB5D1ACFC1170088D14F /* FindShadowsViewController.h */,
 				8404CB5E1ACFC1170088D14F /* FindShadowsViewController.m */,
 				8404CB5F1ACFC1170088D14F /* FindShadowsViewController.xib */,
-				8404CB621ACFC5DF0088D14F /* FollowingViewController.h */,
-				8404CB631ACFC5DF0088D14F /* FollowingViewController.m */,
-				8404CB641ACFC5DF0088D14F /* FollowingViewController.xib */,
 				8404CB671ACFC6F00088D14F /* DataViewController.h */,
 				8404CB681ACFC6F00088D14F /* DataViewController.m */,
 				8404CB691ACFC6F00088D14F /* DataViewController.xib */,
@@ -344,6 +339,8 @@
 				8404CB7E1ACFD4EB0088D14F /* FetchSuggestions.m */,
 				8404CB951ACFEAE40088D14F /* SpeechToText.h */,
 				8404CB961ACFEAE40088D14F /* SpeechToText.m */,
+				8404CBC41AD0B5060088D14F /* DataCruncher.h */,
+				8404CBC51AD0B5070088D14F /* DataCruncher.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -539,7 +536,6 @@
 			files = (
 				8404CBA41AD0643A0088D14F /* ShadowTableViewCell.xib in Resources */,
 				8404CBB51AD0861E0088D14F /* EditProfileViewController.xib in Resources */,
-				8404CB661ACFC5DF0088D14F /* FollowingViewController.xib in Resources */,
 				8404CB901ACFE72D0088D14F /* AcousticModelSpanish.bundle in Resources */,
 				8404CB9D1AD055BF0088D14F /* RyanViewController.xib in Resources */,
 				8404CB8F1ACFE72D0088D14F /* AcousticModelEnglish.bundle in Resources */,
@@ -607,8 +603,8 @@
 				8404CB881ACFE21C0088D14F /* Audio.m in Sources */,
 				8404CB5C1ACFBF7A0088D14F /* NSDataConvert.m in Sources */,
 				8404CB9C1AD055BF0088D14F /* RyanViewController.m in Sources */,
+				8404CBC61AD0B5070088D14F /* DataCruncher.m in Sources */,
 				8404CB841ACFD6C90088D14F /* SettingsViewController.m in Sources */,
-				8404CB651ACFC5DF0088D14F /* FollowingViewController.m in Sources */,
 				8404CB7F1ACFD4EB0088D14F /* FetchSuggestions.m in Sources */,
 				8404CBB91AD08F140088D14F /* DisplayLogViewController.m in Sources */,
 				8404CB131ACFB5BF0088D14F /* AppDelegate.m in Sources */,
