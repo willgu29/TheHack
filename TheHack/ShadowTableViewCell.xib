@@ -23,26 +23,26 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miF-WL-jBL">
+                        <rect key="frame" x="21" y="16" width="176" height="21"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Jn-JwS" customClass="ColoredView">
+                        <rect key="frame" x="21" y="82" width="278" height="45"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hL-om-MYu">
-                        <rect key="frame" x="224" y="8" width="88" height="36"/>
+                        <rect key="frame" x="205" y="9" width="107" height="36"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <state key="normal" image="binocbtnh">
+                        <state key="normal" title="Follow" image="binocbtnh">
                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
                         <connections>
                             <action selector="followButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fG7-zs-tVw"/>
                         </connections>
                     </button>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Jn-JwS" customClass="ColoredView">
-                        <rect key="frame" x="21" y="82" width="278" height="45"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miF-WL-jBL">
-                        <rect key="frame" x="21" y="15" width="208" height="21"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -51,7 +51,7 @@
                 <outlet property="username" destination="miF-WL-jBL" id="049-sb-Euo"/>
                 <outlet property="whyFollow" destination="IU5-si-lv4" id="Qv2-u2-crt"/>
             </connections>
-            <point key="canvasLocation" x="240" y="392"/>
+            <point key="canvasLocation" x="240" y="390"/>
         </tableViewCell>
     </objects>
     <resources>

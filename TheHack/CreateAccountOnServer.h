@@ -25,6 +25,6 @@
 -(BOOL)saveEmail:(NSString *)emailAddress;
 -(void)createAccount;
 -(void)updateAccount;
-
+-(void)loginUserName:(NSString *)username andPassword:(NSString *)password;
 
 @end

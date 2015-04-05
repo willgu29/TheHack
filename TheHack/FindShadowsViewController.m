@@ -13,9 +13,11 @@
 #import "DisplayLogViewController.h"
 #import "ColoredView.h"
 #import "ColorViewCreator.h"
+#import "CreateAccountOnServer.h"
 @interface FindShadowsViewController ()
 
 @property (nonatomic, strong) FetchSuggestions *fetcher;
+@property (nonatomic, strong) CreateAccountOnServer *createAccount;
 
 @property (nonatomic, strong) NSMutableArray *headerContainer;
 
@@ -33,8 +35,7 @@
 }
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    
+    [super viewDidLoad];   
     
     _headerContainer =  [[NSMutableArray alloc] initWithObjects:@[], @[], @[], nil];
     
